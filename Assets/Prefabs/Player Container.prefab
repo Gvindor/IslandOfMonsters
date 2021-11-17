@@ -412,6 +412,7 @@ MonoBehaviour:
   - {fileID: 3083228498669228344}
   maxHP: 100
   hitImpulse: 30
+  hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
 --- !u!114 &7975657822361428970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,7 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookAtPos: {x: 0, y: 0, z: 0}
   lookAtTimer: 0
-  lookAt: 0
+  lookAt: 1
   rotationSpeed: 20
   autoAttackDelay: 2
   modeTransitionTime: 0.5

@@ -10,10 +10,13 @@ namespace SF
         [SerializeField] GameObject[] hitBodyParts;
         [SerializeField] int maxHP = 100;
         [SerializeField] float hitImpulse = 50;
+        [SerializeField] ParticleSystem hitParticlesPrefab;
 
-        private SF.FighterCharacterController controller;
+        private FighterCharacterController controller;
         private Rigidbody rb;
         private List<CombatController> hitTargets = new List<CombatController>();
+
+        private ParticleSystem hitParticles;
 
         public int HP { get; set; }
 
@@ -23,7 +26,7 @@ namespace SF
         {
             HP = maxHP;
 
-            controller = GetComponent<SF.FighterCharacterController>();
+            controller = GetComponent<FighterCharacterController>();
             rb = GetComponent<Rigidbody>();
 
             controller.OnAttack.AddListener(OnAttackStarted);
@@ -64,8 +67,7 @@ namespace SF
             Vector3 dir = new Vector3(impulse.x, 0, impulse.z);
             rb.AddForce(dir.normalized * 400, ForceMode.Impulse);
 
-            //Instantiate(hitParticle, point, Quaternion.identity);
-            PlayHitVFX();
+            PlayHitVFX(point);
 
             return true;
         }
@@ -84,9 +86,16 @@ namespace SF
             hitTargets.Add(targetHitController);
         }
 
-        private void PlayHitVFX()
+        private void PlayHitVFX(Vector3 position)
         {
-            //TODO
+            if (!hitParticles)
+            {
+                hitParticles = Instantiate(hitParticlesPrefab, position, Quaternion.identity, transform);
+            }
+
+            hitParticles.transform.position = position;
+
+            hitParticles.Emit(20);
         }
     }
 }

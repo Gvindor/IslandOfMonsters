@@ -3132,8 +3132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09a54ea6077cb245bdb098fc3eca4be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.75
-  minDistance: 1
+  speed: 0.8
+  minDistance: 0.8
 --- !u!114 &2184925336469110691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3153,7 +3153,8 @@ MonoBehaviour:
   - {fileID: 2184925336704121615}
   - {fileID: 2184925334725699925}
   maxHP: 80
-  hitImpulse: 30
+  hitImpulse: 100
+  hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
 --- !u!114 &5749400307251931678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3168,7 +3169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookAtPos: {x: 0, y: 0, z: 0}
   lookAtTimer: 0
-  lookAt: 0
+  lookAt: 1
   rotationSpeed: 10
   autoAttackDelay: 2
   modeTransitionTime: 0.5
