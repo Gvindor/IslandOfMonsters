@@ -1,0 +1,526 @@
+fileFormatVersion: 2
+guid: 5c9311ceebb65ca4f8116b507b0e7e9e
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 7418856213981388950
+    second: Armature.003|AT
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.7
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: PM3D_Sphere3D4:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PM3D_Sphere3D4:Neck_end
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: CharactersSquidGameMode(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature.003
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: PM3D_Sphere3D4:Hips
+      parentName: Armature.003
+      position: {x: -0.000000031501052, y: 0.00029450958, z: 0.0047362144}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PM3D_Sphere3D4:LeftUpLeg
+      parentName: PM3D_Sphere3D4:Hips
+      position: {x: -0.0008573118, y: -0.00038647422, z: 0.00016381395}
+      rotation: {x: 0.00032284795, y: -0.017408168, z: 0.99966824, w: 0.018982505}
+      scale: {x: 1.0000169, y: 0.99999994, z: 1.0000136}
+    - name: PM3D_Sphere3D4:LeftLeg
+      parentName: PM3D_Sphere3D4:LeftUpLeg
+      position: {x: 6.519257e-12, y: 0.0020650837, z: 4.0720486e-11}
+      rotation: {x: -0.0377111, y: -0.0006471543, z: 0.017381117, w: 0.99913734}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+    - name: PM3D_Sphere3D4:LeftFoot
+      parentName: PM3D_Sphere3D4:LeftLeg
+      position: {x: -5.7353868e-11, y: 0.0012575572, z: -2.9667713e-11}
+      rotation: {x: 0.45893985, y: -0.03130421, z: 0.016193537, w: 0.88776803}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: PM3D_Sphere3D4:LeftToeBase
+      parentName: PM3D_Sphere3D4:LeftFoot
+      position: {x: -1.5299882e-10, y: 0.0013934404, z: -3.42261e-10}
+      rotation: {x: 0.3542977, y: 0.021636022, z: -0.00819231, w: 0.93484646}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.99999976}
+    - name: PM3D_Sphere3D4:LeftToeBase_end
+      parentName: PM3D_Sphere3D4:LeftToeBase
+      position: {x: -0, y: 0.0006398164, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PM3D_Sphere3D4:RightUpLeg
+      parentName: PM3D_Sphere3D4:Hips
+      position: {x: 0.0008573118, y: -0.00038647422, z: 0.00018921387}
+      rotation: {x: -0.00034132227, y: -0.01849268, z: 0.99964875, w: -0.018981168}
+      scale: {x: 1.0000182, y: 1.0000001, z: 1.0000165}
+    - name: PM3D_Sphere3D4:RightLeg
+      parentName: PM3D_Sphere3D4:RightUpLeg
+      position: {x: 3.931927e-11, y: 0.0020652332, z: -7.331378e-13}
+      rotation: {x: -0.03554683, y: 0.0006095871, z: -0.017381083, w: 0.9992167}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: PM3D_Sphere3D4:RightFoot
+      parentName: PM3D_Sphere3D4:RightLeg
+      position: {x: 1.5023101e-10, y: 0.0012572479, z: 4.5583867e-12}
+      rotation: {x: 0.45006073, y: 0.03255053, z: -0.016431117, w: 0.8922533}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: PM3D_Sphere3D4:RightToeBase
+      parentName: PM3D_Sphere3D4:RightFoot
+      position: {x: -6.616028e-11, y: 0.0013665003, z: 6.84522e-11}
+      rotation: {x: 0.36253732, y: -0.022511898, z: 0.008749181, w: 0.93165624}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: PM3D_Sphere3D4:RightToeBase_end
+      parentName: PM3D_Sphere3D4:RightToeBase
+      position: {x: -0, y: 0.0006324164, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PM3D_Sphere3D4:Spine
+      parentName: PM3D_Sphere3D4:Hips
+      position: {x: -0, y: 0.0006947459, z: 0.000012702141}
+      rotation: {x: 0.00914041, y: -0, z: -0, w: 0.9999582}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: PM3D_Sphere3D4:Spine1
+      parentName: PM3D_Sphere3D4:Spine
+      position: {x: 3.183231e-15, y: 0.0008106728, z: 0}
+      rotation: {x: 0.000000033993274, y: -1.5703027e-14, z: -1.7179126e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PM3D_Sphere3D4:Spine2
+      parentName: PM3D_Sphere3D4:Spine1
+      position: {x: 4.029537e-15, y: 0.0009264821, z: 0}
+      rotation: {x: 0.004032132, y: -0.00000011920828, z: -4.7894955e-10, w: 0.9999919}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: PM3D_Sphere3D4:LeftShoulder
+      parentName: PM3D_Sphere3D4:Spine2
+      position: {x: -0.0005829479, y: 0.00035721122, z: 0.000006047325}
+      rotation: {x: 0.51744366, y: -0.47807127, z: 0.5234529, w: 0.4792672}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: PM3D_Sphere3D4:LeftArm
+      parentName: PM3D_Sphere3D4:LeftShoulder
+      position: {x: -6.519257e-12, y: 0.0010731362, z: -1.8335411e-11}
+      rotation: {x: -0.036659572, y: -0.017893927, z: 0.037660453, w: 0.9984576}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.9999998}
+    - name: PM3D_Sphere3D4:LeftForeArm
+      parentName: PM3D_Sphere3D4:LeftArm
+      position: {x: -0, y: 0.0015920345, z: 6.519257e-11}
+      rotation: {x: 0.03623745, y: -0.0057871444, z: -0.13799652, w: 0.98975265}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: PM3D_Sphere3D4:LeftHand
+      parentName: PM3D_Sphere3D4:LeftForeArm
+      position: {x: -1.3038513e-10, y: 0.0009366119, z: -7.823109e-11}
+      rotation: {x: -0.01194466, y: 0.0012954538, z: 0.026677681, w: 0.9995719}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: PM3D_Sphere3D4:LeftHand_end
+      parentName: PM3D_Sphere3D4:LeftHand
+      position: {x: -0, y: 0.0015593636, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PM3D_Sphere3D4:Neck
+      parentName: PM3D_Sphere3D4:Spine2
+      position: {x: -2.0044036e-12, y: 0.0010422592, z: -0.0000084053045}
+      rotation: {x: -0.27152714, y: 0.000000114730675, z: 0.000000032368558, w: 0.96243083}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: PM3D_Sphere3D4:Neck_end
+      parentName: PM3D_Sphere3D4:Neck
+      position: {x: -0, y: 0.002576, z: 0.000045}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PM3D_Sphere3D4:RightShoulder
+      parentName: PM3D_Sphere3D4:Spine2
+      position: {x: 0.0005829479, y: 0.0003574008, z: 0.000013241306}
+      rotation: {x: 0.520851, y: 0.47490114, z: -0.51990336, w: 0.48258018}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: PM3D_Sphere3D4:RightArm
+      parentName: PM3D_Sphere3D4:RightShoulder
+      position: {x: -9.778886e-12, y: 0.0010731358, z: 1.16124256e-10}
+      rotation: {x: -0.03664383, y: 0.018613933, z: -0.037397783, w: 0.99845487}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: PM3D_Sphere3D4:RightForeArm
+      parentName: PM3D_Sphere3D4:RightArm
+      position: {x: -0, y: 0.0015897657, z: 2.395827e-10}
+      rotation: {x: 0.037009694, y: 0.005314597, z: 0.12426474, w: 0.9915444}
+      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+    - name: PM3D_Sphere3D4:RightHand
+      parentName: PM3D_Sphere3D4:RightForeArm
+      position: {x: -2.6077028e-11, y: 0.0009346281, z: 9.583307e-10}
+      rotation: {x: -0.012180574, y: -0.0011205496, z: -0.023210183, w: 0.9996558}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: PM3D_Sphere3D4:RightHand_end
+      parentName: PM3D_Sphere3D4:RightHand
+      position: {x: -0, y: 0.0015581719, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: doll_Mesh.001
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: doll_Mesh.002
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: doll_Mesh.003
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: PM3D_Sphere3D2:PM3D_Sphere3D2:soldier_Mesh.001
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: PM3D_Sphere3D2:PM3D_Sphere3D2:soldier_Mesh.002
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: PM3D_Sphere3D2:PM3D_Sphere3D2:soldier_Mesh.004
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: PM3D_Sphere3D2:PM3D_Sphere3D2:survivalist_Mesh.003
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: soldier_blue_square_Mesh.001
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: soldier_blue_square_Mesh.002
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: soldier_blue_square_Mesh.006
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: soldier_blue_triangle_Mesh.001
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: soldier_blue_triangle_Mesh.002
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: soldier_blue_triangle_Mesh.007
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_green_girl_Mesh.002
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_green_hairless_Mesh.019
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_purple_girl_Mesh
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_purple_hairless_Mesh.017
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_purple_with_hair_Mesh.015
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_yellow_girl_Mesh.001
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_yellow_hairless_Mesh.018
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: survivalist_yellow_with_hair_Mesh.016
+      parentName: CharactersSquidGameMode(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.7
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
