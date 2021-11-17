@@ -19,6 +19,7 @@ namespace SF
         [SerializeField] float rotationSpeed = 10;
         [SerializeField][Min(0)] float autoAttackDelay = 2f;
         [SerializeField][Min(0.1f)] float modeTransitionTime = 0.5f;
+        [SerializeField] [Min(0)] float faintDuration = 2f;
 
         private GameObject[] targets;
 
@@ -30,14 +31,17 @@ namespace SF
         private Vector3 input;
         private bool isAttacking;
         private float attackTimer;
+        private float faintTimer;
 
         private float findTargetTimer;
         private bool isFocused;
         private bool isRun;
         private bool isDead;
+        private bool isFainted;
 
         public bool IsAttacking => animator.GetCurrentAnimatorStateInfo(0).IsTag("attack");
         public bool IsDead => isDead;
+        public bool IsFainted => isFainted;
         public Vector2 Input => input;
         public Transform Target => target;
 
@@ -49,9 +53,7 @@ namespace SF
             rb = GetComponent<Rigidbody>();
             animator = GetComponent<Animator>();
             ragdoll = GetComponent<RamecanMixer>();
-            //hitController = GetComponent<HitController>();
             cam = Camera.main.transform;
-            //Time.timeScale = 0.3f;
 
             targets = GameObject.FindGameObjectsWithTag("Enemy");
         }
@@ -60,11 +62,33 @@ namespace SF
         {
             isDead = true;
             ragdoll.BeginStateTransition(RagdollDeadState);
+            animator.SetBool("dead", true);
+        }
+
+        public void Faint()
+        {
+            isFainted = true;
+            faintTimer = faintDuration;
+            ragdoll.BeginStateTransition(RagdollDeadState);
+            animator.SetBool("dead", true);
+        }
+
+        public void Revive()
+        {
+            isDead = false;
+            isFainted = false;
+
+            rb.position = ragdoll.RootBoneTr.position;
+
+            ragdoll.BeginStateTransition(RagdollDefaultState);
+
+            animator.SetBool("dead", false);
+            animator.SetTrigger("reviveUp");
         }
 
         public void Move(Vector2 input)
         {
-            if (!IsDead)
+            if (!IsDead && !IsFainted)
                 this.input = new Vector3(input.x, 0, input.y);
             else 
                 this.input = Vector3.zero;
@@ -101,6 +125,22 @@ namespace SF
         // Update is called once per frame
         void Update()
         {
+            if (IsFainted && !IsDead)
+            {
+                faintTimer -= Time.deltaTime;
+
+                if (faintTimer < 0)
+                {
+                    Revive();
+                }
+                else
+                {
+                    rb.position = ragdoll.RootBoneTr.position;
+                }
+            }
+
+            if (IsDead || IsFainted) return;
+
             AutoAttack();
 
             Vector3 inputDirection = input.normalized;

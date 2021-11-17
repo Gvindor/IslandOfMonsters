@@ -392,6 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLockDistance: 2
   retreatTime: 1.5
+  targetGizmoPrefab: {fileID: 6967689676335054692, guid: f09d70e4865894041acec9f9ea0f6434, type: 3}
 --- !u!114 &3083228497207101388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +414,8 @@ MonoBehaviour:
   maxHP: 100
   hitImpulse: 30
   hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
+  powerKicksEnabled: 1
+  powerKickChance: 0.5
 --- !u!114 &7975657822361428970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +434,7 @@ MonoBehaviour:
   rotationSpeed: 20
   autoAttackDelay: 2
   modeTransitionTime: 0.5
+  faintDuration: 2
   OnAttack:
     m_PersistentCalls:
       m_Calls: []

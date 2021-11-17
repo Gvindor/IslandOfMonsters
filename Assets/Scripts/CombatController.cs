@@ -11,6 +11,8 @@ namespace SF
         [SerializeField] int maxHP = 100;
         [SerializeField] float hitImpulse = 50;
         [SerializeField] ParticleSystem hitParticlesPrefab;
+        [SerializeField] bool powerKicksEnabled;
+        [SerializeField] [Range(0, 1)] float powerKickChance = 0.25f;
 
         private FighterCharacterController controller;
         private Rigidbody rb;
@@ -19,6 +21,7 @@ namespace SF
         private ParticleSystem hitParticles;
 
         public int HP { get; set; }
+        public int MaxHP => maxHP;
 
         public Transform Head => head;
 
@@ -37,7 +40,7 @@ namespace SF
             hitTargets.Clear();
         }
 
-        public bool TakeHit(GameObject go, Vector3 point, Vector3 impulse, int damage)
+        private bool TakeHit(GameObject go, Vector3 point, Vector3 impulse, int damage, bool isPowerKick)
         {
             if (controller.IsDead) return false;
 
@@ -62,10 +65,16 @@ namespace SF
                 controller.Die();
             }
 
+            float kickBackImpulse = isPowerKick ? hitImpulse * 5 : hitImpulse;
+
             Rigidbody boneRb = go.GetComponent<Rigidbody>();
-            boneRb.AddForceAtPosition(impulse.normalized * hitImpulse, point, ForceMode.Impulse);
-            Vector3 dir = new Vector3(impulse.x, 0, impulse.z);
-            rb.AddForce(dir.normalized * 400, ForceMode.Impulse);
+            boneRb.AddForceAtPosition(impulse.normalized * kickBackImpulse, point, ForceMode.Impulse);
+
+            if (isPowerKick)
+                controller.Faint();
+
+            //Vector3 dir = new Vector3(impulse.x, 0, impulse.z);
+            //rb.AddForce(dir.normalized * 400, ForceMode.Impulse);
 
             PlayHitVFX(point);
 
@@ -81,9 +90,17 @@ namespace SF
             return !hitTargets.Contains(targetHitController);
         }
 
-        public void GiveHit(CombatController targetHitController)
+        public void GiveHit(CombatController targetController, GameObject targetBodyPart, Vector3 hitPosition, Vector3 hitImpulse, int baseDamage)
         {
-            hitTargets.Add(targetHitController);
+            bool isPowerKick = false;
+            if (powerKicksEnabled) 
+            {
+                var dice = Random.Range(0, 1f);
+                isPowerKick = dice <= powerKickChance;
+            }
+
+            if (targetController.TakeHit(targetBodyPart, hitPosition, hitImpulse, baseDamage, isPowerKick))
+                hitTargets.Add(targetController);
         }
 
         private void PlayHitVFX(Vector3 position)

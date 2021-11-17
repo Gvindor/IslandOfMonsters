@@ -8,10 +8,12 @@ namespace SF
         [SerializeField] [Min(0)] float enemyLockDistance = 2f;
         [Tooltip("How long character should run from the target before breaking lock")]
         [SerializeField] [Min(0)] float retreatTime = 1f;
+        [SerializeField] TargetGizmo targetGizmoPrefab;
 
         private FighterCharacterController character;
         private float findTargetTimer;
         private float retreatTimer;
+        private TargetGizmo targetGizmo;
 
         private GameObject[] targets;
 
@@ -19,6 +21,9 @@ namespace SF
         {
             character = GetComponent<FighterCharacterController>();
             targets = GameObject.FindGameObjectsWithTag("Enemy");
+
+            targetGizmo = Instantiate(targetGizmoPrefab);
+            targetGizmo.Hide();
         }
 
         private void Update()
@@ -49,7 +54,8 @@ namespace SF
                     //tempDot > 0.75 && 
                     if (dir.magnitude < dist && dir.magnitude < enemyLockDistance)
                     {
-                        if (!targets[i].GetComponent<SF.FighterCharacterController>().IsDead)
+                        var tc = targets[i].GetComponent<FighterCharacterController>();
+                        if (!tc.IsDead && !tc.IsFainted)
                         {
                             dist = dir.magnitude;
                             id = i;
@@ -59,9 +65,15 @@ namespace SF
 
                 bool isFocused = id != -1;
                 if (isFocused)
+                {
+                    targetGizmo.Show(targets[id].GetComponent<CombatController>());
                     character.ChangeTarget(targets[id].transform);
+                }
                 else
+                {
+                    targetGizmo.Hide();
                     character.ChangeTarget(null);
+                }
 
                 findTargetTimer = 0.5f;
             }
@@ -84,6 +96,7 @@ namespace SF
                         {
                             findTargetTimer = 2f;
                             character.ChangeTarget(null);
+                            targetGizmo.Hide();
                         }
                     }
                     else

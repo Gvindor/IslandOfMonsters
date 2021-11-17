@@ -49,8 +49,7 @@ namespace SF
 
             if (!linker.CombatController.CanHitThisTarget(targetCombatController)) return;
 
-            if (targetCombatController.TakeHit(col.gameObject, col.contacts[0].point, Velocity, hitDamage))
-                linker.CombatController.GiveHit(targetCombatController);
+            linker.CombatController.GiveHit(targetCombatController, col.gameObject, col.contacts[0].point, Velocity, hitDamage);
         }
 
         private void FixedUpdate()

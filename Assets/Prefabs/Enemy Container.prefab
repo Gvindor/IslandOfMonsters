@@ -3133,7 +3133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.8
-  minDistance: 0.8
+  minDistance: 0.7
 --- !u!114 &2184925336469110691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3155,6 +3155,8 @@ MonoBehaviour:
   maxHP: 80
   hitImpulse: 100
   hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
+  powerKicksEnabled: 0
+  powerKickChance: 0.25
 --- !u!114 &5749400307251931678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,6 +3175,7 @@ MonoBehaviour:
   rotationSpeed: 10
   autoAttackDelay: 2
   modeTransitionTime: 0.5
+  faintDuration: 2
   OnAttack:
     m_PersistentCalls:
       m_Calls: []
