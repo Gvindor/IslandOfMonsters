@@ -18,6 +18,7 @@ namespace SF
 
         [SerializeField] float rotationSpeed = 10;
         [SerializeField][Min(0)] float autoAttackDelay = 2f;
+        [SerializeField] [Min(0)] float autoAttackRange = 1f;
         [SerializeField][Min(0.1f)] float modeTransitionTime = 0.5f;
         [SerializeField] [Min(0)] float faintDuration = 2f;
 
@@ -61,6 +62,10 @@ namespace SF
         public void Die()
         {
             isDead = true;
+
+            rb.isKinematic = true;
+            GetComponent<Collider>().enabled = false;
+
             ragdoll.BeginStateTransition(RagdollDeadState);
             animator.SetBool("dead", true);
         }
@@ -69,6 +74,10 @@ namespace SF
         {
             isFainted = true;
             faintTimer = faintDuration;
+
+            rb.isKinematic = true;
+            GetComponent<Collider>().enabled = false;
+
             ragdoll.BeginStateTransition(RagdollDeadState);
             animator.SetBool("dead", true);
         }
@@ -79,6 +88,8 @@ namespace SF
             isFainted = false;
 
             rb.position = ragdoll.RootBoneTr.position;
+            rb.isKinematic = false;
+            GetComponent<Collider>().enabled = true;
 
             ragdoll.BeginStateTransition(RagdollDefaultState);
 
@@ -113,7 +124,7 @@ namespace SF
 
         private void AutoAttack()
         {
-            if (target && attackTimer <= 0 && Vector3.Distance(transform.position, target.position) < 1)
+            if (target && attackTimer <= 0 && Vector3.Distance(transform.position, target.position) < autoAttackRange)
             {
                 Fight();
                 attackTimer = autoAttackDelay;
@@ -217,6 +228,12 @@ namespace SF
                 animator.SetLookAtWeight(1, 0.5f);
                 animator.SetLookAtPosition(lookAtPos);
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawSphere(transform.position, 0.2f);
         }
     }
 }

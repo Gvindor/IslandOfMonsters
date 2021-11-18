@@ -24,6 +24,7 @@ namespace SF
         public int MaxHP => maxHP;
 
         public Transform Head => head;
+        public FighterCharacterController Character => controller;
 
         private void Awake()
         {

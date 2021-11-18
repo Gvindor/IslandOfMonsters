@@ -362,7 +362,7 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 547004b29f88e684ea3fae8d4a6c0733, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2
+  m_Radius: 0.15
   m_Height: 0.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.23, z: 0}
@@ -412,7 +412,7 @@ MonoBehaviour:
   - {fileID: 3083228497576330082}
   - {fileID: 3083228498669228344}
   maxHP: 100
-  hitImpulse: 30
+  hitImpulse: 80
   hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
   powerKicksEnabled: 1
   powerKickChance: 0.5
@@ -433,6 +433,7 @@ MonoBehaviour:
   lookAt: 1
   rotationSpeed: 20
   autoAttackDelay: 2
+  autoAttackRange: 1
   modeTransitionTime: 0.5
   faintDuration: 2
   OnAttack:
@@ -478,7 +479,7 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0.3
+    positionAccuracy: 0.7
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
     rotationAccuracy: 1
