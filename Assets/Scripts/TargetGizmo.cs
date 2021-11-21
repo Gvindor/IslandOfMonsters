@@ -7,9 +7,8 @@ namespace SF
 {
     public class TargetGizmo : MonoBehaviour
     {
+        [SerializeField] CombatController target;
         [SerializeField] Image fill;
-
-        private CombatController target;
 
         private void LateUpdate()
         {
