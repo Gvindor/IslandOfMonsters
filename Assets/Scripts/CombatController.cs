@@ -13,6 +13,8 @@ namespace SF
         [SerializeField] ParticleSystem hitParticlesPrefab;
         [SerializeField] bool powerKicksEnabled;
         [SerializeField] [Range(0, 1)] float powerKickChance = 0.25f;
+        [SerializeField] bool bulletTimeOnHitRecived;
+        [SerializeField] bool bulletTimeOnHitGiven;
 
         private FighterCharacterController controller;
         private Rigidbody rb;
@@ -72,12 +74,19 @@ namespace SF
             boneRb.AddForceAtPosition(impulse.normalized * kickBackImpulse, point, ForceMode.Impulse);
 
             if (isPowerKick)
+            {
                 controller.Faint();
+
+                if (bulletTimeOnHitRecived)
+                    FindObjectOfType<TimeManager>().BulletTime();
+            }
 
             //Vector3 dir = new Vector3(impulse.x, 0, impulse.z);
             //rb.AddForce(dir.normalized * 400, ForceMode.Impulse);
 
             PlayHitVFX(point);
+
+
 
             return true;
         }
@@ -101,7 +110,12 @@ namespace SF
             }
 
             if (targetController.TakeHit(targetBodyPart, hitPosition, hitImpulse, baseDamage, isPowerKick))
+            {
                 hitTargets.Add(targetController);
+
+                if (isPowerKick && bulletTimeOnHitGiven)
+                    FindObjectOfType<TimeManager>().BulletTime();
+            }
         }
 
         private void PlayHitVFX(Vector3 position)

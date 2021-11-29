@@ -3103,7 +3103,7 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &2184925336469110690
@@ -3158,6 +3158,8 @@ MonoBehaviour:
   hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
   powerKicksEnabled: 1
   powerKickChance: 0.25
+  bulletTimeOnHitRecived: 0
+  bulletTimeOnHitGiven: 0
 --- !u!114 &5749400307251931678
 MonoBehaviour:
   m_ObjectHideFlags: 0
