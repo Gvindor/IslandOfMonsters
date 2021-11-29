@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0864b6c6bbd5c854e86cefbdd621b085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 5749400307251931678}
   combatController: {fileID: 2184925336469110691}
 --- !u!1 &2184925334888329074
 GameObject:

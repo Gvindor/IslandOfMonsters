@@ -4303,6 +4303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0864b6c6bbd5c854e86cefbdd621b085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterController: {fileID: 7975657822361428970}
   combatController: {fileID: 3083228497207101388}
 --- !u!1 &3083228498889611012
 GameObject:
