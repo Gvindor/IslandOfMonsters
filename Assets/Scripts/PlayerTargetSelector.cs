@@ -14,6 +14,7 @@ namespace SF
         private float findTargetTimer;
         private float retreatTimer;
         private TargetGizmo targetGizmo;
+        private CameraManager cameraManager;
 
         private GameObject[] targets;
 
@@ -21,6 +22,8 @@ namespace SF
         {
             character = GetComponent<FighterCharacterController>();
             targets = GameObject.FindGameObjectsWithTag("Enemy");
+
+            cameraManager = FindObjectOfType<CameraManager>();
 
             targetGizmo = Instantiate(targetGizmoPrefab);
             targetGizmo.Hide();
@@ -63,11 +66,17 @@ namespace SF
                     }
                 }
 
+                RemoveCurrentTargetFromFocus();
+
                 bool isFocused = id != -1;
                 if (isFocused)
                 {
-                    targetGizmo.Show(targets[id].GetComponent<CombatController>());
-                    character.ChangeTarget(targets[id].transform);
+                    var cc = targets[id].GetComponent<CombatController>();
+                    
+                    targetGizmo.Show(cc);
+                    character.ChangeTarget(cc.transform);
+
+                    AddCurrentTargetToFocus();
                 }
                 else
                 {
@@ -94,6 +103,8 @@ namespace SF
 
                         if (retreatTimer <= 0)
                         {
+                            RemoveCurrentTargetFromFocus();
+
                             findTargetTimer = 2f;
                             character.ChangeTarget(null);
                             targetGizmo.Hide();
@@ -105,6 +116,18 @@ namespace SF
             }
             else
                 retreatTimer = retreatTime;
+        }
+
+        private void AddCurrentTargetToFocus()
+        {
+            var oldTarget = character.Target?.GetComponent<CombatController>();
+            cameraManager.AddTarget(oldTarget);
+        }
+
+        private void RemoveCurrentTargetFromFocus()
+        {
+            var oldTarget = character.Target?.GetComponent<CombatController>();
+            cameraManager.RemoveTarget(oldTarget);
         }
     }
 }

@@ -13,12 +13,15 @@ namespace SF
         private List<CombatController> targets;
         private FighterCharacterController controller;
         private CombatController combatController;
+        private CameraManager cameraManager;
 
         private float findTargetTimer;
         private CombatController activeTarget;
 
         private void Start()
         {
+            cameraManager = FindObjectOfType<CameraManager>();
+
             targets = new List<CombatController>();
 
             controller = GetComponent<FighterCharacterController>();
@@ -74,11 +77,17 @@ namespace SF
                 if (isFocused)
                 {
                     activeTarget = targets[id];
+
+                    if (activeTarget.CompareTag("Player"))
+                    {
+                        AddSelfToFocus();
+                    }
                 }
                 else
                 {
                     activeTarget = null;
                     controller.ChangeTarget(null);
+                    RemoveSelfFromFocus();
                 }
 
                 findTargetTimer = 0.5f;
@@ -90,9 +99,23 @@ namespace SF
             if (!activeTarget) return;
 
             if (Vector3.Distance(transform.position, activeTarget.transform.position) < lockDistance)
+            {
                 controller.ChangeTarget(activeTarget.transform);
+            }
             else
+            {
                 controller.ChangeTarget(null);
+            }
+        }
+
+        private void AddSelfToFocus()
+        {
+            cameraManager.AddTarget(combatController);
+        }
+
+        private void RemoveSelfFromFocus()
+        {
+            cameraManager.RemoveTarget(combatController);
         }
     }
 }

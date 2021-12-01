@@ -47,6 +47,7 @@ namespace SF
         public Transform Target => target;
 
         public UnityEvent OnAttack = new UnityEvent();
+        public UnityEvent<FighterCharacterController, Transform> OnTargetChanged = new UnityEvent<FighterCharacterController, Transform>();
 
         // Use this for initialization
         void Start()
@@ -219,6 +220,8 @@ namespace SF
         {
             this.target = target;
             lookAtTimer = 2;
+
+            OnTargetChanged.Invoke(this, target);
         }
 
         void OnAnimatorIK()
