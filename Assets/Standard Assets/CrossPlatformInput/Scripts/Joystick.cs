@@ -6,25 +6,21 @@ namespace UnityStandardAssets.CrossPlatformInput
 {
 	public class Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 	{
-		public enum AxisOption
-		{
-			// Options for which axes to use
-			Both, // Use both
-			OnlyHorizontal, // Only horizontal
-			OnlyVertical // Only vertical
-		}
+		[SerializeField] RectTransform puck;
+		[SerializeField] RectTransform background;
 
-		public int MovementRange = 100;
-		public bool isCircleMovement = true;
-		public AxisOption axesToUse = AxisOption.Both; // The options for the axes that the still will use
-		public string horizontalAxisName = "Horizontal"; // The name given to the horizontal axis for the cross platform input
-		public string verticalAxisName = "Vertical"; // The name given to the vertical axis for the cross platform input
+		[SerializeField] int MovementRange = 100;
+		[SerializeField] int MinMovementRange = 10; //if joystick was moved less than the value it's considered to be a click
+		[SerializeField] bool isCircleMovement = true;
+		[SerializeField] string horizontalAxisName = "Horizontal"; // The name given to the horizontal axis for the cross platform input
+		[SerializeField] string verticalAxisName = "Vertical"; // The name given to the vertical axis for the cross platform input
+		[SerializeField] string clickButtonName = "Fire";
 
+		bool m_isClick;
 		Vector3 m_StartPos;
-		bool m_UseX; // Toggle for using the x axis
-		bool m_UseY; // Toggle for using the Y axis
 		CrossPlatformInputManager.VirtualAxis m_HorizontalVirtualAxis; // Reference to the joystick in the cross platform input
 		CrossPlatformInputManager.VirtualAxis m_VerticalVirtualAxis; // Reference to the joystick in the cross platform input
+		CrossPlatformInputManager.VirtualButton m_Button;
 
 		void OnEnable()
 		{
@@ -33,109 +29,114 @@ namespace UnityStandardAssets.CrossPlatformInput
 
         void Start()
         {
-            m_StartPos = transform.position;
-        }
+            m_StartPos = puck.position;
+
+			background.sizeDelta = new Vector2(MovementRange * 2, MovementRange * 2);
+
+			puck.gameObject.SetActive(false);
+			background.gameObject.SetActive(false);
+		}
 
 		void UpdateVirtualAxes(Vector3 value)
 		{
 			var delta = m_StartPos - value;
 			delta.y = -delta.y;
 			delta /= MovementRange;
-			if (m_UseX)
-			{
-				m_HorizontalVirtualAxis.Update(-delta.x);
-			}
 
-			if (m_UseY)
-			{
-				m_VerticalVirtualAxis.Update(delta.y);
-			}
+			m_HorizontalVirtualAxis.Update(-delta.x);
+			m_VerticalVirtualAxis.Update(delta.y);
 		}
 
 		void CreateVirtualAxes()
 		{
-			// set axes to use
-			m_UseX = (axesToUse == AxisOption.Both || axesToUse == AxisOption.OnlyHorizontal);
-			m_UseY = (axesToUse == AxisOption.Both || axesToUse == AxisOption.OnlyVertical);
-
-			// create new axes based on axes to use
-			if (m_UseX)
+			// create new axes
+			if (CrossPlatformInputManager.AxisExists(horizontalAxisName))
 			{
-				if (CrossPlatformInputManager.AxisExists(horizontalAxisName))
-				{
-					m_HorizontalVirtualAxis = CrossPlatformInputManager.VirtualAxisReference(horizontalAxisName);
-				}
-				else
-				{
-					m_HorizontalVirtualAxis = new CrossPlatformInputManager.VirtualAxis(horizontalAxisName);
-					CrossPlatformInputManager.RegisterVirtualAxis(m_HorizontalVirtualAxis);
-				}
+				m_HorizontalVirtualAxis = CrossPlatformInputManager.VirtualAxisReference(horizontalAxisName);
 			}
-			if (m_UseY)
+			else
 			{
-				if (CrossPlatformInputManager.AxisExists(verticalAxisName))
-				{
-					m_VerticalVirtualAxis = CrossPlatformInputManager.VirtualAxisReference(verticalAxisName);
-				}
-				else
-				{
-					m_VerticalVirtualAxis = new CrossPlatformInputManager.VirtualAxis(verticalAxisName);
-					CrossPlatformInputManager.RegisterVirtualAxis(m_VerticalVirtualAxis);
-				}
+				m_HorizontalVirtualAxis = new CrossPlatformInputManager.VirtualAxis(horizontalAxisName);
+				CrossPlatformInputManager.RegisterVirtualAxis(m_HorizontalVirtualAxis);
+			}
+
+			if (CrossPlatformInputManager.AxisExists(verticalAxisName))
+			{
+				m_VerticalVirtualAxis = CrossPlatformInputManager.VirtualAxisReference(verticalAxisName);
+			}
+			else
+			{
+				m_VerticalVirtualAxis = new CrossPlatformInputManager.VirtualAxis(verticalAxisName);
+				CrossPlatformInputManager.RegisterVirtualAxis(m_VerticalVirtualAxis);
+			}
+
+			// create a new button
+			if (!CrossPlatformInputManager.ButtonExists(clickButtonName))
+			{
+				m_Button = new CrossPlatformInputManager.VirtualButton(clickButtonName);
+				CrossPlatformInputManager.RegisterVirtualButton(m_Button);
 			}
 		}
-
 
 		public void OnDrag(PointerEventData data)
 		{
 			Vector3 newPos = Vector3.zero;
+			Vector2 delta = data.position - (Vector2)m_StartPos;
 
-			if (m_UseX)
-			{
-				int delta = (int)(data.position.x - m_StartPos.x);
-				if (!isCircleMovement)
-					delta = Mathf.Clamp(delta, - MovementRange, MovementRange);
-				newPos.x = delta;
-			}
-
-			if (m_UseY)
-			{
-				int delta = (int)(data.position.y - m_StartPos.y);
-				if (!isCircleMovement)
-					delta = Mathf.Clamp(delta, -MovementRange, MovementRange);
-				newPos.y = delta;
-			}
+			if (delta.magnitude > MinMovementRange) m_isClick = false;
 
 			if (isCircleMovement)
-            {
-				newPos = Vector3.ClampMagnitude(newPos, MovementRange);
-            }
+			{
+				newPos = Vector3.ClampMagnitude(delta, MovementRange);
+			}
+			else 
+			{
+				newPos.x = Mathf.Clamp(delta.x, -MovementRange, MovementRange);
+				newPos.y = Mathf.Clamp(delta.y, -MovementRange, MovementRange);
+			}
 
-			transform.position = new Vector3(m_StartPos.x + newPos.x, m_StartPos.y + newPos.y, m_StartPos.z + newPos.z);
-			UpdateVirtualAxes(transform.position);
+			puck.position = m_StartPos + newPos;
+			UpdateVirtualAxes(puck.position);
 		}
 
 
 		public void OnPointerUp(PointerEventData data)
 		{
-			transform.position = m_StartPos;
+			puck.position = m_StartPos;
 			UpdateVirtualAxes(m_StartPos);
+
+			if (m_isClick)
+            {
+                m_Button.Pressed();
+                m_Button.Released();
+
+                Debug.Log("Button click!");
+			}
+
+			puck.gameObject.SetActive(false);
+			background.gameObject.SetActive(false);
 		}
 
 
-		public void OnPointerDown(PointerEventData data) { }
+		public void OnPointerDown(PointerEventData data) 
+		{
+			m_StartPos = new Vector3(data.position.x, data.position.y);
+			m_isClick = true;
+
+			puck.position = m_StartPos;
+			background.position = m_StartPos;
+
+			puck.gameObject.SetActive(true);
+			background.gameObject.SetActive(true);
+		}
 
 		void OnDisable()
 		{
 			// remove the joysticks from the cross platform input
-			if (m_UseX)
-			{
-				m_HorizontalVirtualAxis.Remove();
-			}
-			if (m_UseY)
-			{
-				m_VerticalVirtualAxis.Remove();
-			}
+			m_HorizontalVirtualAxis.Remove();
+			m_VerticalVirtualAxis.Remove();
+			// and the button
+			m_Button.Remove();
 		}
 	}
 }
