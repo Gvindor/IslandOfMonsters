@@ -6,6 +6,7 @@ namespace SF
 {
     public class CameraManager : MonoBehaviour
     {
+        [SerializeField] bool findPlayerOnStart = true;
         [SerializeField] Transform player;
         [SerializeField] CinemachineTargetGroup targetGroup;
 
@@ -13,7 +14,19 @@ namespace SF
 
         private void Start()
         {
-            targetGroup.AddMember(player, 1, 1);
+            var controllers = FindObjectsOfType<CombatController>();
+
+            foreach (var item in controllers)
+            {
+                if (item.CompareTag("Player"))
+                {
+                    player = item.transform;
+                    break;
+                }
+            }
+
+            if (player)
+                targetGroup.AddMember(player, 1, 1);
         }
 
         private void LateUpdate()
