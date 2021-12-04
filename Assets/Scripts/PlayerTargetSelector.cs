@@ -66,8 +66,6 @@ namespace SF
                     }
                 }
 
-                RemoveCurrentTargetFromFocus();
-
                 bool isFocused = id != -1;
                 if (isFocused)
                 {
@@ -75,8 +73,6 @@ namespace SF
                     
                     targetGizmo.Show(cc);
                     character.ChangeTarget(cc.transform);
-
-                    AddCurrentTargetToFocus();
                 }
                 else
                 {
@@ -103,8 +99,6 @@ namespace SF
 
                         if (retreatTimer <= 0)
                         {
-                            RemoveCurrentTargetFromFocus();
-
                             findTargetTimer = 2f;
                             character.ChangeTarget(null);
                             targetGizmo.Hide();
@@ -116,18 +110,6 @@ namespace SF
             }
             else
                 retreatTimer = retreatTime;
-        }
-
-        private void AddCurrentTargetToFocus()
-        {
-            var oldTarget = character.Target?.GetComponent<CombatController>();
-            cameraManager.AddTarget(oldTarget);
-        }
-
-        private void RemoveCurrentTargetFromFocus()
-        {
-            var oldTarget = character.Target?.GetComponent<CombatController>();
-            cameraManager.RemoveTarget(oldTarget);
         }
     }
 }

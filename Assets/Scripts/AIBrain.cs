@@ -77,17 +77,11 @@ namespace SF
                 if (isFocused)
                 {
                     activeTarget = targets[id];
-
-                    if (activeTarget.CompareTag("Player"))
-                    {
-                        AddSelfToFocus();
-                    }
                 }
                 else
                 {
                     activeTarget = null;
                     controller.ChangeTarget(null);
-                    RemoveSelfFromFocus();
                 }
 
                 findTargetTimer = 0.5f;
@@ -106,16 +100,6 @@ namespace SF
             {
                 controller.ChangeTarget(null);
             }
-        }
-
-        private void AddSelfToFocus()
-        {
-            cameraManager.AddTarget(combatController);
-        }
-
-        private void RemoveSelfFromFocus()
-        {
-            cameraManager.RemoveTarget(combatController);
         }
     }
 }

@@ -8,9 +8,8 @@ namespace SF
     {
         [SerializeField] bool findPlayerOnStart = true;
         [SerializeField] Transform player;
-        [SerializeField] CinemachineTargetGroup targetGroup;
+        [SerializeField] CinemachineVirtualCamera cm_camera;
 
-        private List<CombatController> targets = new List<CombatController>();
 
         private void Start()
         {
@@ -26,35 +25,10 @@ namespace SF
             }
 
             if (player)
-                targetGroup.AddMember(player, 1, 1);
-        }
-
-        private void LateUpdate()
-        {
-            for (int i = targets.Count - 1; i >= 0; i--)
             {
-                if (targets[i].Character.IsDead)
-                    RemoveTarget(targets[i]);
+                cm_camera.Follow = player;
+                cm_camera.LookAt = player;
             }
-        }
-
-        public void AddTarget(CombatController controller)
-        {
-            if (!controller) return;
-
-            if (!targets.Contains(controller))
-            {
-                targets.Add(controller);
-                targetGroup.AddMember(controller.transform, 1, 1);
-            }
-        }
-
-        public void RemoveTarget(CombatController controller)
-        {
-            if (!controller) return;
-
-            targets.Remove(controller);
-            targetGroup.RemoveMember(controller.transform);
         }
     }
 }
