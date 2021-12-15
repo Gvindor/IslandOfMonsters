@@ -120,6 +120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018951596654937 stripped
@@ -137,6 +141,14 @@ PrefabInstance:
     - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_Name
       value: Wall door pink (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056546772317667340, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2242845445339424764, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_RootOrder
@@ -199,6 +211,10 @@ PrefabInstance:
     - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_Name
       value: Wall pink (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8471210961163216690, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_RootOrder
@@ -310,6 +326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018951521649771 stripped
@@ -327,6 +347,10 @@ PrefabInstance:
     - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_Name
       value: Wall pink (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8471210961163216690, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_RootOrder
@@ -394,6 +418,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall door pink (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056546772317667340, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2242845445339424764, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -452,6 +484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7254108809782916656}
     m_Modifications:
+    - target: {fileID: 1269005257476439640, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4052356893431835342, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -500,6 +536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall window pink (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9100472744273802028, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
 --- !u!4 &3281125782138741399 stripped
@@ -517,6 +557,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -624,6 +668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018951825964238 stripped
@@ -686,6 +734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018951663355857 stripped
@@ -703,6 +755,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -766,6 +822,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall door pink (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056546772317667340, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2242845445339424764, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -827,6 +891,10 @@ PrefabInstance:
     - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_Name
       value: Wall pink
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8471210961163216690, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_RootOrder
@@ -894,6 +962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs corner pink
       objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -952,6 +1024,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7254108809782916656}
     m_Modifications:
+    - target: {fileID: 1269005257476439640, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4052356893431835342, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1000,6 +1076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall window pink (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9100472744273802028, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
 --- !u!4 &3281125782800675100 stripped
@@ -1017,6 +1097,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -1124,6 +1208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018950538735587 stripped
@@ -1186,6 +1274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018950519942261 stripped
@@ -1203,6 +1295,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -1265,6 +1361,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -1372,6 +1472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018950372032974 stripped
@@ -1389,6 +1493,14 @@ PrefabInstance:
     - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_Name
       value: Wall door pink (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056546772317667340, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2242845445339424764, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_RootOrder
@@ -1448,6 +1560,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7254108809782916656}
     m_Modifications:
+    - target: {fileID: 1269005257476439640, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4052356893431835342, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1496,6 +1612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall window pink
       objectReference: {fileID: 0}
+    - target: {fileID: 9100472744273802028, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfe77df8e78284147b099d0ff54e42dd, type: 3}
 --- !u!4 &3281125781455434774 stripped
@@ -1513,6 +1633,14 @@ PrefabInstance:
     - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_Name
       value: Wall door pink (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056546772317667340, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2242845445339424764, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_RootOrder
@@ -1576,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs corner pink (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -1637,6 +1769,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -1700,6 +1836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs corner pink (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -1761,6 +1901,10 @@ PrefabInstance:
     - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_Name
       value: Wall pink (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8471210961163216690, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_RootOrder
@@ -1827,6 +1971,10 @@ PrefabInstance:
     - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_Name
       value: Wall pink (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811687864452592617, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8471210961163216690, guid: 72b8c21de3baa584bae31d3fc5a63576, type: 3}
       propertyPath: m_RootOrder
@@ -1938,6 +2086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018950633635535 stripped
@@ -1955,6 +2107,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -2018,6 +2174,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall door pink
       objectReference: {fileID: 0}
+    - target: {fileID: 566098359965321231, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056546772317667340, guid: 69e906320ee79bd469047cb864a17533, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2242845445339424764, guid: 69e906320ee79bd469047cb864a17533, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2079,6 +2243,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder
@@ -2186,6 +2354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs straight pink (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7642703796551681115, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e06c3da6667e76841a6b5d5cd10dce79, type: 3}
 --- !u!4 &900018951345699738 stripped
@@ -2203,6 +2375,10 @@ PrefabInstance:
     - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_Name
       value: Stairs corner pink (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378681329760069084, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3021483903411962038, guid: 8ea38f878651c2a4a853242b0ddef00c, type: 3}
       propertyPath: m_RootOrder

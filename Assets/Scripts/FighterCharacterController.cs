@@ -30,7 +30,6 @@ namespace SF
         private Transform cam;
 
         private Vector3 input;
-        private bool isAttacking;
         private float attackTimer;
         private float faintTimer;
 
@@ -108,10 +107,9 @@ namespace SF
 
         public void Fight()
         {
-            isAttacking = animator.GetCurrentAnimatorStateInfo(0).IsTag("attack");
             float time = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
 
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Default") || (isAttacking && time > 0.5f))
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Default") || (IsAttacking && time > 0.5f))
             {
                 animator.SetBool("side", !animator.GetBool("side"));
                 animator.SetInteger("number", Random.Range(0, 3));
@@ -199,8 +197,8 @@ namespace SF
 
         void LateUpdate()
         {
-            if (target == null && isAttacking) return;
-            //if (inputVelocity == 0) return;
+            //if (target == null && IsAttacking) return;
+
             Vector3 directionToTarget = transform.forward;
 
             if (target == null)
