@@ -17,9 +17,9 @@ namespace SF
         public bool lookAt;
 
         [SerializeField] float rotationSpeed = 10;
-        [SerializeField][Min(0)] float autoAttackDelay = 2f;
+        [SerializeField] [Min(0)] float autoAttackDelay = 2f;
         [SerializeField] [Min(0)] float autoAttackRange = 1f;
-        [SerializeField][Min(0.1f)] float modeTransitionTime = 0.5f;
+        [SerializeField] [Min(0.1f)] float modeTransitionTime = 0.5f;
         [SerializeField] [Min(0)] float faintDuration = 2f;
 
         private GameObject[] targets;
@@ -44,6 +44,7 @@ namespace SF
         public bool IsFainted => isFainted;
         public Vector2 Input => input;
         public Transform Target => target;
+        public float SpeedModifier { get; set; } = 1f;
 
         public UnityEvent OnAttack = new UnityEvent();
         public UnityEvent<FighterCharacterController, Transform> OnTargetChanged = new UnityEvent<FighterCharacterController, Transform>();
@@ -68,6 +69,9 @@ namespace SF
 
             ragdoll.BeginStateTransition(RagdollDeadState);
             animator.SetBool("dead", true);
+
+            var navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+            if (navAgent) navAgent.enabled = false;
         }
 
         public void Faint()
@@ -167,15 +171,15 @@ namespace SF
 
                 Vector3 localInput = transform.InverseTransformDirection(input);
 
-                animator.SetFloat("direction", localInput.x);
-                animator.SetFloat("velocity", localInput.z);
+                animator.SetFloat("direction", localInput.x * SpeedModifier);
+                animator.SetFloat("velocity", localInput.z * SpeedModifier);
             }
             else // run mode
             {
                 strafe -= Time.deltaTime / modeTransitionTime;
 
                 animator.SetFloat("direction", angle / 180);
-                animator.SetFloat("velocity", inputVelocity);
+                animator.SetFloat("velocity", inputVelocity * SpeedModifier);
             }
             animator.SetFloat("strafe", Mathf.Clamp01(strafe));
 

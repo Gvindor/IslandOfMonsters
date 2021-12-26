@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace SF
 {
@@ -15,6 +16,7 @@ namespace SF
         [SerializeField] [Range(0, 1)] float powerKickChance = 0.25f;
         [SerializeField] bool bulletTimeOnHitRecived;
         [SerializeField] bool bulletTimeOnHitGiven;
+        [SerializeField] bool hurtSlowdown;
 
         private FighterCharacterController controller;
         private Rigidbody rb;
@@ -27,6 +29,8 @@ namespace SF
 
         public Transform Head => head;
         public FighterCharacterController Character => controller;
+
+        public UnityEvent<CombatController> OnHitRecived;
 
         private void Awake()
         {
@@ -43,11 +47,9 @@ namespace SF
             hitTargets.Clear();
         }
 
-        private bool TakeHit(GameObject go, Vector3 point, Vector3 impulse, int damage, bool isPowerKick)
+        private bool TakeHit(CombatController sender, GameObject go, Vector3 point, Vector3 impulse, int damage, bool isPowerKick)
         {
             if (controller.IsDead) return false;
-
-            Debug.Log("Got hit!");
 
             bool hit = false;
             foreach (GameObject bone in hitBodyParts)
@@ -61,6 +63,12 @@ namespace SF
             if (!hit) return false;
 
             HP -= damage;
+
+            if (hurtSlowdown)
+            {
+                float t = HP / MaxHP;
+                controller.SpeedModifier = Mathf.Lerp(0.8f, 1f, t);
+            }
 
             if (HP <= 0)
             {
@@ -86,7 +94,7 @@ namespace SF
 
             PlayHitVFX(point);
 
-
+            OnHitRecived.Invoke(sender);
 
             return true;
         }
@@ -109,7 +117,7 @@ namespace SF
                 isPowerKick = dice <= powerKickChance;
             }
 
-            if (targetController.TakeHit(targetBodyPart, hitPosition, hitImpulse, baseDamage, isPowerKick))
+            if (targetController.TakeHit(this, targetBodyPart, hitPosition, hitImpulse, baseDamage, isPowerKick))
             {
                 hitTargets.Add(targetController);
 
