@@ -32,6 +32,7 @@ namespace SF
         private Vector3 input;
         private float attackTimer;
         private float faintTimer;
+        private float boostTimer;
 
         private float findTargetTimer;
         private bool isFocused;
@@ -45,6 +46,8 @@ namespace SF
         public Vector2 Input => input;
         public Transform Target => target;
         public float SpeedModifier { get; set; } = 1f;
+        public BoostData ActiveBoost { get; private set; }
+        public float BoostTimeLeft => boostTimer;
 
         public UnityEvent OnAttack = new UnityEvent();
         public UnityEvent<FighterCharacterController, Transform> OnTargetChanged = new UnityEvent<FighterCharacterController, Transform>();
@@ -72,6 +75,8 @@ namespace SF
 
             var navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
             if (navAgent) navAgent.enabled = false;
+
+            ClearBoost();
         }
 
         public void Faint()
@@ -153,6 +158,9 @@ namespace SF
                 }
             }
 
+            if (boostTimer > 0) boostTimer -= Time.deltaTime;
+            if (boostTimer < 0 && ActiveBoost != null) ClearBoost();
+
             if (IsDead || IsFainted) return;
 
             AutoAttack();
@@ -224,6 +232,20 @@ namespace SF
             lookAtTimer = 2;
 
             OnTargetChanged.Invoke(this, target);
+        }
+
+        public void ApplyBoost(BoostData boost)
+        {
+            ActiveBoost = boost;
+            boostTimer = boost.Duration;
+            animator.speed = boost.Speed;
+        }
+
+        public void ClearBoost()
+        {
+            animator.speed = 1f;
+            boostTimer = 0;
+            ActiveBoost = null;
         }
 
         void OnAnimatorIK()

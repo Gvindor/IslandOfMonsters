@@ -78,6 +78,8 @@ namespace SF
 
             float kickBackImpulse = isPowerKick ? hitImpulse * 5 : hitImpulse;
 
+            if (sender.Character.ActiveBoost != null) kickBackImpulse *= sender.Character.ActiveBoost.KickBack;
+
             Rigidbody boneRb = go.GetComponent<Rigidbody>();
             boneRb.AddForceAtPosition(impulse.normalized * kickBackImpulse, point, ForceMode.Impulse);
 
