@@ -1293,10 +1293,10 @@ MonoBehaviour:
   width: 10
   height: 10
   spawnTime:
-    min: 4
-    max: 6
+    min: 10
+    max: 15
   spawnY: 10
-  maxBoosterInstances: 5
+  maxBoosterInstances: 3
   boostSettings:
     duration: 5
     movementSpeedModifier: 1.2
@@ -2410,7 +2410,12 @@ MonoBehaviour:
   charactersToSpawn: 6
   radius: 4
   prefabPlayer: {fileID: 3083228498874448394, guid: 1e595ec2099bcc64fa29ab8e362edcb1, type: 3}
-  prefabEnemy: {fileID: 2184925334797566567, guid: 758ceb3ef3e74c447b36b34315560860, type: 3}
+  prefabsEnemy:
+  - {fileID: 5505947442691836536, guid: 9bd5aa57a639e5d4898f3a9d1740e7b5, type: 3}
+  - {fileID: 3977016760310220019, guid: 467f343b4d1357f4eac853fcfa422305, type: 3}
+  - {fileID: 1683978548907805031, guid: 904a408eb53d02245b3608bf88f5d564, type: 3}
+  - {fileID: 3022998720269404107, guid: 565eaf1f47d724d439a0702033cb6c29, type: 3}
+  - {fileID: 2566447013844092161, guid: 9ac9b3b46c10c8b47bd4ac193793b386, type: 3}
 --- !u!4 &1292180565
 Transform:
   m_ObjectHideFlags: 0

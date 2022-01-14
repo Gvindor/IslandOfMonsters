@@ -31,9 +31,11 @@ namespace SF
 
         private void Update()
         {
-            RetreatCheck();
+            //RetreatCheck();
 
-            if (!character.IsAttacking)
+            if (character.Input.magnitude > 0.1f)
+                character.ChangeTarget(null);
+            else if (!character.IsAttacking)
                 FindTarget();
         }
 

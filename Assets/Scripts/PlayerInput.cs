@@ -27,16 +27,6 @@ namespace SF
             {
                 controller.Fight();
             }
-
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                controller.Die();
-            }
-
-            //if (Input.GetKeyDown(KeyCode.X))
-            //{
-            //    controller.SimulateHit();
-            //}
         }
     }
 }

@@ -9,7 +9,7 @@ namespace SF
         [SerializeField] int charactersToSpawn = 6;
         [SerializeField] float radius = 5;
         [SerializeField] GameObject prefabPlayer;
-        [SerializeField] GameObject prefabEnemy;
+        [SerializeField] GameObject[] prefabsEnemy;
 
         private void Awake()
         {
@@ -20,13 +20,18 @@ namespace SF
         {
             for (int i = 0; i < charactersToSpawn; i++)
             {
-                var prefab = i == 0 ? prefabPlayer : prefabEnemy;
+                var prefab = i == 0 ? prefabPlayer : GetRandomEnemyPrefab();
 
                 var pos = GetCharacterPosition(i);
                 var rot = GetCharacterRotation(i);
 
                 Instantiate(prefab, pos, rot);
             }
+        }
+
+        private GameObject GetRandomEnemyPrefab()
+        {
+            return prefabsEnemy[Random.Range(0, prefabsEnemy.Length)];
         }
 
         private Vector3 GetCharacterPosition(int index)
