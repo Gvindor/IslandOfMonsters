@@ -220,6 +220,21 @@ MonoBehaviour:
   OnTargetChanged:
     m_PersistentCalls:
       m_Calls: []
+  OnDead:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5170513361052281117}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &262294601597575293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,10 +1534,10 @@ MonoBehaviour:
     childIDs: 010000000400000007000000
     rect:
       serializedVersion: 2
-      x: 18
-      y: 25
-      width: 417
-      height: 18
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 6
     rotation: {x: -0.00010090017, y: -0.7803738, z: -0.6253133, w: -0.000080851285}
@@ -1549,10 +1564,10 @@ MonoBehaviour:
     childIDs: 02000000
     rect:
       serializedVersion: 2
-      x: 18
-      y: 45
-      width: 81
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 7
     rotation: {x: 0.7006315, y: 0.0093042655, z: 0.009473828, w: 0.71339977}
@@ -1579,10 +1594,10 @@ MonoBehaviour:
     childIDs: 03000000
     rect:
       serializedVersion: 2
-      x: 18
-      y: 77
-      width: 81
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 8
     rotation: {x: -0.74350405, y: 0.0110396575, z: 0.009926975, w: -0.66856664}
@@ -1609,10 +1624,10 @@ MonoBehaviour:
     childIDs: 
     rect:
       serializedVersion: 2
-      x: 18
-      y: 109
-      width: 81
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 9
     rotation: {x: 0.7069847, y: 0, z: 0, w: 0.70722884}
@@ -1639,10 +1654,10 @@ MonoBehaviour:
     childIDs: 05000000
     rect:
       serializedVersion: 2
-      x: 102
-      y: 45
-      width: 83
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 1
     characterBoneId: 12
     rotation: {x: 0.5968847, y: -0.008109713, z: -0.01089944, w: 0.802212}
@@ -1669,10 +1684,10 @@ MonoBehaviour:
     childIDs: 06000000
     rect:
       serializedVersion: 2
-      x: 102
-      y: 77
-      width: 83
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 13
     rotation: {x: -0.81716335, y: -0.011923592, z: -0.008407904, w: -0.5762216}
@@ -1699,10 +1714,10 @@ MonoBehaviour:
     childIDs: 
     rect:
       serializedVersion: 2
-      x: 102
-      y: 109
-      width: 83
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 14
     rotation: {x: 0.7069847, y: 0, z: 0, w: 0.70722884}
@@ -1729,10 +1744,10 @@ MonoBehaviour:
     childIDs: 08000000
     rect:
       serializedVersion: 2
-      x: 187
-      y: 45
-      width: 248
-      height: 18
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 18
     rotation: {x: 0, y: -0.780369, z: -0.62531936, w: 0}
@@ -1759,10 +1774,10 @@ MonoBehaviour:
     childIDs: 090000000c0000000d000000
     rect:
       serializedVersion: 2
-      x: 187
-      y: 65
-      width: 248
-      height: 18
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 19
     rotation: {x: 0, y: -0.7118288, z: -0.70235306, w: 0}
@@ -1789,10 +1804,10 @@ MonoBehaviour:
     childIDs: 0a000000
     rect:
       serializedVersion: 2
-      x: 187
-      y: 85
-      width: 87
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 21
     rotation: {x: 0.50000006, y: -0.49999982, z: -0.49999994, w: 0.5000002}
@@ -1819,10 +1834,10 @@ MonoBehaviour:
     childIDs: 0b000000
     rect:
       serializedVersion: 2
-      x: 187
-      y: 117
-      width: 87
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 22
     rotation: {x: 0.5000002, y: -0.49999976, z: -0.49999988, w: 0.50000024}
@@ -1849,10 +1864,10 @@ MonoBehaviour:
     childIDs: 
     rect:
       serializedVersion: 2
-      x: 187
-      y: 149
-      width: 87
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 23
     rotation: {x: 0.49462196, y: -0.39761567, z: -0.48419982, w: 0.60233}
@@ -1879,10 +1894,10 @@ MonoBehaviour:
     childIDs: 
     rect:
       serializedVersion: 2
-      x: 277
-      y: 85
-      width: 66
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 33
     rotation: {x: -0.00000003090862, y: -0.70710677, z: -0.70710677, w: 0.00000003090862}
@@ -1909,10 +1924,10 @@ MonoBehaviour:
     childIDs: 0e000000
     rect:
       serializedVersion: 2
-      x: 346
-      y: 85
-      width: 89
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 36
     rotation: {x: 0.5000006, y: 0.499999, z: 0.4999994, w: 0.500001}
@@ -1939,10 +1954,10 @@ MonoBehaviour:
     childIDs: 0f000000
     rect:
       serializedVersion: 2
-      x: 346
-      y: 117
-      width: 89
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 37
     rotation: {x: 0.5000008, y: 0.4999991, z: 0.49999928, w: 0.5000009}
@@ -1969,10 +1984,10 @@ MonoBehaviour:
     childIDs: 
     rect:
       serializedVersion: 2
-      x: 346
-      y: 149
-      width: 89
-      height: 30
+      x: 0
+      y: 0
+      width: 1
+      height: 1
     selected: 0
     characterBoneId: 38
     rotation: {x: 0.49462184, y: 0.3976159, z: 0.4842001, w: 0.6023298}
@@ -2012,7 +2027,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 262294601597575292}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.36
+  m_Radius: 0.24
   m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
@@ -2602,6 +2617,7 @@ GameObject:
   - component: {fileID: 7743621499468663198}
   - component: {fileID: 906444777727997151}
   - component: {fileID: 6134642045214177260}
+  - component: {fileID: 5170513361052281117}
   m_Layer: 9
   m_Name: mixamorig:Hips
   m_TagString: Untagged
@@ -2652,6 +2668,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5170513361052281117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152266636360931323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d9366a580161547b8b8813ac974a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 1, g: 0, b: 0, a: 1}
+  indicator: {fileID: 0}
 --- !u!1 &1363663182661773216
 GameObject:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@ namespace SF
 
         public UnityEvent OnAttack = new UnityEvent();
         public UnityEvent<FighterCharacterController, Transform> OnTargetChanged = new UnityEvent<FighterCharacterController, Transform>();
+        public UnityEvent OnDead = new UnityEvent();
 
         // Use this for initialization
         void Start()
@@ -77,6 +78,8 @@ namespace SF
             if (navAgent) navAgent.enabled = false;
 
             ClearBoost();
+
+            OnDead.Invoke();
         }
 
         public void Faint()
