@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace SF
 {
@@ -11,22 +13,58 @@ namespace SF
         [SerializeField] GameObject prefabPlayer;
         [SerializeField] GameObject[] prefabsEnemy;
 
+        private List<FighterCharacterController> aliveEnemies;
+        private FighterCharacterController player;
+
+        public int TotalCharacters => charactersToSpawn;
+        public int AliveEnemiesCount => aliveEnemies.Count;
+
+        public UnityEvent<FighterCharacterController> OnCharacterSpawned = new UnityEvent<FighterCharacterController>();
+        public UnityEvent<FighterCharacterController> OnCharacterDead = new UnityEvent<FighterCharacterController>();
+
         private void Awake()
         {
-            if (spawnOnAwake) Spawn();
+            aliveEnemies = new List<FighterCharacterController>();
+
+            SpawnPlayer();
+
+            if (spawnOnAwake) SpawnEnemies();
         }
 
-        public void Spawn()
+        public void SpawnPlayer()
         {
-            for (int i = 0; i < charactersToSpawn; i++)
+            var prefab = prefabPlayer;
+
+            player = SpawnCharacter(0, prefab);
+
+            OnCharacterSpawned.Invoke(player);
+        }
+
+        public void SpawnEnemies()
+        {
+            for (int i = 1; i < charactersToSpawn; i++)
             {
-                var prefab = i == 0 ? prefabPlayer : GetRandomEnemyPrefab();
+                var prefab = GetRandomEnemyPrefab();
 
-                var pos = GetCharacterPosition(i);
-                var rot = GetCharacterRotation(i);
+                var enemy = SpawnCharacter(i, prefab);
 
-                Instantiate(prefab, pos, rot);
+                aliveEnemies.Add(enemy);
+
+                OnCharacterSpawned.Invoke(enemy);
             }
+        }
+
+        private FighterCharacterController SpawnCharacter(int position, GameObject prefab)
+        {
+            var pos = GetCharacterPosition(position);
+            var rot = GetCharacterRotation(position);
+
+            var character = Instantiate(prefab, pos, rot);
+            var controller = character.GetComponentInChildren<FighterCharacterController>();
+
+            controller.OnDead.AddListener(() => { HandleCharacterDead(controller); });
+
+            return controller;
         }
 
         private GameObject GetRandomEnemyPrefab()
@@ -52,6 +90,12 @@ namespace SF
             var rotation = Quaternion.LookRotation(forward, Vector3.up);
 
             return rotation;
+        }
+
+        private void HandleCharacterDead(FighterCharacterController controller)
+        {
+            aliveEnemies.Remove(controller);
+            OnCharacterDead.Invoke(controller);
         }
 
         private void OnDrawGizmos()
