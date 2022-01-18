@@ -17,7 +17,7 @@ namespace SF
         private FighterCharacterController player;
 
         public int TotalCharacters => charactersToSpawn;
-        public int AliveEnemiesCount => aliveEnemies.Count;
+        public int AliveEnemiesCount => aliveEnemies != null ? aliveEnemies.Count : 0;
 
         public UnityEvent<FighterCharacterController> OnCharacterSpawned = new UnityEvent<FighterCharacterController>();
         public UnityEvent<FighterCharacterController> OnCharacterDead = new UnityEvent<FighterCharacterController>();
