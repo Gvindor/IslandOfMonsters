@@ -57,12 +57,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7562296017009166941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6759c14cc589de4ea70bb1ecbaa28a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7da34bb6420ab134188ca12fbac6cd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   howerHeight: 0.5
   rotationSpeed: 30
   fallSpeed: 1
+  OnPicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &7618376204785190702
 Animator:
   serializedVersion: 3
