@@ -19,6 +19,8 @@ namespace SF
             {
                 StartCoroutine(LoadArena(0));
             }
+            else
+                OnArenaLoaded.Invoke();
 #else
             StartCoroutine(LoadArena(0));
 #endif
@@ -47,5 +49,19 @@ namespace SF
 
             OnArenaLoaded.Invoke();
         }
+
+        public void LoadNextArena()
+        {
+            int index = GetLoadedArenaIndex();
+
+            if (index < 0) index = 0;
+            else
+            {
+                SceneManager.UnloadSceneAsync(arenas[index]);
+            }
+
+            StartCoroutine(LoadArena(index));
+        }
+
     }
 }

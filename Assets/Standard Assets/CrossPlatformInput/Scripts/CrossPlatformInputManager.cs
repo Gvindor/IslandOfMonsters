@@ -88,6 +88,10 @@ namespace UnityStandardAssets.CrossPlatformInput
 			return activeInput.VirtualAxisReference(name);
 		}
 
+		public static VirtualButton VirtualButtonReference(string name)
+        {
+			return activeInput.VirtualButtonReference(name);
+        }
 
 		// returns the platform appropriate axis for the given name
 		public static float GetAxis(string name)

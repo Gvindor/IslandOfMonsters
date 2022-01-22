@@ -1,19 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using Cinemachine;
 using UnityEngine;
-using Cinemachine;
 
 namespace SF
 {
     public class CameraManager : MonoBehaviour
     {
-        [SerializeField] bool findPlayerOnStart = true;
-        [SerializeField] Transform player;
-        [SerializeField] CinemachineVirtualCamera cm_camera;
-
+        [SerializeField] CinemachineVirtualCamera gameplayCamera;
 
         private void Start()
         {
+            UpdatePlayerReference();
+        }
+
+        public void UpdatePlayerReference()
+        {
             var controllers = FindObjectsOfType<CombatController>();
+            Transform player = null;
 
             foreach (var item in controllers)
             {
@@ -26,8 +28,8 @@ namespace SF
 
             if (player)
             {
-                cm_camera.Follow = player;
-                cm_camera.LookAt = player;
+                gameplayCamera.Follow = player;
+                gameplayCamera.LookAt = player;
             }
         }
     }

@@ -98,6 +98,10 @@ namespace UnityStandardAssets.CrossPlatformInput
             return m_VirtualAxes.ContainsKey(name) ? m_VirtualAxes[name] : null;
         }
 
+        public CrossPlatformInputManager.VirtualButton VirtualButtonReference(string name)
+        {
+            return m_VirtualButtons.ContainsKey(name) ? m_VirtualButtons[name] : null;
+        }
 
         public void SetVirtualMousePositionX(float f)
         {

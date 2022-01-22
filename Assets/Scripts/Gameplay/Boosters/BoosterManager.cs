@@ -21,6 +21,8 @@ namespace SF
         private float spawnTimer;
         private List<Booster> boosterInstances;
 
+        public bool AutoSpawnBoosts { get; set; }
+
         private void Start()
         {
             boosterInstances = new List<Booster>();
@@ -77,13 +79,16 @@ namespace SF
 
         private void Update()
         {
-            if (spawnTimer > 0)
-                spawnTimer -= Time.deltaTime;
-            else
+            if (AutoSpawnBoosts)
             {
-                if (boosterInstances.Count < maxBoosterInstances)
-                    SpawnBooster();
-                spawnTimer = spawnTime.Random(); //Reset the timer anyway. We don't want to spawn a new booster immediately after another got picked.
+                if (spawnTimer > 0)
+                    spawnTimer -= Time.deltaTime;
+                else
+                {
+                    if (boosterInstances.Count < maxBoosterInstances)
+                        SpawnBooster();
+                    spawnTimer = spawnTime.Random(); //Reset the timer anyway. We don't want to spawn a new booster immediately after another got picked.
+                }
             }
         }
 

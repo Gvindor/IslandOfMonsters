@@ -21,13 +21,17 @@ namespace SF
         public static Action<Target, bool> TargetStateChanged;
 
         void Awake()
-        {
-            mainCamera = Camera.main;
+        {         
             screenCentre = new Vector3(Screen.width, Screen.height, 0) / 2;
             screenBounds = screenCentre * screenBoundOffset;
             TargetStateChanged += HandleTargetStateChanged;
 
             arrowsPool = new ObjectPool<TargetArrow>(transform, arrowPrefab);
+        }
+
+        private void OnEnable()
+        {
+            mainCamera = Camera.main;
         }
 
         void LateUpdate()

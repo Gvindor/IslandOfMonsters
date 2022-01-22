@@ -71,8 +71,12 @@ namespace UnityStandardAssets.CrossPlatformInput
 			}
 
 			// create a new button
-			if (!CrossPlatformInputManager.ButtonExists(clickButtonName))
+			if (CrossPlatformInputManager.ButtonExists(clickButtonName))
 			{
+				m_Button = CrossPlatformInputManager.VirtualButtonReference(clickButtonName);
+			}
+			else
+            {
 				m_Button = new CrossPlatformInputManager.VirtualButton(clickButtonName);
 				CrossPlatformInputManager.RegisterVirtualButton(m_Button);
 			}

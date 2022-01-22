@@ -1125,17 +1125,17 @@ MonoBehaviour:
   - {fileID: 1974901726034504140, guid: 6ce66903ecebcf643a56df35781e39bc, type: 3}
   - {fileID: 2980380485533678879, guid: 456f7bc9cab0cf6459702a23fa1b7f45, type: 3}
   - {fileID: 5147322678978023623, guid: 7b2fd2b4e2359b446b28aca277787ede, type: 3}
-  width: 1
-  height: 1
+  width: 10
+  height: 10
   spawnTime:
-    min: 4
-    max: 6
+    min: 10
+    max: 15
   spawnY: 10
-  maxBoosterInstances: 5
+  maxBoosterInstances: 3
   boostSettings:
     duration: 5
-    movementSpeedModifier: 1.2
-    kickBackStrengthModifier: 1.2
+    movementSpeedModifier: 1.5
+    kickBackStrengthModifier: 1.5
 --- !u!4 &1148530245
 Transform:
   m_ObjectHideFlags: 0
@@ -1162,7 +1162,7 @@ GameObject:
   - component: {fileID: 1194615611}
   - component: {fileID: 1194615613}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: CM Gameplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2049,7 +2049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28f630a7c43f86458edbb6d9fe5f8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnOnAwake: 1
+  spawnOnAwake: 0
   charactersToSpawn: 6
   radius: 4
   prefabPlayer: {fileID: 3083228498874448394, guid: 1e595ec2099bcc64fa29ab8e362edcb1, type: 3}
@@ -2780,9 +2780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93fd0ad1a40a4b54aab1a72c796e2c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  findPlayerOnStart: 1
-  player: {fileID: 0}
-  cm_camera: {fileID: 1194615611}
+  gameplayCamera: {fileID: 1194615611}
 --- !u!1001 &1942019312
 PrefabInstance:
   m_ObjectHideFlags: 0

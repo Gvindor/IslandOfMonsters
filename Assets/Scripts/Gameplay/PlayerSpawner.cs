@@ -26,9 +26,11 @@ namespace SF
         {
             aliveEnemies = new List<FighterCharacterController>();
 
-            SpawnPlayer();
-
-            if (spawnOnAwake) SpawnEnemies();
+            if (spawnOnAwake)
+            {
+                SpawnPlayer();
+                SpawnEnemies();
+            }
         }
 
         public void SpawnPlayer()

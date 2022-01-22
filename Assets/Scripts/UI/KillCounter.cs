@@ -12,12 +12,13 @@ namespace SF
 
         private void Awake()
         {
-            label = GetComponent<TMP_Text>();
-            spawner = FindObjectOfType<PlayerSpawner>();
+            label = GetComponent<TMP_Text>();          
         }
 
         private void OnEnable()
         {
+            spawner = FindObjectOfType<PlayerSpawner>();
+
             spawner?.OnCharacterSpawned.AddListener(OnCharactersChanged);
             spawner?.OnCharacterDead.AddListener(OnCharactersChanged);
 
