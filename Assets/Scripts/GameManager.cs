@@ -21,6 +21,7 @@ namespace SF
             uiManager.SwithToLobby();
 
             gameState = GameState.Lobby;
+
         }
 
         public void StartGame()
@@ -28,6 +29,7 @@ namespace SF
             boosts.AutoSpawnBoosts = true;
             spawner.SpawnEnemies();
             uiManager.SwitchToGameplay();
+            cameraManager.SwitchToGameplayCamera();
 
             gameState = GameState.Gameplay;
         }
@@ -51,7 +53,13 @@ namespace SF
             cameraManager.UpdatePlayerReference();
 
             if (gameState == GameState.End)
+            {
                 StartGame();
+            }
+            if (gameState == GameState.Lobby)
+            {
+                cameraManager.SwitchToOverviewCamera();
+            }
         }
 
         private void OnCharacterDead(FighterCharacterController character)

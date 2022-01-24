@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace SF
@@ -18,13 +16,10 @@ namespace SF
         private ObjectPool<TargetArrow> arrowsPool;
         private List<Target> targets = new List<Target>();
 
-        public static Action<Target, bool> TargetStateChanged;
-
         void Awake()
         {         
             screenCentre = new Vector3(Screen.width, Screen.height, 0) / 2;
             screenBounds = screenCentre * screenBoundOffset;
-            TargetStateChanged += HandleTargetStateChanged;
 
             arrowsPool = new ObjectPool<TargetArrow>(transform, arrowPrefab);
         }
@@ -68,19 +63,21 @@ namespace SF
             }
         }
 
-        private void HandleTargetStateChanged(Target target, bool active)
+        public void RegisterTarget(Target target)
         {
-            if (active)
-            {
+            if (targets.Contains(target) == false)
                 targets.Add(target);
-            }
-            else
+        }
+
+        public void UnregisterTarget(Target target)
+        {
+            if (target.indicator)
             {
-                if (target.indicator)
-                    target.indicator.Active = false;
-                target.indicator = null;
-                targets.Remove(target);
+                target.indicator.Active = false;
+                arrowsPool.ReturnPooledObject(target.indicator);
             }
+            target.indicator = null;
+            targets.Remove(target);
         }
 
         private TargetArrow GetIndicator(ref TargetArrow indicator)
@@ -92,11 +89,6 @@ namespace SF
             }
 
             return indicator;
-        }
-
-        private void OnDestroy()
-        {
-            TargetStateChanged -= HandleTargetStateChanged;
         }
 
         public static Vector3 GetScreenPosition(Camera mainCamera, Vector3 targetPosition)

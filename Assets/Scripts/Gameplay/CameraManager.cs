@@ -6,6 +6,7 @@ namespace SF
     public class CameraManager : MonoBehaviour
     {
         [SerializeField] CinemachineVirtualCamera gameplayCamera;
+        [SerializeField] CinemachineVirtualCamera overviewCamera;
 
         private void Start()
         {
@@ -31,6 +32,18 @@ namespace SF
                 gameplayCamera.Follow = player;
                 gameplayCamera.LookAt = player;
             }
+        }
+
+        public void SwitchToGameplayCamera()
+        {
+            overviewCamera.gameObject.SetActive(false);
+            gameplayCamera.gameObject.SetActive(true);
+        }
+
+        public void SwitchToOverviewCamera()
+        {
+            gameplayCamera.gameObject.SetActive(false);
+            overviewCamera.gameObject.SetActive(true);
         }
     }
 }

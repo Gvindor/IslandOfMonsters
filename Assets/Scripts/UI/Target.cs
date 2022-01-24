@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace SF
 {
@@ -11,14 +10,18 @@ namespace SF
 
         public Color TargetColor => targetColor;
 
+        private TargetArrowManager manager;
+
         private void OnEnable()
         {
-            TargetArrowManager.TargetStateChanged?.Invoke(this, true);
+            manager = FindObjectOfType<TargetArrowManager>(true);
+
+            manager?.RegisterTarget(this);
         }
 
         private void OnDisable()
         {
-            TargetArrowManager.TargetStateChanged?.Invoke(this, false);
+            manager?.UnregisterTarget(this);
         }
 
         public float GetDistanceFromCamera(Vector3 cameraPosition)
