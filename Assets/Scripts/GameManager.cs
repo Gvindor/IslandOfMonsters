@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace SF
 {
@@ -13,6 +14,9 @@ namespace SF
         private CameraManager cameraManager;
 
         private GameState gameState;
+
+        public UnityEvent OnGameWon = new UnityEvent();
+        public UnityEvent OnGameLost = new UnityEvent();
 
         private void Awake()
         {
@@ -79,17 +83,21 @@ namespace SF
         {
             spawner.OnCharacterDead.RemoveListener(OnCharacterDead);
 
-            uiManager.SwithToLostScreen();
-
             gameState = GameState.End;
+
+            OnGameLost.Invoke();
+
+            uiManager.SwithToLostScreen();
         }
 
         private void OnAllEnemiesDead()
         {
             spawner.OnCharacterDead.RemoveListener(OnCharacterDead);
-            uiManager.SwithToWinScreen();
-
             gameState = GameState.End;
+
+            OnGameWon.Invoke();
+
+            uiManager.SwithToWinScreen();
         }
 
         private enum GameState

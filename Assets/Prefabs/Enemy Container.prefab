@@ -424,8 +424,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5250
+    positionDamper: 52.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -613,8 +613,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 2450
+    positionDamper: 24.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -771,8 +771,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 10500
+    positionDamper: 105
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -930,8 +930,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5250
+    positionDamper: 52.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -1089,8 +1089,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 1050
+    positionDamper: 10.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -1292,8 +1292,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5250
+    positionDamper: 52.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -1545,8 +1545,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 2450
+    positionDamper: 24.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -1828,8 +1828,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 1749.9999
+    positionDamper: 17.499998
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -2111,8 +2111,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 1749.9999
+    positionDamper: 17.499998
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -2331,8 +2331,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 1749.9999
+    positionDamper: 17.499998
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -2521,8 +2521,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 5250
+    positionDamper: 52.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -2680,8 +2680,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 4900
+    positionDamper: 49
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -3005,8 +3005,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 1050
+    positionDamper: 10.5
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -3050,6 +3050,7 @@ GameObject:
   - component: {fileID: 2184925336469110686}
   - component: {fileID: 2184925336469110697}
   - component: {fileID: 1162459628000421098}
+  - component: {fileID: 8931954332653549216}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
@@ -3191,6 +3192,21 @@ MonoBehaviour:
   OnTargetChanged:
     m_PersistentCalls:
       m_Calls: []
+  OnDead:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8931954332653549216}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2184925336469110686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3231,7 +3247,7 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
     rotationAccuracy: 1
@@ -3262,10 +3278,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:LeftLeg
     parentID: 1
     childIDs: 03000000
@@ -3293,10 +3309,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:LeftFoot
     parentID: 2
     childIDs: 
@@ -3324,10 +3340,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:RightUpLeg
     parentID: 0
     childIDs: 05000000
@@ -3355,10 +3371,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:RightLeg
     parentID: 4
     childIDs: 06000000
@@ -3386,10 +3402,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:RightFoot
     parentID: 5
     childIDs: 
@@ -3417,10 +3433,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:Spine1
     parentID: 0
     childIDs: 08000000
@@ -3448,10 +3464,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:Spine2
     parentID: 7
     childIDs: 090000000c0000000d000000
@@ -3479,10 +3495,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:LeftArm
     parentID: 8
     childIDs: 0a000000
@@ -3510,10 +3526,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:LeftForeArm
     parentID: 9
     childIDs: 0b000000
@@ -3541,10 +3557,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:LeftHand
     parentID: 10
     childIDs: 
@@ -3572,10 +3588,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:Neck
     parentID: 8
     childIDs: 
@@ -3603,10 +3619,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:RightArm
     parentID: 8
     childIDs: 0e000000
@@ -3634,10 +3650,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:RightForeArm
     parentID: 13
     childIDs: 0f000000
@@ -3665,10 +3681,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   - name: PM3D_Sphere3D4:RightHand
     parentID: 14
     childIDs: 
@@ -3696,10 +3712,10 @@ MonoBehaviour:
     onlyAnimation: 0
     positionDriveSpring: 1000
     positionDriveDamper: 10
-    positionAccuracy: 0
+    positionAccuracy: 0.3
     rotationDriveSpring: 1000
     rotationDriveDamper: 10
-    rotationAccuracy: 0
+    rotationAccuracy: 1
   states:
   - name: default
     transitionSmooth: 1
@@ -3901,7 +3917,7 @@ MonoBehaviour:
       positionAccuracy: 0
       rotationAccuracy: 0
       angularLimits: 1
-  currentState: 1
+  currentState: 0
   ragdollContainer: {fileID: 2184925334888329077}
 --- !u!114 &2184925336469110697
 MonoBehaviour:
@@ -4780,6 +4796,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8931954332653549216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2184925336469110687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d9366a580161547b8b8813ac974a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 1, g: 0, b: 0, a: 1}
+  indicator: {fileID: 0}
 --- !u!1 &2184925336541568673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4955,8 +4985,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 1749.9999
+    positionDamper: 17.499998
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1
@@ -5237,8 +5267,8 @@ ConfigurableJoint:
     maximumForce: 3.4028233e+38
   m_SlerpDrive:
     serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
+    positionSpring: 9100
+    positionDamper: 91
     maximumForce: 3.4028233e+38
   m_ProjectionMode: 1
   m_ProjectionDistance: 0.1

@@ -10,6 +10,7 @@ namespace SF
         [SerializeField] bool spawnOnAwake = true;
         [SerializeField] int charactersToSpawn = 6;
         [SerializeField] float radius = 5;
+        [SerializeField] bool useSkins = true;
         [SerializeField] GameObject prefabPlayer;
         [SerializeField] GameObject[] prefabsEnemy;
 
@@ -36,6 +37,16 @@ namespace SF
         public void SpawnPlayer()
         {
             var prefab = prefabPlayer;
+
+            if (useSkins)
+            {
+                var pm = FindObjectOfType<ProgressionManager>();
+
+                if (pm)
+                    prefab = pm.ActiveSkin;
+                else
+                    Debug.LogError("Can't find Progression Manager.", this);
+            }
 
             player = SpawnCharacter(0, prefab);
 
