@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Character Preview.unity
     guid: 9281573d2d8eef943ad80f1a118e8ac9
   - enabled: 1
-    path: Assets/Scenes/Arena 0.unity
-    guid: b562dd49a42b4264d8d9430be10b9e63
+    path: Assets/Scenes/Scene_1.unity
+    guid: 68a0e65c7e8c90a4e9b0751a831a1442
+  - enabled: 1
+    path: Assets/Scenes/Scene_2.unity
+    guid: 96734eaaa702e844891cd473d12fd858
+  - enabled: 1
+    path: Assets/Scenes/Scene_3.unity
+    guid: c19d487fc0c4ece4ca78a9c150df2140
   m_configObjects: {}

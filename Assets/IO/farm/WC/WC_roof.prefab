@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3968035408332377537}
   - component: {fileID: 4884036385389665608}
   - component: {fileID: 8001599704286242972}
-  - component: {fileID: 6824462388884087977}
   m_Layer: 0
   m_Name: WC_roof
   m_TagString: Untagged
@@ -113,15 +112,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8680041, y: 0.20304099, z: 2.512166}
   m_Center: {x: -0.0046660006, y: 0.0191455, z: -0.0016989708}
---- !u!114 &6824462388884087977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521224656727477378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af923fbb1f504bf459509fdb14eabc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

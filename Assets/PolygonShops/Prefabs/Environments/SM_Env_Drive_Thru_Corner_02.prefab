@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23307660512553570}
   - component: {fileID: 65604429574846606}
   - component: {fileID: 556006253676573576}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SM_Env_Drive_Thru_Corner_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

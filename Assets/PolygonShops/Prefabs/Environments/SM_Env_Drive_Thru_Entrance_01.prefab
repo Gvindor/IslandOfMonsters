@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23104322714088298}
   - component: {fileID: 65844055546196274}
   - component: {fileID: 4679876511331245123}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SM_Env_Drive_Thru_Entrance_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

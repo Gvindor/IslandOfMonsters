@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33975554602639572}
   - component: {fileID: 23867127083116366}
   - component: {fileID: 65291996836192206}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SM_Env_Ground_LoadingZone_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

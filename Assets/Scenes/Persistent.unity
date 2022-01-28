@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43975598, g: 0.4881817, b: 0.5683977, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3049,8 +3049,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arenas:
-  - sceneAsset: {fileID: 102900000, guid: b562dd49a42b4264d8d9430be10b9e63, type: 3}
-    scenePath: Assets/Scenes/Arena 0.unity
+  - sceneAsset: {fileID: 102900000, guid: c19d487fc0c4ece4ca78a9c150df2140, type: 3}
+    scenePath: Assets/Scenes/Scene_3.unity
+  - sceneAsset: {fileID: 102900000, guid: 96734eaaa702e844891cd473d12fd858, type: 3}
+    scenePath: Assets/Scenes/Scene_2.unity
+  - sceneAsset: {fileID: 102900000, guid: 68a0e65c7e8c90a4e9b0751a831a1442, type: 3}
+    scenePath: Assets/Scenes/Scene_1.unity
   OnArenaLoaded:
     m_PersistentCalls:
       m_Calls: []

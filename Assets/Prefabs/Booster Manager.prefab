@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1673059139490622138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673059139490622140}
+  - component: {fileID: 1673059139490622141}
+  m_Layer: 0
+  m_Name: Booster Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673059139490622140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673059139490622138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673059139490622141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673059139490622138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 576ff795b2f55164e89a4733133c9975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boosterPrefabs:
+  - {fileID: 1155661000655230260, guid: e4b4767ddd7e955469efe79ee84405b3, type: 3}
+  - {fileID: 1974901726034504140, guid: 6ce66903ecebcf643a56df35781e39bc, type: 3}
+  - {fileID: 2980380485533678879, guid: 456f7bc9cab0cf6459702a23fa1b7f45, type: 3}
+  - {fileID: 5147322678978023623, guid: 7b2fd2b4e2359b446b28aca277787ede, type: 3}
+  width: 10
+  height: 10
+  spawnTime:
+    min: 10
+    max: 15
+  spawnY: 10
+  maxBoosterInstances: 3
+  boostSettings:
+    duration: 5
+    movementSpeedModifier: 1.5
+    kickBackStrengthModifier: 1.5

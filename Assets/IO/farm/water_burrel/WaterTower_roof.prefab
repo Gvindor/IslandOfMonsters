@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 9072255541689939650}
   - component: {fileID: 9081574473409416330}
   - component: {fileID: 4634024392695830039}
-  - component: {fileID: 6259382711781944285}
   m_Layer: 0
   m_Name: WaterTower_roof
   m_TagString: Untagged
@@ -114,15 +113,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7040251170711941531, guid: fdd8bdfc81b430e4bbf7f302888fae41, type: 3}
---- !u!114 &6259382711781944285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9215221995709995088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af923fbb1f504bf459509fdb14eabc06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
