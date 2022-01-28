@@ -16,6 +16,8 @@ namespace SF
         public float lookAtTimer;
         public bool lookAt;
 
+        [SerializeField][Tooltip("In local space")] Vector3 defaultLoopAtPos = new Vector3(0, 1f, 2f);
+
         [SerializeField] float rotationSpeed = 10;
         [SerializeField] [Min(0)] float autoAttackDelay = 2f;
         [SerializeField] [Min(0)] float autoAttackRange = 1f;
@@ -194,7 +196,7 @@ namespace SF
             }
             animator.SetFloat("strafe", Mathf.Clamp01(strafe));
 
-            Vector3 pos = transform.TransformPoint(new Vector3(0, 0.7f, 1));
+            Vector3 pos = transform.TransformPoint(defaultLoopAtPos);
             if (target != null)
             {
                 pos = target.GetComponent<CombatController>().Head.position;
