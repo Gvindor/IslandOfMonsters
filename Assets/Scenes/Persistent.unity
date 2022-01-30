@@ -414,8 +414,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winsPerSkin: 3
   skins:
-  - {fileID: 3083228498874448394, guid: 1e595ec2099bcc64fa29ab8e362edcb1, type: 3}
-  - {fileID: 1683978548907805031, guid: 904a408eb53d02245b3608bf88f5d564, type: 3}
+  - {fileID: 3852800733061925746, guid: 603e0463fc1b53346931df1cf1ca5266, type: 3}
+  - {fileID: 1416285728583615915, guid: f41a44424a9514f409c500bd2bd15647, type: 3}
+  - {fileID: 1539076585386002213, guid: 2c0b186344de22b498911ff67ae25e53, type: 3}
+  - {fileID: 5788650507513054204, guid: 44f667aa686f7714d8a615df34f23c57, type: 3}
   OnActiveSkinChanged:
     m_PersistentCalls:
       m_Calls: []
