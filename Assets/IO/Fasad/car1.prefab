@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2497448709952714}
   - component: {fileID: 4835238254863819587}
   - component: {fileID: 646541185257691375}
-  m_Layer: 0
+  - component: {fileID: 4829602477957807620}
+  m_Layer: 9
   m_Name: SM_Veh_Car_Van_Door_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +113,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.69, y: 1.06, z: 0.2208967}
   m_Center: {x: 0.4031335, y: 0.2046286, z: 0.09066839}
+--- !u!114 &4829602477957807620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497448707961460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &2497448707964340
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +141,8 @@ GameObject:
   - component: {fileID: 2497448709977418}
   - component: {fileID: 2793983528695078477}
   - component: {fileID: 7589437654476070824}
-  m_Layer: 0
+  - component: {fileID: 854609749032567669}
+  m_Layer: 9
   m_Name: SM_Veh_Car_Van_Door_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,6 +241,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.69, y: 1.06, z: 0.2208967}
   m_Center: {x: -0.40313432, y: 0.2046286, z: 0.09066839}
+--- !u!114 &854609749032567669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497448707964340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &2497448707972562
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +676,7 @@ GameObject:
   - component: {fileID: 4884654909724944702}
   - component: {fileID: 8841544447233863897}
   - component: {fileID: 1327988614553091385}
+  - component: {fileID: 578925239597795540}
   m_Layer: 0
   m_Name: SM_Veh_Car_Van_01
   m_TagString: Untagged
@@ -774,6 +807,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.11, y: 0.35, z: 2.43}
   m_Center: {x: -0.000000059604645, y: 0.56, z: 0.21}
+--- !u!114 &578925239597795540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2497448708032278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger:
+  - {fileID: 854609749032567669}
+  - {fileID: 4829602477957807620}
+  deactivateOnTrigger: []
 --- !u!1 &4420212023764877572
 GameObject:
   m_ObjectHideFlags: 0

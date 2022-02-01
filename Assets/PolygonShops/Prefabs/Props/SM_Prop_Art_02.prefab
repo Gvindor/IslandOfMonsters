@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23638850924482162}
   - component: {fileID: 9212790987886404877}
   - component: {fileID: 3989469224103669299}
-  m_Layer: 0
+  - component: {fileID: 5053510273492477562}
+  m_Layer: 9
   m_Name: SM_Prop_Art_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5053510273492477562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215482396099736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

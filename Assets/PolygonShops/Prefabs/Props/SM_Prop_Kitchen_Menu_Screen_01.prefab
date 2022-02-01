@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23943405736799602}
   - component: {fileID: 4554498982179921731}
   - component: {fileID: 1146409528901088413}
-  m_Layer: 0
+  - component: {fileID: 415813802805370345}
+  m_Layer: 9
   m_Name: SM_Prop_Kitchen_Menu_Screen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,6 +114,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &415813802805370345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938771957082312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &1954805207594108
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +140,7 @@ GameObject:
   - component: {fileID: 4263611670532048}
   - component: {fileID: 33586218264770316}
   - component: {fileID: 23310090248623204}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Kitchen_Menu_Screen_01_Screen_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

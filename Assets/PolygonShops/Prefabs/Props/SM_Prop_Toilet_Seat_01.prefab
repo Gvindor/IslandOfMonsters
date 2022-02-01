@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4093948076938064}
   - component: {fileID: 33656717047961002}
   - component: {fileID: 23319023704154456}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Toilet_Seat_01_Rim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 23390482643836594}
   - component: {fileID: 1496824077031084217}
   - component: {fileID: 7360354027852187081}
-  m_Layer: 0
+  - component: {fileID: 5567683972743738690}
+  m_Layer: 9
   m_Name: SM_Prop_Toilet_Seat_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,6 +196,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5567683972743738690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476407638723938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &1957938279956898
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +222,7 @@ GameObject:
   - component: {fileID: 4591611579226234}
   - component: {fileID: 33598388332505774}
   - component: {fileID: 23714790319997636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Toilet_Seat_01_Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

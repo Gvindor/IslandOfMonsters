@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 65769015472126480}
   - component: {fileID: 65060359681945278}
   - component: {fileID: 9065760806999242588}
-  m_Layer: 0
+  - component: {fileID: 1684812558168732085}
+  m_Layer: 9
   m_Name: SM_Bld_Awning_Large_02_Pillars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,6 +128,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1684812558168732085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428646620685654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger:
+  - {fileID: 1935646733283172006}
 --- !u!1 &1588935977719008
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +156,8 @@ GameObject:
   - component: {fileID: 23689080716052382}
   - component: {fileID: 65880719213712384}
   - component: {fileID: 8559791319893583616}
-  m_Layer: 0
+  - component: {fileID: 1935646733283172006}
+  m_Layer: 9
   m_Name: SM_Bld_Awning_Large_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,3 +258,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1935646733283172006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588935977719008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []

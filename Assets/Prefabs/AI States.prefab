@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextState: {fileID: 7026089304612339201}
-  distance: 4
+  distance: 7
 --- !u!1 &5730482093886068468
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,13 +136,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   retreatState: {fileID: 1732914291990795669}
   seekState: {fileID: 8036388783427726500}
-  minDistance: 2
-  lockDistance: 4
+  minDistance: 5
+  lockDistance: 8
   lockTime:
     min: 3
     max: 7
   maxTargetsBeforeRetreat: 3
-  retreatTargetRange: 4
+  retreatTargetRange: 6
 --- !u!1 &7467216966269259573
 GameObject:
   m_ObjectHideFlags: 0

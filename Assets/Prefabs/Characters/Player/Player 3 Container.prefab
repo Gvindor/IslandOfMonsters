@@ -5,12 +5,16 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1539076585386002212}
+    m_TransformParent: {fileID: 2123655828304084154}
     m_Modifications:
     - target: {fileID: 7842895273079876784, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Name
       value: Player Gizmo
       objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876787, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2123655828304084158}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -48,6 +52,18 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.651299
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6512983
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.651299
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -65,15 +81,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -178,16 +194,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb70ab9415244e241840885d865bd072, type: 3}
---- !u!4 &1539076585386002212 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8695438436936603684, guid: cb70ab9415244e241840885d865bd072, type: 3}
-  m_PrefabInstance: {fileID: 7923944113042333440}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2123655828304084098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8110768015084036994, guid: cb70ab9415244e241840885d865bd072, type: 3}
   m_PrefabInstance: {fileID: 7923944113042333440}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2123655828304084154 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8110768015084037050, guid: cb70ab9415244e241840885d865bd072, type: 3}
+  m_PrefabInstance: {fileID: 7923944113042333440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2123655828304084158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8110768015084037054, guid: cb70ab9415244e241840885d865bd072, type: 3}
+  m_PrefabInstance: {fileID: 7923944113042333440}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123655828304084098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48058e36c6a5234cb50d252a9b537ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &118853964870030273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ce380ce6d3dc343800ea4ae21660a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLockDistance: 2
+  enemyLockDistance: 8
   retreatTime: 1
   targetGizmoPrefab: {fileID: 6967689676335054692, guid: f09d70e4865894041acec9f9ea0f6434, type: 3}
 --- !u!114 &9004564412444902712

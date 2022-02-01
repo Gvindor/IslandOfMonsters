@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23291094143255040}
   - component: {fileID: 1352924113301912148}
   - component: {fileID: 6389}
-  m_Layer: 0
+  - component: {fileID: 7816896572263656753}
+  m_Layer: 9
   m_Name: SM_Prop_AirDuct_End_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,6 +114,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7816896572263656753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245736612396132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger:
+  - {fileID: 4299517837416910397}
 --- !u!1001 &4299517837416924453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +140,10 @@ PrefabInstance:
     - target: {fileID: 117528, guid: de0fb8fabb4497b4fb140cddb057abbf, type: 3}
       propertyPath: m_Name
       value: FX_Steam
+      objectReference: {fileID: 0}
+    - target: {fileID: 117528, guid: de0fb8fabb4497b4fb140cddb057abbf, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 428568, guid: de0fb8fabb4497b4fb140cddb057abbf, type: 3}
       propertyPath: m_RootOrder
@@ -174,6 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de0fb8fabb4497b4fb140cddb057abbf, type: 3}
+--- !u!1 &4299517837416910397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117528, guid: de0fb8fabb4497b4fb140cddb057abbf, type: 3}
+  m_PrefabInstance: {fileID: 4299517837416924453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4299517837417353021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 428568, guid: de0fb8fabb4497b4fb140cddb057abbf, type: 3}

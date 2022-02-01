@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4693525500285070}
   - component: {fileID: 33209761037030018}
   - component: {fileID: 23817348107944070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Grinder_Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 23092336385302750}
   - component: {fileID: 4439770086687963083}
   - component: {fileID: 8654642109351111184}
-  m_Layer: 0
+  - component: {fileID: 4812253676339315851}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Grinder_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,3 +195,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.23189941, y: 0.7323525, z: 0.3040869}
   m_Center: {x: 0.0000020600855, y: 0.36617625, z: -0.0000018030405}
+--- !u!114 &4812253676339315851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332780732695504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

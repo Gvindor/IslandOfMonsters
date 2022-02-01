@@ -224,6 +224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ce380ce6d3dc343800ea4ae21660a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLockDistance: 2
+  enemyLockDistance: 8
   retreatTime: 1
   targetGizmoPrefab: {fileID: 6967689676335054692, guid: f09d70e4865894041acec9f9ea0f6434, type: 3}

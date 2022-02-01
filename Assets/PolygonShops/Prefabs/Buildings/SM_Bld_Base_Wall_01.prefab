@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23660294812871848}
   - component: {fileID: 65808061066717222}
   - component: {fileID: 1949}
-  m_Layer: 0
+  - component: {fileID: 8729176613689473815}
+  m_Layer: 9
   m_Name: SM_Bld_Base_Wall_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,3 +114,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8729176613689473815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303111850184744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []

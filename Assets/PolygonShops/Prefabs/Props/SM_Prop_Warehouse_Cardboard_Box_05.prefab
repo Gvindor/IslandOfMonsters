@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23664623096937596}
   - component: {fileID: 6037668532131340909}
   - component: {fileID: 5021586877773406304}
-  m_Layer: 0
+  - component: {fileID: 4275252673459876088}
+  m_Layer: 9
   m_Name: SM_Prop_Warehouse_Cardboard_Box_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4275252673459876088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169133504047306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

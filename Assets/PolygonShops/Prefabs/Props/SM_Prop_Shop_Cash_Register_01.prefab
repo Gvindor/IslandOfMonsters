@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23040551980389522}
   - component: {fileID: 6713872148910899975}
   - component: {fileID: 7876372963020206576}
-  m_Layer: 0
+  - component: {fileID: 7468806644843555972}
+  m_Layer: 9
   m_Name: SM_Prop_Shop_Cash_Register_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,6 +114,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7468806644843555972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746536802831500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &1882315575067446
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +140,7 @@ GameObject:
   - component: {fileID: 4053486112115938}
   - component: {fileID: 33020196533275446}
   - component: {fileID: 23410001939311528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Shop_Cash_Register_01_Tray_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

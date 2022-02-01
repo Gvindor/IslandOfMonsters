@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23642133873353188}
   - component: {fileID: 4724578900646104802}
   - component: {fileID: 3774561986493143725}
-  m_Layer: 0
+  - component: {fileID: 1158289712037296733}
+  m_Layer: 9
   m_Name: SM_Prop_Clothes_Rack_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,6 +115,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1158289712037296733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455293834013480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1001 &1495235843165734728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124,6 +140,10 @@ PrefabInstance:
     - target: {fileID: 1990894914988468, guid: 889eb7635450b484aa66de68ea416144, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Clothes_Sweater_Set_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990894914988468, guid: 889eb7635450b484aa66de68ea416144, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4762471299500898, guid: 889eb7635450b484aa66de68ea416144, type: 3}
       propertyPath: m_RootOrder
@@ -194,6 +214,10 @@ PrefabInstance:
     - target: {fileID: 1528891816712562, guid: 96862c043b3bcbe4ca8d276cc2bad02a, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Clothes_Shirt_Set_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528891816712562, guid: 96862c043b3bcbe4ca8d276cc2bad02a, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4710768089767510, guid: 96862c043b3bcbe4ca8d276cc2bad02a, type: 3}
       propertyPath: m_RootOrder

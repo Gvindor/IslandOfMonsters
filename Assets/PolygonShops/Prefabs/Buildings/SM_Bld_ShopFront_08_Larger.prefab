@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 5675489972032122548}
   - component: {fileID: 807501633073168150}
   - component: {fileID: 3452395447556302233}
-  m_Layer: 0
+  - component: {fileID: 6932470060269569575}
+  m_Layer: 9
   m_Name: SM_Bld_ShopFront_08_Larger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,3 +143,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6932470060269569575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236150866642832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6967094042273763918}
   - component: {fileID: 4828415723538647629}
   - component: {fileID: 6963023101836758018}
-  m_Layer: 0
+  - component: {fileID: 1296679600108954972}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Booth_Wall_Seat_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,3 +127,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1296679600108954972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556919288816272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

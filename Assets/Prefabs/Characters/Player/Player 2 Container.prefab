@@ -277,16 +277,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dc2c430b356f0b49a1723366224beb3, type: 3}
---- !u!4 &1416285728583615893 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 935883084162904957, guid: 6dc2c430b356f0b49a1723366224beb3, type: 3}
-  m_PrefabInstance: {fileID: 2259475405951809256}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2443975291765586352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4517667317483163480, guid: 6dc2c430b356f0b49a1723366224beb3, type: 3}
   m_PrefabInstance: {fileID: 2259475405951809256}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2443975291765586312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4517667317483163488, guid: 6dc2c430b356f0b49a1723366224beb3, type: 3}
+  m_PrefabInstance: {fileID: 2259475405951809256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2443975291765586316 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4517667317483163492, guid: 6dc2c430b356f0b49a1723366224beb3, type: 3}
+  m_PrefabInstance: {fileID: 2259475405951809256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443975291765586352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48058e36c6a5234cb50d252a9b537ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3383774875796645221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3ce380ce6d3dc343800ea4ae21660a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLockDistance: 2
+  enemyLockDistance: 8
   retreatTime: 1.5
   targetGizmoPrefab: {fileID: 6967689676335054692, guid: f09d70e4865894041acec9f9ea0f6434, type: 3}
 --- !u!114 &6084296993983676617
@@ -319,12 +330,16 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1416285728583615893}
+    m_TransformParent: {fileID: 2443975291765586312}
     m_Modifications:
     - target: {fileID: 7842895273079876784, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Name
       value: Player Gizmo
       objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876787, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 2443975291765586316}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -362,6 +377,18 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5856459
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5856459
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5856459
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -379,15 +406,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_AnchoredPosition.x
