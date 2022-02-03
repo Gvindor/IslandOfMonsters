@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4626689082144176}
   - component: {fileID: 33571551214689960}
   - component: {fileID: 23193456193342028}
-  m_Layer: 0
+  - component: {fileID: 5717327197361982671}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Chair_Folding_Leg_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5717327197361982671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520422054254734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05940318, y: 0.48097214, z: 0.3562561}
+  m_Center: {x: 1.200002, y: 0.2404861, z: 0.000002861023}
 --- !u!1 &1649047897576688
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +107,9 @@ GameObject:
   - component: {fileID: 33233033198545896}
   - component: {fileID: 23332301299476112}
   - component: {fileID: 6871636972136493729}
-  m_Layer: 0
+  - component: {fileID: 2965361404204040963}
+  - component: {fileID: 860901240767035776}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Chair_Folding_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,6 +194,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.255186, y: 0.052185297, z: 0.38395715}
   m_Center: {x: 0.0000019073486, y: 0.5070648, z: 0.0000029578805}
+--- !u!54 &2965361404204040963
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649047897576688}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &860901240767035776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649047897576688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &1827964843116082
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +236,8 @@ GameObject:
   - component: {fileID: 4944504157897624}
   - component: {fileID: 33906184784682264}
   - component: {fileID: 23577200176910202}
-  m_Layer: 0
+  - component: {fileID: 5723101841649773783}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Chair_Folding_Leg_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,3 +307,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5723101841649773783
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827964843116082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05940318, y: 0.48097214, z: 0.3562561}
+  m_Center: {x: -1.1999981, y: 0.2404861, z: 0.000002861023}

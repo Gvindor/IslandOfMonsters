@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2343824}
   - component: {fileID: 8847949745469572861}
   - component: {fileID: 7304777803544413902}
-  m_Layer: 0
+  - component: {fileID: 627256813961000873}
+  m_Layer: 9
   m_Name: SM_Prop_LightPole_Base_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,3 +114,18 @@ CapsuleCollider:
   m_Height: 6.4
   m_Direction: 1
   m_Center: {x: -0.0000009536743, y: 3.241499, z: 0}
+--- !u!114 &627256813961000873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23553272577104812}
   - component: {fileID: 600520958}
   - component: {fileID: 4581842896417854391}
-  m_Layer: 0
+  - component: {fileID: 1870835875648803069}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Chair_Folding_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.5, z: 0.5}
   m_Center: {x: 0.0000038146973, y: 0.18, z: 0}
+--- !u!114 &1870835875648803069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298422318242536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

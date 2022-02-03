@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4346992578438054}
   - component: {fileID: 33609530815018476}
   - component: {fileID: 23367196918673388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Lighting_Wall_Glass_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 23319475653256998}
   - component: {fileID: 7393133311258828844}
   - component: {fileID: 2375496282628840990}
-  m_Layer: 0
+  - component: {fileID: 6879999324785693997}
+  m_Layer: 9
   m_Name: SM_Prop_Lighting_Wall_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,3 +195,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6879999324785693997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731027237949776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

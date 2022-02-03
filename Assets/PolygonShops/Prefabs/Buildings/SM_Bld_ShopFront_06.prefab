@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 33749072606491876}
   - component: {fileID: 23143128755899922}
   - component: {fileID: 6792393608759709675}
+  - component: {fileID: 2509498894513278928}
   - component: {fileID: 3915900642222887918}
-  m_Layer: 0
+  - component: {fileID: 2179293197721626399}
+  m_Layer: 9
   m_Name: SM_Bld_ShopFront_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +101,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 2.8, z: 0.3}
   m_Center: {x: -1.92, y: 1.5, z: 0.06}
+--- !u!65 &2509498894513278928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930815874105100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2581631, y: 0.8393519, z: 0.32316387}
+  m_Center: {x: -0.6290894, y: 2.5344815, z: 0.08341704}
 --- !u!54 &3915900642222887918
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115,3 +130,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2179293197721626399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930815874105100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

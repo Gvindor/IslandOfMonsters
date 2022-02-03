@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4545991506963924}
   - component: {fileID: 33086568633654456}
   - component: {fileID: 23847634912787186}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Warehouse_Pallet_Jack_01_Pivot_01_Handle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4723912119318118}
   - component: {fileID: 33545541742303072}
   - component: {fileID: 23722417410470540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Warehouse_Pallet_Jack_01_Pivot_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,8 @@ GameObject:
   - component: {fileID: 23734684609120688}
   - component: {fileID: 4210329758130817800}
   - component: {fileID: 3360874382355331487}
-  m_Layer: 0
+  - component: {fileID: 2321284462401006701}
+  m_Layer: 9
   m_Name: SM_Prop_Warehouse_Pallet_Jack_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,3 +277,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2321284462401006701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462723015133616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

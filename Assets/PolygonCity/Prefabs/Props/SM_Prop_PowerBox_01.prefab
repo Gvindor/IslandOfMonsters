@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2318180}
   - component: {fileID: 4026917716770205227}
   - component: {fileID: 8014857140182273625}
-  m_Layer: 0
+  - component: {fileID: 6692078252367598694}
+  m_Layer: 9
   m_Name: SM_Prop_PowerBox_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 1.8, z: 0.8}
   m_Center: {x: -0.00000011920929, y: 0.95165676, z: -0.0000019073486}
+--- !u!114 &6692078252367598694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

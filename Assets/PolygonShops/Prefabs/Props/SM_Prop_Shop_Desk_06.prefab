@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23698978356133754}
   - component: {fileID: 2180560054675341526}
   - component: {fileID: 2890242808043838038}
-  m_Layer: 0
+  - component: {fileID: 4338001402798716423}
+  m_Layer: 9
   m_Name: SM_Prop_Shop_Desk_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8, y: 1, z: 0.8}
   m_Center: {x: 0.000009536743, y: 0.59127957, z: 0.084767975}
+--- !u!114 &4338001402798716423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461520866650616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

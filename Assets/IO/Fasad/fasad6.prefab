@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1457825684127684190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fasad6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,8 @@ GameObject:
   - component: {fileID: 1035840647519893309}
   - component: {fileID: 4327837258723773450}
   - component: {fileID: 7520479358065200170}
-  m_Layer: 0
+  - component: {fileID: 861100374829113186}
+  m_Layer: 9
   m_Name: Front_07.002_Mesh.026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,6 +91,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -114,6 +116,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &4327837258723773450
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,6 +147,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8797190214341569413, guid: e8f2b2cfa4323284f8c24a9e12ba329e, type: 3}
+--- !u!114 &861100374829113186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863821435523393393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &4946828411441609937
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +176,8 @@ GameObject:
   - component: {fileID: 4778068059164279242}
   - component: {fileID: 3148169747725469448}
   - component: {fileID: 4715534444071754855}
-  m_Layer: 0
+  - component: {fileID: 7991126577854386614}
+  m_Layer: 9
   m_Name: Front_07_Mesh.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,6 +221,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -226,6 +246,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &4778068059164279242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -268,6 +289,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.19, y: 0.26, z: 0.92}
   m_Center: {x: -1.58, y: 2.86, z: -0.32029247}
+--- !u!114 &7991126577854386614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4946828411441609937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger:
+  - {fileID: 861100374829113186}
+  deactivateOnTrigger: []
 --- !u!1 &5113216437605899333
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +319,8 @@ GameObject:
   - component: {fileID: 5064975451689610555}
   - component: {fileID: 7433879841576186794}
   - component: {fileID: 4935238909196978117}
-  m_Layer: 0
+  - component: {fileID: 223340880923747472}
+  m_Layer: 9
   m_Name: Front_07.003_Mesh.027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,6 +364,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -350,6 +389,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &5064975451689610555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -392,3 +432,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.667361, y: 0.86, z: 1.19656}
   m_Center: {x: -4.1663194, y: 0.42, z: -0.25682497}
+--- !u!114 &223340880923747472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5113216437605899333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger:
+  - {fileID: 861100374829113186}
+  deactivateOnTrigger: []

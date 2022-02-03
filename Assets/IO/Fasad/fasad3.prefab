@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 8231981862887178489}
   - component: {fileID: 5486555546891622480}
   - component: {fileID: 5083804219901046617}
-  m_Layer: 0
+  - component: {fileID: 3410815309450933441}
+  m_Layer: 9
   m_Name: Front_03.002_Mesh.022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,6 +59,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -82,6 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &8231981862887178489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124,6 +127,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3410815309450933441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436031615408968832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger:
+  - {fileID: 5748137658155357246}
+  deactivateOnTrigger: []
 --- !u!1 &1934608951285846469
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +156,8 @@ GameObject:
   - component: {fileID: 7388220558642299671}
   - component: {fileID: 6785170329127024017}
   - component: {fileID: 1144432326590630240}
-  m_Layer: 0
+  - component: {fileID: 5748137658155357246}
+  m_Layer: 9
   m_Name: Front_03.006_Mesh.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,6 +201,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -205,6 +226,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &6785170329127024017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -234,6 +256,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5748137658155357246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934608951285846469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &5376343651382525573
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +284,8 @@ GameObject:
   - component: {fileID: 759706519219099223}
   - component: {fileID: 1593430728803555082}
   - component: {fileID: 5458436910025556859}
-  m_Layer: 0
+  - component: {fileID: 3877691341578729304}
+  m_Layer: 9
   m_Name: Front_03.003_Mesh.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,6 +329,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -315,6 +354,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &1593430728803555082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -344,6 +384,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3877691341578729304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376343651382525573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &5854235847452495285
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +413,8 @@ GameObject:
   - component: {fileID: 831134474345816303}
   - component: {fileID: 6437516531164243275}
   - component: {fileID: 6199244736662168087}
-  m_Layer: 0
+  - component: {fileID: 3348403780300589845}
+  m_Layer: 9
   m_Name: Front_03_Mesh.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,6 +458,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -426,6 +483,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &831134474345816303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -468,6 +526,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3348403780300589845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5854235847452495285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger:
+  - {fileID: 3877691341578729304}
+  - {fileID: 8145940218953514212}
+  - {fileID: 8048066487158702541}
+  deactivateOnTrigger: []
 --- !u!1 &6038466382806390528
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9072334644835245591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fasad3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +593,8 @@ GameObject:
   - component: {fileID: 8383974354754539066}
   - component: {fileID: 2943406641168734164}
   - component: {fileID: 3944564384822720065}
-  m_Layer: 0
+  - component: {fileID: 8145940218953514212}
+  m_Layer: 9
   m_Name: Front_03.004_Mesh.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,6 +638,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -585,6 +663,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2943406641168734164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -614,6 +693,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8145940218953514212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6275693960407360817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &8546406542597606698
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +721,8 @@ GameObject:
   - component: {fileID: 833117668635999683}
   - component: {fileID: 3604610224720530411}
   - component: {fileID: 7931368950653688619}
-  m_Layer: 0
+  - component: {fileID: 8048066487158702541}
+  m_Layer: 9
   m_Name: Front_03.005_Mesh.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,6 +766,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -695,6 +791,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &3604610224720530411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -724,3 +821,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8048066487158702541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8546406542597606698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

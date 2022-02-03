@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4043201856996574}
   - component: {fileID: 33408186577115412}
   - component: {fileID: 23535969393859362}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Barber_Chair_01_Chair_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 23359791119373736}
   - component: {fileID: 6817655875500297763}
   - component: {fileID: 5053258393158624079}
-  m_Layer: 0
+  - component: {fileID: 3464433353701637418}
+  m_Layer: 9
   m_Name: SM_Prop_Barber_Chair_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,3 +196,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3464433353701637418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510957736209806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

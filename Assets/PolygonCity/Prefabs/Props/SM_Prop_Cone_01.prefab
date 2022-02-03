@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2307540}
   - component: {fileID: 1566276845067746032}
   - component: {fileID: 2276344283106073577}
-  m_Layer: 0
+  - component: {fileID: 2433175161528035261}
+  m_Layer: 9
   m_Name: SM_Prop_Cone_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,3 +114,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4c754cc944263d140a68f22b535bd973, type: 3}
+--- !u!114 &2433175161528035261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

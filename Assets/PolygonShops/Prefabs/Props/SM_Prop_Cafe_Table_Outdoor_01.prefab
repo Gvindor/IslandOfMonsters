@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23453605065125838}
   - component: {fileID: 1666619931}
   - component: {fileID: 523739173188233532}
-  m_Layer: 0
+  - component: {fileID: 5819820614970962683}
+  m_Layer: 9
   m_Name: SM_Prop_Cafe_Table_Outdoor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,3 +114,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0.000000014901161, y: 0.48965293, z: -0.00000093877316}
+--- !u!114 &5819820614970962683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820569235493160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

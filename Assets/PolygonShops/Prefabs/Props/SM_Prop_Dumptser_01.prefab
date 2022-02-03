@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23408506789410694}
   - component: {fileID: 4679185606834459780}
   - component: {fileID: 7764740124882776869}
-  m_Layer: 0
+  - component: {fileID: 1480899068045862469}
+  m_Layer: 9
   m_Name: SM_Prop_Dumptser_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,6 +114,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1480899068045862469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597673174853930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &1722354235517640
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +140,7 @@ GameObject:
   - component: {fileID: 4917894662271982}
   - component: {fileID: 33235569175097670}
   - component: {fileID: 23346059206358066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Dumptser_01_Lid_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

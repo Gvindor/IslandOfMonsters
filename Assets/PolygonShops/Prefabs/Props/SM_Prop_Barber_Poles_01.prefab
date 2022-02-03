@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33525777612477564}
   - component: {fileID: 23399070973955914}
   - component: {fileID: 7396441209863000529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Barber_Poles_01_Swirl_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,8 @@ GameObject:
   - component: {fileID: 23449836976625412}
   - component: {fileID: 8789954477319441818}
   - component: {fileID: 2431182855816026908}
-  m_Layer: 0
+  - component: {fileID: 803847340978496798}
+  m_Layer: 9
   m_Name: SM_Prop_Barber_Poles_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,3 +211,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &803847340978496798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314400776366584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

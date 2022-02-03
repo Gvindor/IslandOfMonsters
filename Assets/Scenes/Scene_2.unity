@@ -1751,7 +1751,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 759
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -2202,6 +2202,10 @@ PrefabInstance:
     - target: {fileID: 5356074927707719051, guid: 27f2f5d3e2df4f541a7c6f01bb37c6b3, type: 3}
       propertyPath: near clip plane
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356074927707719051, guid: 27f2f5d3e2df4f541a7c6f01bb37c6b3, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 759
       objectReference: {fileID: 0}
     - target: {fileID: 5356074927707719055, guid: 27f2f5d3e2df4f541a7c6f01bb37c6b3, type: 3}
       propertyPath: gameplayCamera
@@ -4178,6 +4182,14 @@ PrefabInstance:
     - target: {fileID: 2459099683554356652, guid: d2e0c0d8cbbb7134b9e4012ce08214ee, type: 3}
       propertyPath: m_LocalPosition.z
       value: 57.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459510549018848527, guid: d2e0c0d8cbbb7134b9e4012ce08214ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.603
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459510549018848527, guid: d2e0c0d8cbbb7134b9e4012ce08214ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 51.879
       objectReference: {fileID: 0}
     - target: {fileID: 2463613486471972634, guid: d2e0c0d8cbbb7134b9e4012ce08214ee, type: 3}
       propertyPath: m_Name

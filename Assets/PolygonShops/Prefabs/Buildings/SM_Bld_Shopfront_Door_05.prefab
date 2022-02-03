@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 33710142574008842}
   - component: {fileID: 23377437373685820}
   - component: {fileID: 65373854923906446}
-  m_Layer: 0
+  - component: {fileID: 7070801281360187403}
+  - component: {fileID: 3303810507574986612}
+  m_Layer: 9
   m_Name: SM_Bld_Shopfront_Door_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,3 +97,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0015357, y: 1.9693928, z: 0.07775146}
   m_Center: {x: -0.5007678, y: 0.9846964, z: 0.0000012200326}
+--- !u!54 &7070801281360187403
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005485792341690}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3303810507574986612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005485792341690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

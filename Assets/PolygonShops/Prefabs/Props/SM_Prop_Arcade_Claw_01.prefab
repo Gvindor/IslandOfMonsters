@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4108456205615532}
   - component: {fileID: 33752259136887094}
   - component: {fileID: 23041666149265210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Rail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4664887440181610}
   - component: {fileID: 33618032413680818}
   - component: {fileID: 23942077803487384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Claw_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4541059453867928}
   - component: {fileID: 33971934346126656}
   - component: {fileID: 23045829578488336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Claw_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 4234712155133400}
   - component: {fileID: 33217251263429340}
   - component: {fileID: 23050562907348314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Insert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,8 @@ GameObject:
   - component: {fileID: 23589157969852064}
   - component: {fileID: 4783948659250192946}
   - component: {fileID: 3973813949987130579}
-  m_Layer: 0
+  - component: {fileID: 4062988838284003230}
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,6 +444,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4062988838284003230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287802348432994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1 &1473294021717416
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +470,7 @@ GameObject:
   - component: {fileID: 4379131643241264}
   - component: {fileID: 33520793372786964}
   - component: {fileID: 23665230521811426}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Claw_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +551,7 @@ GameObject:
   - component: {fileID: 4342124758889128}
   - component: {fileID: 33636329414872812}
   - component: {fileID: 23177300899631482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Stick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +632,7 @@ GameObject:
   - component: {fileID: 4201177056773466}
   - component: {fileID: 33243584350470926}
   - component: {fileID: 23937118369868970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Arcade_Claw_01_Claw_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
