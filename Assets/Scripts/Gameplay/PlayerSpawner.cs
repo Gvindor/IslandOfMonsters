@@ -11,6 +11,9 @@ namespace SF
         [SerializeField] int charactersToSpawn = 6;
         [SerializeField] float radius = 5;
         [SerializeField] bool useSkins = true;
+        [SerializeField] bool circleMode = true;
+        [SerializeField] Transform[] spawnPoints;
+        [Header("Prefabs")]
         [SerializeField] GameObject prefabPlayer;
         [SerializeField] GameObject[] prefabsEnemy;
 
@@ -87,11 +90,24 @@ namespace SF
 
         private Vector3 GetCharacterPosition(int index)
         {
-            float angle = 360f / charactersToSpawn * index;
-            var position = new Vector3(0, 0, radius);
+            Vector3 position = transform.position;
 
-            position = Quaternion.Euler(0, angle, 0) * position;
-            position = transform.TransformPoint(position);
+            if (circleMode) 
+            { 
+                float angle = 360f / charactersToSpawn * index;
+                position = new Vector3(0, 0, radius);
+
+                position = Quaternion.Euler(0, angle, 0) * position;
+                position = transform.TransformPoint(position);
+            }
+            else
+            {
+                if (spawnPoints.Length > 0)
+                {
+                    index = index % spawnPoints.Length;
+                    position = spawnPoints[index].position;
+                }
+            }
 
             return position;
         }
@@ -125,7 +141,25 @@ namespace SF
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(transform.position, radius);
+            if (circleMode)
+            {
+                Gizmos.DrawWireSphere(transform.position, radius);
+            }
+            else
+            {
+                if (spawnPoints.Length > 1) 
+                {
+                    if (spawnPoints.Length > 2)
+                    {
+                        for (int i = 0; i < spawnPoints.Length - 1; i++)
+                        {
+                            Gizmos.DrawLine(spawnPoints[i].position, spawnPoints[i + 1].position);
+                        }
+                    }
+
+                    Gizmos.DrawLine(spawnPoints[0].position, spawnPoints[spawnPoints.Length - 1].position);
+                }
+            }
         }
     }
 }
