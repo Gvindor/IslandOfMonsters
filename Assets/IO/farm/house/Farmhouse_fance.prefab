@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4966268906303639149}
   - component: {fileID: 8645818597196823135}
   - component: {fileID: 7786251420522942448}
-  m_Layer: 0
+  - component: {fileID: 8082777601057763853}
+  m_Layer: 9
   m_Name: Farmhouse_fance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.31, y: 2, z: 0.07}
-  m_Center: {x: 0.012327492, y: 0.58, z: 0.0056115016}
+  m_Size: {x: 2.31, y: 0.8765658, z: 0.07}
+  m_Center: {x: 0.012327433, y: 0.01828295, z: 0.0056115016}
 --- !u!54 &7786251420522942448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -112,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8082777601057763853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4202481194402216083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

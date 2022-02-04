@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4517775339263294431}
   - component: {fileID: 2029351833030464339}
   - component: {fileID: 4109058757060256661}
-  m_Layer: 0
+  - component: {fileID: 3793123737287901565}
+  m_Layer: 9
   m_Name: Harvester_cabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.9588339, z: 1.509495}
   m_Center: {x: 0.02, y: -0.016163975, z: 0.14510849}
+--- !u!114 &3793123737287901565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575307726623787601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []

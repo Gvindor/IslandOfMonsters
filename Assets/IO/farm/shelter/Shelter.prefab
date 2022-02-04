@@ -111,6 +111,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelter_stik1
       objectReference: {fileID: 0}
+    - target: {fileID: 4908715010512622437, guid: 2a233ab4b58effa4090448838a67a048, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908715010512622437, guid: 2a233ab4b58effa4090448838a67a048, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 4731117899287733623}
     - target: {fileID: 8802174818137948833, guid: 2a233ab4b58effa4090448838a67a048, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -169,6 +177,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041600008405186129}
     m_Modifications:
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 5647763478674717758}
     - target: {fileID: 8089975401017780980, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
       propertyPath: m_Name
       value: Shelter_stik.001_Shelter_stik
@@ -231,6 +247,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041600008405186129}
     m_Modifications:
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 4731117899287733623}
     - target: {fileID: 8089975401017780980, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
       propertyPath: m_Name
       value: Shelter_stik.001_Shelter_stik (1)
@@ -352,6 +376,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 722255132221341110, guid: b6d8b3d1823967646bfe41d85816777b, type: 3}
   m_PrefabInstance: {fileID: 7344666696329873289}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5704596995247647334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3082630160392744431, guid: b6d8b3d1823967646bfe41d85816777b, type: 3}
+  m_PrefabInstance: {fileID: 7344666696329873289}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8097709727388285852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,6 +394,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041600008405186129}
     m_Modifications:
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 5704596995247647334}
     - target: {fileID: 8089975401017780980, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
       propertyPath: m_Name
       value: Shelter_stik.001_Shelter_stik (2)
@@ -414,6 +457,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8857437605895182993, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
   m_PrefabInstance: {fileID: 8097709727388285852}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5647763478674717758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+  m_PrefabInstance: {fileID: 8097709727388285852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8435695106044379693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,6 +479,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelter_stik1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4908715010512622437, guid: 2a233ab4b58effa4090448838a67a048, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908715010512622437, guid: 2a233ab4b58effa4090448838a67a048, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 5647763478674717758}
     - target: {fileID: 8802174818137948833, guid: 2a233ab4b58effa4090448838a67a048, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -483,6 +545,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2041600008405186129}
     m_Modifications:
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 5704596995247647334}
     - target: {fileID: 8089975401017780980, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
       propertyPath: m_Name
       value: Shelter_stik.001_Shelter_stik (3)
@@ -538,3 +608,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8857437605895182993, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
   m_PrefabInstance: {fileID: 9198730107385619157}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4731117899287733623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4467635572736821154, guid: fc7ed89341635ea4aaa261ab0679a84f, type: 3}
+  m_PrefabInstance: {fileID: 9198730107385619157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

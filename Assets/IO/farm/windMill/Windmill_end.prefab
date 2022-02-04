@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8083983261884666629}
   - component: {fileID: 685008150933344451}
   - component: {fileID: 4804458083956766393}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Windmill_Blades_01_Mesh.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4489680000295846025}
   - component: {fileID: 4589874286122953138}
   - component: {fileID: 682533687228347989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Prop_Windmill_Blades_01.017_Mesh.078
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,8 @@ GameObject:
   - component: {fileID: 6006480547245674697}
   - component: {fileID: 7047466905150420978}
   - component: {fileID: 1681290075144300295}
-  m_Layer: 0
+  - component: {fileID: 3165717729265537349}
+  m_Layer: 9
   m_Name: Windmill_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,3 +277,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.5, z: 3.5}
   m_Center: {x: -0.00015899539, y: -0.004815012, z: 0.13762546}
+--- !u!114 &3165717729265537349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535638388949572525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []

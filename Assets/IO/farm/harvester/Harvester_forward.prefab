@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6305211204547103337}
   - component: {fileID: 3118648576522491303}
   - component: {fileID: 1128834752134473170}
-  m_Layer: 0
+  - component: {fileID: 6167088454547419954}
+  m_Layer: 9
   m_Name: Harvester_forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6167088454547419954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857370079064867763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []

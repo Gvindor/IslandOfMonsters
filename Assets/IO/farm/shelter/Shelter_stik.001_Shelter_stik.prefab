@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7248684306970582774}
   - component: {fileID: 3806252985044948647}
   - component: {fileID: 557442412264807035}
-  m_Layer: 0
+  - component: {fileID: 4467635572736821154}
+  m_Layer: 9
   m_Name: Shelter_stik.001_Shelter_stik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19855401, y: 3.137909, z: 0.132497}
   m_Center: {x: -0.026540998, y: 1.5718346, z: 0.0116455015}
+--- !u!114 &4467635572736821154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089975401017780980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 23576487066447662}
   - component: {fileID: 5569256884615872110}
   - component: {fileID: 1227596236595559785}
-  m_Layer: 0
+  - component: {fileID: 542893417014579949}
+  m_Layer: 9
   m_Name: SM_Prop_Hemp_01_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,3 +115,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &542893417014579949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978200287030232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []

@@ -209,6 +209,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_wall2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 211861290354548969}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 1237809165581007425}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 3203927516135525766}
     - target: {fileID: 8894039652332383855, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -277,6 +293,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3904377cb5a7d1843a4652b758ff84bd, type: 3}
+--- !u!114 &6959642308886422319 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7917577470283187035, guid: 3904377cb5a7d1843a4652b758ff84bd, type: 3}
+  m_PrefabInstance: {fileID: 969820988397707380}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7069507330435546389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8029514043511840097, guid: 3904377cb5a7d1843a4652b758ff84bd, type: 3}
@@ -351,6 +378,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4704035106192154802}
     m_Modifications:
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 4375380537571490332}
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 8717262735654248625}
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 6589117390839094339}
     - target: {fileID: 6061295462542182284, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -401,11 +444,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+--- !u!1 &8051206249308384817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9105562890022447262, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+  m_PrefabInstance: {fileID: 1289951825036445359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5042017562417266979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6061295462542182284, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
   m_PrefabInstance: {fileID: 1289951825036445359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3203289619509622794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+  m_PrefabInstance: {fileID: 1289951825036445359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051206249308384817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1381177214701319278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -461,8 +520,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_roof (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 7406227577140345872}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 8707845843219018178}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 8680902057278642856}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+--- !u!114 &5346173504633400784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+  m_PrefabInstance: {fileID: 1381177214701319278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &932831221467012533 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2294857059751815643, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
@@ -534,6 +620,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5968851490483267415, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
   m_PrefabInstance: {fileID: 1471242502266189734}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2964401818484400493 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4416145562148050635, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
+  m_PrefabInstance: {fileID: 1471242502266189734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1834736963715499584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -837,8 +934,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_roof
       objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 8680902057278642856}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 7358929399849795088}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 8707845843219018178}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+--- !u!114 &8805503122589376985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+  m_PrefabInstance: {fileID: 2533537910694459495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4391035029189317052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2294857059751815643, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
@@ -906,6 +1030,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
   m_PrefabInstance: {fileID: 2681472992755347303}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8044687970863596919 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 2681472992755347303}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2923425427724829906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1023,8 +1158,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_roof (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 298635581361307703}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 2964401818484400493}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 8680902057278642856}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+--- !u!114 &8304892361822765028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+  m_PrefabInstance: {fileID: 3052146129461913178}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3856100449017188225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2294857059751815643, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
@@ -1085,6 +1247,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 8805503122589376985}
+    - target: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 1449984339868309424}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
 --- !u!4 &8800766609743539535 stripped
@@ -1092,6 +1266,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5881439681443234460, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
   m_PrefabInstance: {fileID: 3151825538238017491}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5006742255354167245 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+  m_PrefabInstance: {fileID: 3151825538238017491}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3195940929983208191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1211,6 +1396,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+--- !u!114 &7207629436461123247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 3356409483876674751}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5179466301466884994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
@@ -1267,6 +1463,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 3203289619509622794}
     - target: {fileID: 4201587129859921055, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
       propertyPath: m_Name
       value: Farmhouse_pillar1 (2)
@@ -1335,6 +1539,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ad34d2ebdec50c48a39c3ccbea09c3f, type: 3}
+--- !u!114 &298635581361307703 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4026991330720407298, guid: 5ad34d2ebdec50c48a39c3ccbea09c3f, type: 3}
+  m_PrefabInstance: {fileID: 3730748768782360373}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7499862729547325879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6616515005731028610, guid: 5ad34d2ebdec50c48a39c3ccbea09c3f, type: 3}
@@ -1397,6 +1612,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+--- !u!114 &8974864899931223882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 3900073845726846298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6875499042242398823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
@@ -1453,6 +1679,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 7598347903623528970}
     - target: {fileID: 4201587129859921055, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
       propertyPath: m_Name
       value: Farmhouse_pillar1 (3)
@@ -1526,6 +1760,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
   m_PrefabInstance: {fileID: 3941051584446354666}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8945158097877925626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 3941051584446354666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4318112782919430641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1581,6 +1826,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_wall2
       objectReference: {fileID: 0}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 8974864899931223882}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 8945158097877925626}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 8304892361822765028}
     - target: {fileID: 8894039652332383855, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1709,6 +1970,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 5346173504633400784}
+    - target: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 8304892361822765028}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
 --- !u!4 &1382530380114484996 stripped
@@ -1716,6 +1989,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5881439681443234460, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
   m_PrefabInstance: {fileID: 4805532344551693720}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3203927516135525766 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7982081877240238110, guid: 338dcb4c6b0656c4c8d39fb42d66f620, type: 3}
+  m_PrefabInstance: {fileID: 4805532344551693720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4850328058356886482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,7 +2121,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_littleplank3 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3872034285951803276, guid: 88913870a17db374494e5330932b3eb1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 88913870a17db374494e5330932b3eb1, type: 3}
 --- !u!4 &4654899462396677305 stripped
 Transform:
@@ -1910,6 +2195,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8414287976481767003, guid: f95f27bb4d5fc1f4094d701a75ade581, type: 3}
   m_PrefabInstance: {fileID: 5046618386256159689}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7616963648206159099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3440139593287262002, guid: f95f27bb4d5fc1f4094d701a75ade581, type: 3}
+  m_PrefabInstance: {fileID: 5046618386256159689}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5199322122845702410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1917,6 +2213,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4704035106192154802}
     m_Modifications:
+    - target: {fileID: 784176887116729125, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784176887116729125, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 1712519901975910399}
     - target: {fileID: 3153147349726525949, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
       propertyPath: m_Name
       value: Farmhouse_wall3
@@ -2038,6 +2342,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3948790673632043079, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
   m_PrefabInstance: {fileID: 5208034673928041296}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8717262735654248625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3512622668888019937, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
+  m_PrefabInstance: {fileID: 5208034673928041296}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5215826787232090873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2095,6 +2410,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+--- !u!114 &211861290354548969 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 5215826787232090873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2384413391547342276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
@@ -2157,6 +2483,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
+--- !u!114 &8680902057278642856 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3512622668888019937, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
+  m_PrefabInstance: {fileID: 5244325052870232393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9082487126518769934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3948790673632043079, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
@@ -2217,8 +2554,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_roof (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 298635581361307703}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 5549356277437121070}
+    - target: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 8680902057278642856}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+--- !u!114 &1449984339868309424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6420867675926682046, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
+  m_PrefabInstance: {fileID: 5549807150187875854}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5970674026951141333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2294857059751815643, guid: 111fa0d92bdf4af4281eada284591449, type: 3}
@@ -2235,6 +2599,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fdf18c58b725a2f469593ece1786d307, type: 2}
+    - target: {fileID: 1643594070408670745, guid: 8ccf1c17e159cfe47b0c6cf6d943a80b, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643594070408670745, guid: 8ccf1c17e159cfe47b0c6cf6d943a80b, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 7616963648206159099}
     - target: {fileID: 3094001820784237700, guid: 8ccf1c17e159cfe47b0c6cf6d943a80b, type: 3}
       propertyPath: m_Name
       value: Farmhouse_doorBase
@@ -2285,6 +2657,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ccf1c17e159cfe47b0c6cf6d943a80b, type: 3}
+--- !u!114 &6472299193021410568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1643594070408670745, guid: 8ccf1c17e159cfe47b0c6cf6d943a80b, type: 3}
+  m_PrefabInstance: {fileID: 5700714671920841489}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2239817024430640845 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5766978607758740956, guid: 8ccf1c17e159cfe47b0c6cf6d943a80b, type: 3}
@@ -2352,6 +2735,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6616515005731028610, guid: 5ad34d2ebdec50c48a39c3ccbea09c3f, type: 3}
   m_PrefabInstance: {fileID: 5709092008535305920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8707845843219018178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4026991330720407298, guid: 5ad34d2ebdec50c48a39c3ccbea09c3f, type: 3}
+  m_PrefabInstance: {fileID: 5709092008535305920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5807881428682820607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2471,6 +2865,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3904377cb5a7d1843a4652b758ff84bd, type: 3}
+--- !u!114 &4375380537571490332 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7917577470283187035, guid: 3904377cb5a7d1843a4652b758ff84bd, type: 3}
+  m_PrefabInstance: {fileID: 5861606062469593415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4482783478421529638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8029514043511840097, guid: 3904377cb5a7d1843a4652b758ff84bd, type: 3}
@@ -2538,6 +2943,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
   m_PrefabInstance: {fileID: 6004747800526854913}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857697617377800465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 6004747800526854913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6115971441388928175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2545,6 +2961,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4704035106192154802}
     m_Modifications:
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 8717262735654248625}
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 6959642308886422319}
+    - target: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 6589117390839094339}
     - target: {fileID: 6061295462542182284, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -2600,6 +3032,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6061295462542182284, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
   m_PrefabInstance: {fileID: 6115971441388928175}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7598347903623528970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4436761098799759013, guid: ac9946ef6afc8cc4ba7664f926d17c48, type: 3}
+  m_PrefabInstance: {fileID: 6115971441388928175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6221259823167863983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2717,6 +3160,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_wall2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 5006742255354167245}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 8044687970863596919}
+    - target: {fileID: 4530657624109429598, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
+      propertyPath: chainTrigger.Array.data[2]
+      value: 
+      objectReference: {fileID: 7207629436461123247}
     - target: {fileID: 8894039652332383855, guid: f64b99c80bf483548a67c76b61b7d98c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2841,6 +3300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: fracturedPrefab
+      value: 
+      objectReference: {fileID: 8051206249308384817}
     - target: {fileID: 4201587129859921055, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
       propertyPath: m_Name
       value: Farmhouse_pillar1
@@ -2913,6 +3376,17 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fdf18c58b725a2f469593ece1786d307, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
+--- !u!114 &7358929399849795088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4416145562148050635, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
+  m_PrefabInstance: {fileID: 6586909941816699099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &701709966190956428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5968851490483267415, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
@@ -2984,6 +3458,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5968851490483267415, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
   m_PrefabInstance: {fileID: 6593683547354458843}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7406227577140345872 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4416145562148050635, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
+  m_PrefabInstance: {fileID: 6593683547354458843}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6611122127258980433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3046,6 +3531,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
   m_PrefabInstance: {fileID: 6611122127258980433}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1237809165581007425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 6611122127258980433}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6614781939987682562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3097,6 +3593,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4766362498949555792, guid: 8cb0a0c0a82628241a4d5bd940c9ea9f, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766362498949555792, guid: 8cb0a0c0a82628241a4d5bd940c9ea9f, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 3121821278515518655}
+    - target: {fileID: 4766362498949555792, guid: 8cb0a0c0a82628241a4d5bd940c9ea9f, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 6472299193021410568}
     - target: {fileID: 8935438098961361135, guid: 8cb0a0c0a82628241a4d5bd940c9ea9f, type: 3}
       propertyPath: m_Name
       value: Farmhouse_wall1
@@ -3236,6 +3744,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
   m_PrefabInstance: {fileID: 6725826613857828335}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1712519901975910399 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 6725826613857828335}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7043655678044337839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3293,6 +3812,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+--- !u!114 &3121821278515518655 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373630450693745168, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
+  m_PrefabInstance: {fileID: 7043655678044337839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &627515516294816146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7599109193604437821, guid: 805f2859b26a1cb4fa369e0ef3ae6ab9, type: 3}
@@ -3349,6 +3879,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498562650244071812, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 7598347903623528970}
     - target: {fileID: 4201587129859921055, guid: 55f6413a68bb8334cb24ddb031467197, type: 3}
       propertyPath: m_Name
       value: Farmhouse_pillar1 (1)
@@ -3669,6 +4207,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
+--- !u!114 &6589117390839094339 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3512622668888019937, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
+  m_PrefabInstance: {fileID: 7768261786479759266}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6702065284018647013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3948790673632043079, guid: c2fe3b8f22fdd874ab0fe6d6fe784776, type: 3}
@@ -3735,6 +4284,17 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fdf18c58b725a2f469593ece1786d307, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
+--- !u!114 &5549356277437121070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4416145562148050635, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
+  m_PrefabInstance: {fileID: 8091291621690823909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2494875524215157682 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5968851490483267415, guid: c14790fe7e0bfa644a221a7e25155bfe, type: 3}
@@ -3747,6 +4307,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4704035106192154802}
     m_Modifications:
+    - target: {fileID: 784176887116729125, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 784176887116729125, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 1857697617377800465}
+    - target: {fileID: 784176887116729125, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
+      propertyPath: chainTrigger.Array.data[1]
+      value: 
+      objectReference: {fileID: 1449984339868309424}
     - target: {fileID: 3153147349726525949, guid: bfd20dde9c70eec47b79f79ee687d7fa, type: 3}
       propertyPath: m_Name
       value: Farmhouse_wall3 (1)
@@ -3865,7 +4437,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fdf18c58b725a2f469593ece1786d307, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1104073723713443246, guid: 1fc8e91ffedfc9b42accb39ace49be02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1fc8e91ffedfc9b42accb39ace49be02, type: 3}
 --- !u!4 &3555072225265387827 stripped
 Transform:
@@ -3931,7 +4504,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6885015647946273620, guid: a639a23128ded2f44ac36d2259ac74bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a639a23128ded2f44ac36d2259ac74bc, type: 3}
 --- !u!4 &1116976280854858089 stripped
 Transform:
@@ -3997,7 +4571,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Farmhouse_littleplank3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3872034285951803276, guid: 88913870a17db374494e5330932b3eb1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 88913870a17db374494e5330932b3eb1, type: 3}
 --- !u!4 &8842198285190108391 stripped
 Transform:

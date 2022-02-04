@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 7857733518411080738}
   - component: {fileID: 1442569046510890197}
   - component: {fileID: 1892616740608756051}
-  m_Layer: 0
+  - component: {fileID: 2234725084779284082}
+  m_Layer: 9
   m_Name: Harvester_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,6 +131,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2234725084779284082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2496593407840943499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1001 &550446105472697034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,6 +155,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3676203360555035746}
     m_Modifications:
+    - target: {fileID: 4127502331688268780, guid: a347b7bd49ecf8c499ad33bce5720403, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8499451157028657748, guid: a347b7bd49ecf8c499ad33bce5720403, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -183,6 +205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3676203360555035746}
     m_Modifications:
+    - target: {fileID: 1492272892878732366, guid: ef267e1a035ac3b43ab7972c8d141f61, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7229451738874666338, guid: ef267e1a035ac3b43ab7972c8d141f61, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -229,6 +255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3676203360555035746}
     m_Modifications:
+    - target: {fileID: 4127502331688268780, guid: a347b7bd49ecf8c499ad33bce5720403, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8499451157028657748, guid: a347b7bd49ecf8c499ad33bce5720403, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2670002
@@ -259,6 +289,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3676203360555035746}
     m_Modifications:
+    - target: {fileID: 1492272892878732366, guid: ef267e1a035ac3b43ab7972c8d141f61, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7229451738874666338, guid: ef267e1a035ac3b43ab7972c8d141f61, type: 3}
       propertyPath: m_RootOrder
       value: 1

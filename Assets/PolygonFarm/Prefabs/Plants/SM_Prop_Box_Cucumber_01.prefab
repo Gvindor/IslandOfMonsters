@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 23988402860510970}
   - component: {fileID: 6949769516692076056}
   - component: {fileID: 7645954068576077868}
-  - component: {fileID: 6214061551007957223}
-  m_Layer: 0
+  - component: {fileID: 4736335715988990170}
+  m_Layer: 9
   m_Name: SM_Prop_Box_Cucumber_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7593243, y: 0.43354738, z: 0.45261502}
   m_Center: {x: 0, y: 0.21677369, z: -0.00000015646219}
---- !u!114 &6214061551007957223
+--- !u!114 &4736335715988990170
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1335058353384804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec137bae169633247963f7b3574c10b0, type: 3}
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SwapObject: {fileID: 7621359466158308562, guid: 042424117af9e614ca5ec9a1a08255ee, type: 3}
+  minImpulse: 50
+  spawnFracturedObject: 1
+  fracturedPrefab: {fileID: 7621359466158308562, guid: 042424117af9e614ca5ec9a1a08255ee, type: 3}
+  chainTrigger: []
+  deactivateOnTrigger: []

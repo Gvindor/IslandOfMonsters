@@ -5,12 +5,14 @@ namespace SF
     public class Destructible : MonoBehaviour
     {
         [SerializeField] float minImpulse = 50;
+        [SerializeField] bool spawnFracturedObject = false;
+        [SerializeField] GameObject fracturedPrefab;
         [SerializeField] Destructible[] chainTrigger;
         [SerializeField] GameObject[] deactivateOnTrigger;
 
         private Rigidbody rb;
 
-        public bool IsDestroyed => !rb.isKinematic;
+        public bool IsDestroyed { get; private set; }
 
         private void Awake()
         {
@@ -27,7 +29,7 @@ namespace SF
 
         public void Trigger()
         {
-            rb.isKinematic = false;
+            IsDestroyed = true;
 
             foreach (var item in chainTrigger)
             {
@@ -37,6 +39,16 @@ namespace SF
             foreach (var item in deactivateOnTrigger)
             {
                 item.SetActive(false);
+            }
+
+            if (spawnFracturedObject)
+            {
+                GameObject fractured = Instantiate(fracturedPrefab, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
+            else
+            {
+                rb.isKinematic = false;
             }
         }
     }

@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8458988569590951783}
   - component: {fileID: 498195386285641463}
   - component: {fileID: 2527323282227719664}
-  - component: {fileID: 8774482265340339413}
-  m_Layer: 0
+  - component: {fileID: 784176887116729125}
+  m_Layer: 9
   m_Name: Farmhouse_wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8774482265340339413
+--- !u!114 &784176887116729125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,7 +136,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3153147349726525949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec137bae169633247963f7b3574c10b0, type: 3}
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SwapObject: {fileID: 7738187143758505112, guid: 1b0ad24d765afb848a4ed6f2cc2f9336, type: 3}
+  minImpulse: 50
+  spawnFracturedObject: 1
+  fracturedPrefab: {fileID: 7738187143758505112, guid: 1b0ad24d765afb848a4ed6f2cc2f9336, type: 3}
+  chainTrigger: []
+  deactivateOnTrigger: []

@@ -114,6 +114,14 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 0.09
       objectReference: {fileID: 0}
+    - target: {fileID: 6756967785887457145, guid: 64328deed10384c45b66c5d0bf64f27e, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6756967785887457145, guid: 64328deed10384c45b66c5d0bf64f27e, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 788511012586471953}
     - target: {fileID: 8127854845433265605, guid: 64328deed10384c45b66c5d0bf64f27e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -232,6 +240,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1452734078286496293, guid: 47d4579f52ef6d047b9c90b022a8524c, type: 3}
   m_PrefabInstance: {fileID: 670386097612136233}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &788511012586471953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 269347415201111352, guid: 47d4579f52ef6d047b9c90b022a8524c, type: 3}
+  m_PrefabInstance: {fileID: 670386097612136233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1182832260520737399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,6 +302,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4427809378447463694, guid: bd42a8a9cc9f29c49b5ad9bddc948224, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427809378447463694, guid: bd42a8a9cc9f29c49b5ad9bddc948224, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 788511012586471953}
     - target: {fileID: 6379361417928172729, guid: bd42a8a9cc9f29c49b5ad9bddc948224, type: 3}
       propertyPath: m_Name
       value: WC_wall2 (1)
@@ -345,6 +372,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4427809378447463694, guid: bd42a8a9cc9f29c49b5ad9bddc948224, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427809378447463694, guid: bd42a8a9cc9f29c49b5ad9bddc948224, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 788511012586471953}
     - target: {fileID: 6379361417928172729, guid: bd42a8a9cc9f29c49b5ad9bddc948224, type: 3}
       propertyPath: m_Name
       value: WC_wall2
@@ -411,6 +446,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WC_wall1
       objectReference: {fileID: 0}
+    - target: {fileID: 9028100656898285402, guid: 1460b55607bb461459b9cb7b887da4fb, type: 3}
+      propertyPath: chainTrigger.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028100656898285402, guid: 1460b55607bb461459b9cb7b887da4fb, type: 3}
+      propertyPath: chainTrigger.Array.data[0]
+      value: 
+      objectReference: {fileID: 2428233576030380521}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1460b55607bb461459b9cb7b887da4fb, type: 3}
 --- !u!4 &4839697270870095454 stripped
@@ -488,3 +531,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6739746601309367758, guid: ad9006ed3defaea479a467366d09f276, type: 3}
   m_PrefabInstance: {fileID: 7206711976103306314}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2428233576030380521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5021992758798665123, guid: ad9006ed3defaea479a467366d09f276, type: 3}
+  m_PrefabInstance: {fileID: 7206711976103306314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

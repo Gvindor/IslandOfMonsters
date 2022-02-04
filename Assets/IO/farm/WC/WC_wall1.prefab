@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 5616816910768225343}
   - component: {fileID: 3014416734580642070}
   - component: {fileID: 974694708143655323}
-  m_Layer: 0
+  - component: {fileID: 9028100656898285402}
+  m_Layer: 9
   m_Name: WC_wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4460571, y: 2.737399, z: 0.076172}
   m_Center: {x: 0.0077705085, y: -0.4018585, z: 0.002218999}
+--- !u!114 &9028100656898285402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063105355701333842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []

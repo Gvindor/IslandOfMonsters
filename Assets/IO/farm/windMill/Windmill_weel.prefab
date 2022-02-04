@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4043438922197448325}
   - component: {fileID: 6255537021162963282}
   - component: {fileID: 1053301007549323598}
-  m_Layer: 0
+  - component: {fileID: 7801318317617277122}
+  m_Layer: 9
   m_Name: Windmill_weel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,6 +126,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3078619242263316472, guid: 409ecf07fcfc8134fa478b4690106119, type: 3}
+--- !u!114 &7801318317617277122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7133786145846923393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
+  chainTrigger: []
+  deactivateOnTrigger: []
 --- !u!1001 &97896865196868680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -179,6 +197,10 @@ PrefabInstance:
     - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
       propertyPath: m_Name
       value: Windmill_leaf (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
@@ -242,6 +264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill_leaf (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
 --- !u!4 &5533259956165165268 stripped
@@ -303,6 +329,10 @@ PrefabInstance:
     - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
       propertyPath: m_Name
       value: Windmill_leaf (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
@@ -366,6 +396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill_leaf (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
 --- !u!4 &4965394199898878775 stripped
@@ -427,6 +461,10 @@ PrefabInstance:
     - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
       propertyPath: m_Name
       value: Windmill_leaf (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
@@ -490,6 +528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill_leaf (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
 --- !u!4 &7410842275577921146 stripped
@@ -551,6 +593,10 @@ PrefabInstance:
     - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
       propertyPath: m_Name
       value: Windmill_leaf (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
@@ -614,6 +660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill_leaf (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
 --- !u!4 &630800559242562231 stripped
@@ -675,6 +725,10 @@ PrefabInstance:
     - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
       propertyPath: m_Name
       value: Windmill_leaf (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
@@ -738,6 +792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill_leaf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
 --- !u!4 &1587629021680141867 stripped
@@ -800,6 +858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windmill_leaf (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
 --- !u!4 &3336451038721739927 stripped
@@ -861,6 +923,10 @@ PrefabInstance:
     - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
       propertyPath: m_Name
       value: Windmill_leaf (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949999378403636172, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07cdf6c2a76ac64a8e2ae0651dd516c, type: 3}

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 9175634607178618857}
   - component: {fileID: 5257286359345075759}
   - component: {fileID: 5169524417350696116}
-  m_Layer: 0
+  - component: {fileID: 5021992758798665123}
+  m_Layer: 9
   m_Name: WC_door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.120388, y: 2.1335, z: 0.148815}
   m_Center: {x: -0.015480995, y: -0.0046460032, z: 0.004291501}
+--- !u!114 &5021992758798665123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251927150156401959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec917462b60454f4898ed987dea56261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minImpulse: 50
+  chainTrigger: []
+  deactivateOnTrigger: []
