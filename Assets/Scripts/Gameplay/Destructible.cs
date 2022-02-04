@@ -4,6 +4,9 @@ namespace SF
 {
     public class Destructible : MonoBehaviour
     {
+        private const float DespawnTime = 5f;
+        private const float DespawnChance = 0.6f;
+
         [SerializeField] float minImpulse = 50;
         [SerializeField] bool spawnFracturedObject = false;
         [SerializeField] GameObject fracturedPrefab;
@@ -29,6 +32,8 @@ namespace SF
 
         public void Trigger()
         {
+            if (IsDestroyed) return;
+
             IsDestroyed = true;
 
             foreach (var item in chainTrigger)
@@ -44,11 +49,30 @@ namespace SF
             if (spawnFracturedObject)
             {
                 GameObject fractured = Instantiate(fracturedPrefab, transform.position, transform.rotation);
-                Destroy(gameObject);
+
+                var rbs = fractured.GetComponentsInChildren<Rigidbody>();
+
+                foreach (var rb in rbs)
+                {
+                    Despawn(rb.gameObject);
+                }
             }
             else
             {
                 rb.isKinematic = false;
+                Despawn(gameObject);
+            }
+        }
+
+        private void Despawn(GameObject gameObject)
+        {
+            float dice = Random.Range(0, 1f);
+
+            if (dice <= DespawnChance)
+            {
+                var shrinker = gameObject.AddComponent<ShrinkAndDestroy>();
+                float time = Random.Range(DespawnTime * 0.9f, DespawnTime * 1.1f);
+                shrinker.Shrink(time);
             }
         }
     }
