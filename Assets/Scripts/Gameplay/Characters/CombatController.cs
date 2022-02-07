@@ -22,7 +22,7 @@ namespace SF
         private Rigidbody rb;
         private List<CombatController> hitTargets = new List<CombatController>();
 
-        private ParticleSystem hitParticles;
+        private List<ParticleSystem> hitParticles;
 
         public int HP { get; set; }
         public int MaxHP => maxHP;
@@ -40,6 +40,8 @@ namespace SF
             rb = GetComponent<Rigidbody>();
 
             controller.OnAttack.AddListener(OnAttackStarted);
+
+            hitParticles = new List<ParticleSystem>();
         }
 
         private void OnAttackStarted()
@@ -130,14 +132,25 @@ namespace SF
 
         private void PlayHitVFX(Vector3 position)
         {
-            if (!hitParticles)
+            var particles = GetHitParticles();
+
+            particles.transform.position = position;
+
+            particles.Play();
+        }
+
+        private ParticleSystem GetHitParticles()
+        {
+            foreach (var item in hitParticles)
             {
-                hitParticles = Instantiate(hitParticlesPrefab, position, Quaternion.identity, transform);
+                if (item.isStopped) return item;
             }
 
-            hitParticles.transform.position = position;
+            var particles = Instantiate(hitParticlesPrefab, transform);
 
-            hitParticles.Emit(20);
+            hitParticles.Add(particles);
+
+            return particles;
         }
     }
 }
