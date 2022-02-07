@@ -53,7 +53,7 @@ MonoBehaviour:
   spawnTime:
     min: 10
     max: 15
-  spawnY: 10
+  spawnY: 20
   maxBoosterInstances: 3
   boostSettings:
     duration: 5
