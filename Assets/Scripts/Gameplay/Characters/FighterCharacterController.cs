@@ -24,12 +24,16 @@ namespace SF
         [SerializeField] [Min(0.1f)] float modeTransitionTime = 0.5f;
         [SerializeField] [Min(0)] float faintDuration = 2f;
 
+        [SerializeField] Renderer characterRenderer;
+        [SerializeField] ParticleSystem powerUpPrefab;
+
         private GameObject[] targets;
 
         private Rigidbody rb;
         private Animator animator;
         private RamecanMixer ragdoll;
         private Transform cam;
+        private ParticleSystem powerUpVFX;
 
         private Vector3 input;
         private float attackTimer;
@@ -244,6 +248,13 @@ namespace SF
             ActiveBoost = boost;
             boostTimer = boost.Duration;
             animator.speed = boost.Speed;
+
+            characterRenderer.material.SetFloat("_FresnelPower", 1);
+
+            if (!powerUpVFX)
+                powerUpVFX = Instantiate(powerUpPrefab, transform);
+
+            powerUpVFX.Play();
         }
 
         public void ClearBoost()
@@ -251,6 +262,10 @@ namespace SF
             animator.speed = 1f;
             boostTimer = 0;
             ActiveBoost = null;
+
+            characterRenderer.material.SetFloat("_FresnelPower", 0);
+
+            powerUpVFX?.Stop();
         }
 
         void OnAnimatorIK()

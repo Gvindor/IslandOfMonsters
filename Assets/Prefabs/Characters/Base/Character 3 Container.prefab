@@ -545,7 +545,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 361e8d5196ddb1c4ea13ea3710ce3d95, type: 3}
+  - {fileID: 2100000, guid: 8032e6dac4811354daace0f7372125f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1401,6 +1401,8 @@ MonoBehaviour:
   autoAttackRange: 5
   modeTransitionTime: 0.5
   faintDuration: 2
+  characterRenderer: {fileID: 8549784327163210567}
+  powerUpPrefab: {fileID: 2011749616756088366, guid: e51006a604518564fafb154a0dfd3411, type: 3}
   OnAttack:
     m_PersistentCalls:
       m_Calls: []
