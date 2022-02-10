@@ -59,12 +59,15 @@ namespace SF
         public UnityEvent<FighterCharacterController, Transform> OnTargetChanged = new UnityEvent<FighterCharacterController, Transform>();
         public UnityEvent OnDead = new UnityEvent();
 
-        // Use this for initialization
-        void Start()
+        private void Awake()
         {
             rb = GetComponent<Rigidbody>();
             animator = GetComponent<Animator>();
             ragdoll = GetComponent<RamecanMixer>();
+        }
+
+        private void Start()
+        {
             cam = Camera.main.transform;
 
             targets = GameObject.FindGameObjectsWithTag("Enemy");
