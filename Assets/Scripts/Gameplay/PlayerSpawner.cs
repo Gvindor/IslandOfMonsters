@@ -13,9 +13,10 @@ namespace SF
         [SerializeField] bool useSkins = true;
         [SerializeField] bool circleMode = true;
         [SerializeField] Transform[] spawnPoints;
-        [Header("Prefabs")]
+
+        [Header("Prefabs")] //Only used when ProgressionManager isn't present.
         [SerializeField] GameObject prefabPlayer;
-        [SerializeField] GameObject[] prefabsEnemy;
+        [SerializeField] GameObject prefabEnemy;
 
         private List<FighterCharacterController> aliveEnemies;
         private FighterCharacterController player;
@@ -46,7 +47,7 @@ namespace SF
                 var pm = FindObjectOfType<ProgressionManager>();
 
                 if (pm)
-                    prefab = pm.ActiveSkin;
+                    prefab = pm.ActiveSkin.PlayerPrefab;
                 else
                     Debug.LogError("Can't find Progression Manager.", this);
             }
@@ -58,9 +59,26 @@ namespace SF
 
         public void SpawnEnemies()
         {
+            var pm = FindObjectOfType<ProgressionManager>();
+
+            var prefabsPool = new List<GameObject>();
+            if (pm)
+            {
+                var skins = pm.GetUnusedSkins();
+                foreach (var item in skins)
+                {
+                    prefabsPool.Add(item.EnemyPrefab);
+                }
+            }
+
             for (int i = 1; i < charactersToSpawn; i++)
             {
-                var prefab = GetRandomEnemyPrefab();
+                var prefab = prefabEnemy;
+                if (prefabsPool.Count > 0)
+                {
+                    prefab = prefabsPool[0];
+                    prefabsPool.RemoveAt(0);
+                }
 
                 var enemy = SpawnCharacter(i, prefab);
 
@@ -81,11 +99,6 @@ namespace SF
             controller.OnDead.AddListener(() => { HandleCharacterDead(controller); });
 
             return controller;
-        }
-
-        private GameObject GetRandomEnemyPrefab()
-        {
-            return prefabsEnemy[Random.Range(0, prefabsEnemy.Length)];
         }
 
         private Vector3 GetCharacterPosition(int index)

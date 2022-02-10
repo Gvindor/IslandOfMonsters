@@ -47,12 +47,10 @@ MonoBehaviour:
   charactersToSpawn: 6
   radius: 4
   useSkins: 1
+  circleMode: 1
+  spawnPoints: []
   prefabPlayer: {fileID: 3852800733061925746, guid: 603e0463fc1b53346931df1cf1ca5266, type: 3}
-  prefabsEnemy:
-  - {fileID: 398802996762942362, guid: 499cd5356790dfe43ac15ab064d073bb, type: 3}
-  - {fileID: 3539554028164758024, guid: 5d69572d36fcef34d97629fdb6e30557, type: 3}
-  - {fileID: 8207956651881611003, guid: b6cf13e076b0a4d4594924356250ee31, type: 3}
-  - {fileID: 7423721091998616780, guid: cae1c66e2c5340847b60f8dfabed90ae, type: 3}
+  prefabEnemy: {fileID: 3539554028164758024, guid: 5d69572d36fcef34d97629fdb6e30557, type: 3}
   OnCharacterSpawned:
     m_PersistentCalls:
       m_Calls: []

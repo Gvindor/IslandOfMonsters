@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff25252d3fa9904a83a2d4fe11dcf42, type: 3}
+  m_Name: Miss T Skin
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 5788650507513054204, guid: 44f667aa686f7714d8a615df34f23c57, type: 3}
+  enemyPrefab: {fileID: 7423721091998616780, guid: cae1c66e2c5340847b60f8dfabed90ae, type: 3}
+  preview: {fileID: 21300000, guid: 939715fe724dc614c9cd044ece066071, type: 3}

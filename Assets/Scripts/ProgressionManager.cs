@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace SF
@@ -6,7 +7,7 @@ namespace SF
     public class ProgressionManager : MonoBehaviour
     {
         [SerializeField] int winsPerSkin = 3;
-        [SerializeField] GameObject[] skins;
+        [SerializeField] CharacterSkin[] skins;
 
         public int WinsPerSkin => winsPerSkin;
 
@@ -41,8 +42,8 @@ namespace SF
         }
 
         public bool SkinUnlocked => SkinProgress == winsPerSkin;
-        public GameObject NextSkin => skins[NextSkinIndex];
-        public GameObject ActiveSkin => skins[ActiveSkinIndex];
+        public CharacterSkin NextSkin => skins[NextSkinIndex];
+        public CharacterSkin ActiveSkin => skins[ActiveSkinIndex];
 
         public UnityEvent OnActiveSkinChanged = new UnityEvent();
 
@@ -80,6 +81,14 @@ namespace SF
             ActiveSkinIndex = NextSkinIndex;
 
             OnActiveSkinChanged.Invoke();
+        }
+
+        public CharacterSkin[] GetUnusedSkins()
+        {
+            var result = new List<CharacterSkin>(skins);
+            result.Remove(ActiveSkin);
+
+            return result.ToArray();
         }
     }
 }
