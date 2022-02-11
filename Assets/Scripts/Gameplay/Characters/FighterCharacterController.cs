@@ -285,5 +285,13 @@ namespace SF
             Gizmos.color = Color.green;
             Gizmos.DrawSphere(transform.position, 0.2f);
         }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.yellow;
+
+            Vector3 pos = transform.TransformPoint(defaultLoopAtPos);
+            Gizmos.DrawSphere(pos, 0.2f);
+        }
     }
 }
