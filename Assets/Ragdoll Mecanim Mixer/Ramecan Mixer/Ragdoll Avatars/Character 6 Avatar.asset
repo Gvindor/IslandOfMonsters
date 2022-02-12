@@ -1,0 +1,500 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bedf342f7517b48a204328f1d6dc1b, type: 3}
+  m_Name: Character 6 Avatar
+  m_EditorClassIdentifier: 
+  mass: 70
+  layer: 6
+  physicMaterial: {fileID: 13400000, guid: 547004b29f88e684ea3fae8d4a6c0733, type: 2}
+  spring: 1000
+  damper: 10
+  previewBones:
+  - name: mixamorig:Hips
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: -1
+    childIDs: 010000000400000007000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.00000034759148, y: 0.6995939, z: 0.71454066, w: 0.0000003550178}
+    colliderType: 0
+    bounds:
+      m_Center: {x: 0, y: 0, z: -0.04334122}
+      m_Extent: {x: 0.34596634, y: 0.270706, z: 0.13859099}
+    capsuleBounds:
+      height: 0.6919327
+      radius: 0.270706
+      direction: 0
+    axis: {x: 0, y: 0, z: 1}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.15
+  - name: mixamorig:LeftUpLeg
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 02000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7155694, y: 0.0008837492, z: 0.00086271827, w: 0.6985406}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.78564024}
+      m_Extent: {x: 0.13914078, y: 0.13914078, z: 0.78564024}
+    capsuleBounds:
+      height: 1.5712805
+      radius: 0.13914078
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -80.50897
+    highTwistLimit: 113.81562
+    swing1Limit: 58.54062
+    swing2Limit: 28.798187
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.075
+  - name: mixamorig:LeftLeg
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 1
+    childIDs: 03000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7195085, y: -0.0010094984, z: -0.0009743855, w: 0.69448227}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.6912854}
+      m_Extent: {x: 0.11934872, y: 0.11934872, z: 0.6912854}
+    capsuleBounds:
+      height: 1.3825707
+      radius: 0.11934872
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -100.825195
+    highTwistLimit: -0.4901886
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.075
+  - name: mixamorig:LeftFoot
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 2
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7069847, y: 0, z: 0, w: 0.70722884}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0.28, z: 0.09}
+      m_Extent: {x: 0.12127045, y: 0.26735538, z: 0.12127045}
+    capsuleBounds:
+      height: 0.53471076
+      radius: 0.12127045
+      direction: 1
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 12.288544
+    swing2Limit: 33.33737
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.035
+  - name: mixamorig:RightUpLeg
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 05000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7157352, y: -0.00088397117, z: -0.0008625251, w: 0.6983707}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.7856341}
+      m_Extent: {x: 0.13914078, y: 0.13914078, z: 0.7856341}
+    capsuleBounds:
+      height: 1.5712682
+      radius: 0.13914078
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -80.50897
+    highTwistLimit: 113.81562
+    swing1Limit: 58.54062
+    swing2Limit: 28.798187
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.075
+  - name: mixamorig:RightLeg
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 4
+    childIDs: 06000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.719435, y: 0.0010093725, z: 0.0009744704, w: 0.6945584}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.6912957}
+      m_Extent: {x: 0.11934872, y: 0.11934872, z: 0.6912957}
+    capsuleBounds:
+      height: 1.3825914
+      radius: 0.11934872
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -100.825195
+    highTwistLimit: -0.4901886
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.075
+  - name: mixamorig:RightFoot
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 5
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.7069847, y: 0, z: 0, w: 0.70722884}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0.28, z: 0.09}
+      m_Extent: {x: 0.12127045, y: 0.26735538, z: 0.12127045}
+    capsuleBounds:
+      height: 0.53471076
+      radius: 0.12127045
+      direction: 1
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 12.288544
+    swing2Limit: 33.33737
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.035
+  - name: mixamorig:Spine1
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 0
+    childIDs: 08000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0, y: 0.6995939, z: 0.71454066, w: 0}
+    colliderType: 0
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.064608105}
+      m_Extent: {x: 0.3936026, y: 0.22049965, z: 0.2307567}
+    capsuleBounds:
+      height: 0.7872052
+      radius: 0.2307567
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 16.559967
+    swing2Limit: 18.36377
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.14999998
+  - name: mixamorig:Spine2
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 7
+    childIDs: 090000000c0000000d000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0, y: 0.70080733, z: 0.7133506, w: 0}
+    colliderType: 0
+    bounds:
+      m_Center: {x: 0, y: 0.0065994263, z: 0.17020217}
+      m_Extent: {x: 0.35015404, y: 0.24360505, z: 0.26844612}
+    capsuleBounds:
+      height: 0.7003081
+      radius: 0.26844612
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -29.252167
+    highTwistLimit: 29.872868
+    swing1Limit: 21.955261
+    swing2Limit: 21.467346
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.13
+  - name: mixamorig:LeftArm
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 8
+    childIDs: 0a000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.50002575, y: -0.499976, z: -0.4999743, w: 0.5000241}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.52764344}
+      m_Extent: {x: 0.109482646, y: 0.109482646, z: 0.52764344}
+    capsuleBounds:
+      height: 1.0552869
+      radius: 0.109482646
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -44.690624
+    highTwistLimit: 117.455635
+    swing1Limit: 87.52023
+    swing2Limit: 58.797535
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.025
+  - name: mixamorig:LeftForeArm
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 9
+    childIDs: 0b000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.5000254, y: -0.49997628, z: -0.4999746, w: 0.5000237}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.5361364}
+      m_Extent: {x: 0.12198135, y: 0.12198135, z: 0.5361364}
+    capsuleBounds:
+      height: 1.0722728
+      radius: 0.12198135
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: 0.24228337
+    highTwistLimit: 108.288216
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.025
+  - name: mixamorig:LeftHand
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 10
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.49462196, y: -0.39761567, z: -0.48419982, w: 0.60233}
+    colliderType: 2
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.21239866}
+      m_Extent: {x: 0.21239121, y: 0.21239121, z: 0.21239121}
+    capsuleBounds:
+      height: 0.42478243
+      radius: 0.21239121
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 16.955383
+    swing2Limit: 18.371368
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.015
+  - name: mixamorig:Head
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 8
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: -0.00000003090862, y: -0.70710677, z: -0.70710677, w: 0.00000003090862}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.24833953}
+      m_Extent: {x: 0.4325226, y: 0.4325226, z: 0.5437959}
+    capsuleBounds:
+      height: 1.0875918
+      radius: 0.4325226
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -49.364536
+    highTwistLimit: 47.107185
+    swing1Limit: 45.49936
+    swing2Limit: 30.26
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.07
+  - name: mixamorig:RightArm
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 8
+    childIDs: 0e000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.49996597, y: 0.50003237, z: 0.50003403, w: 0.4999677}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.5276432}
+      m_Extent: {x: 0.109482646, y: 0.109482646, z: 0.5276432}
+    capsuleBounds:
+      height: 1.0552864
+      radius: 0.109482646
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -44.690624
+    highTwistLimit: 117.455635
+    swing1Limit: 87.52023
+    swing2Limit: 58.797535
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.025
+  - name: mixamorig:RightForeArm
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 13
+    childIDs: 0f000000
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.4999658, y: 0.50003207, z: 0.5000342, w: 0.499968}
+    colliderType: 1
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.5361018}
+      m_Extent: {x: 0.12198135, y: 0.12198135, z: 0.5361018}
+    capsuleBounds:
+      height: 1.0722036
+      radius: 0.12198135
+      direction: 2
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: 0.24228337
+    highTwistLimit: 108.288216
+    swing1Limit: 0
+    swing2Limit: 0
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.025
+  - name: mixamorig:RightHand
+    avatarConnection: 
+    tr: {fileID: 0}
+    parentID: 14
+    childIDs: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    selected: 0
+    characterBoneId: -1
+    rotation: {x: 0.49462184, y: 0.3976159, z: 0.4842001, w: 0.6023298}
+    colliderType: 2
+    bounds:
+      m_Center: {x: 0, y: 0, z: 0.21239866}
+      m_Extent: {x: 0.21239121, y: 0.21239121, z: 0.21239121}
+    capsuleBounds:
+      height: 0.42478243
+      radius: 0.21239121
+      direction: 0
+    axis: {x: 1, y: 0, z: 0}
+    swingAxis: {x: 0, y: 1, z: 0}
+    lowTwistLimit: -20
+    highTwistLimit: 20
+    swing1Limit: 16.955383
+    swing2Limit: 18.371368
+    direction: {x: 0, y: 0, z: 0}
+    massInPercent: 0.015

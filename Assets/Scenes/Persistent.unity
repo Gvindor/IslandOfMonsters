@@ -521,6 +521,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 358f507d528cb8b45aee04424e97b222, type: 2}
   - {fileID: 11400000, guid: 2232a192bc016724c8b6e45ce02d49dd, type: 2}
   - {fileID: 11400000, guid: 3a6795472633bf24abbe8bf02248f9a3, type: 2}
+  - {fileID: 11400000, guid: b4a557871a141fc41876fa6e177f0f16, type: 2}
   OnActiveSkinChanged:
     m_PersistentCalls:
       m_Calls: []

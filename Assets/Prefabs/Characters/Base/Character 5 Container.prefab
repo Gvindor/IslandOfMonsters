@@ -40,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 882592095467060928}
-  - component: {fileID: 3805086159502953081}
   m_Layer: 0
   m_Name: Ragdoll
   m_TagString: Untagged
@@ -78,20 +77,6 @@ Transform:
   m_Father: {fileID: 7968670591434571468}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3805086159502953081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82140621687045701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0864b6c6bbd5c854e86cefbdd621b085, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterController: {fileID: 8619342239981134191}
-  combatController: {fileID: 1289032206067815607}
 --- !u!1 &201270294306420609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1884,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8368722655750445499, guid: e87618ac34a670249ad8504f551ac40d, type: 3}
+  - {fileID: 2100000, guid: 8032e6dac4811354daace0f7372125f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5793,6 +5778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7968670591434571468}
+  - component: {fileID: 2491757104862432891}
   m_Layer: 0
   m_Name: Character 5 Container
   m_TagString: Untagged
@@ -5816,6 +5802,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2491757104862432891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6687955862512490194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0864b6c6bbd5c854e86cefbdd621b085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterController: {fileID: 8619342239981134191}
+  combatController: {fileID: 1289032206067815607}
 --- !u!1 &6693499143930098915
 GameObject:
   m_ObjectHideFlags: 0
