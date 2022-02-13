@@ -3732,7 +3732,7 @@ MonoBehaviour:
   lookAtPos: {x: 0, y: 0, z: 0}
   lookAtTimer: 0
   lookAt: 1
-  defaultLoopAtPos: {x: 0, y: 1.7, z: 2}
+  defaultLoopAtPos: {x: 0, y: 2.45, z: 2}
   rotationSpeed: 20
   autoAttackDelay: 2
   autoAttackRange: 5
