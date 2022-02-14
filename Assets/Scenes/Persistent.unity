@@ -517,6 +517,7 @@ MonoBehaviour:
   winsPerSkin: 3
   skins:
   - {fileID: 11400000, guid: 15e6e064d2af02647b9e80693397bfe4, type: 2}
+  - {fileID: 11400000, guid: e1d769dbc53792b42b90f0593191b033, type: 2}
   - {fileID: 11400000, guid: e947ef0d041eac04fa88e45a689f80b2, type: 2}
   - {fileID: 11400000, guid: 8c806db02837a204b8839f2d6f4762a3, type: 2}
   - {fileID: 11400000, guid: 358f507d528cb8b45aee04424e97b222, type: 2}
