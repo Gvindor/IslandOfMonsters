@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476ca0d357a60974086e04f4e6fc2bc0, type: 3}
+  m_Name: Loop 11
+  m_EditorClassIdentifier: 
+  boostEnabled: 1
+  skinProgressFill: 0.333
+  scene:
+    sceneAsset: {fileID: 102900000, guid: 68a0e65c7e8c90a4e9b0751a831a1442, type: 3}
+    scenePath: Assets/Scenes/Scene_1.unity
+  additionalRandomEnemies: 6
+  enemies: []

@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 namespace SF
 {
     public class CharacterProgressView : MonoBehaviour
     {
-        [SerializeField] TMP_Text progressLabel;
         [SerializeField] Image previewImage;
         [SerializeField] Image previewShadow;
         [SerializeField] GameObject skinInUse;
@@ -21,12 +18,8 @@ namespace SF
 
         private void OnEnable()
         {
-            SetProgress(pm.SkinProgress / (float)pm.WinsPerSkin);
+            SetProgress(pm.SkinProgress);
             SetPreview(pm.ActiveSkin.Preview);
-
-            progressLabel.text = $"{pm.SkinProgress} / {pm.WinsPerSkin}";
-
-            progressLabel.gameObject.SetActive(!pm.SkinUnlocked);
         }
 
         private void SetPreview(Sprite sprite)

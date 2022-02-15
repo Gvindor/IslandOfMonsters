@@ -6,10 +6,11 @@ namespace SF
 {
     public class ProgressionManager : MonoBehaviour
     {
-        [SerializeField] int winsPerSkin = 3;
-        [SerializeField] CharacterSkin[] skins;
+        private const float SkinUnlockThreshold = 0.97f; //After reaching this value the skin will be unlocked. Required to compensate any rounding errors.
 
-        public int WinsPerSkin => winsPerSkin;
+        [SerializeField] CharacterSkin[] skins;
+        [SerializeField] LevelConfig[] introlevels;
+        [SerializeField] LevelConfig[] loopLevels;
 
         private int ActiveSkinIndex
         {
@@ -21,12 +22,12 @@ namespace SF
             }
         }
 
-        public int SkinProgress
+        public float SkinProgress
         {
-            get => PlayerPrefs.GetInt("skin_progress", 0);
+            get => PlayerPrefs.GetFloat("skin_progress", 0);
             private set
             {
-                PlayerPrefs.SetInt("skin_progress", value);
+                PlayerPrefs.SetFloat("skin_progress", value);
                 PlayerPrefs.Save();
             }
         }
@@ -41,7 +42,17 @@ namespace SF
             }
         }
 
-        public bool SkinUnlocked => SkinProgress == winsPerSkin;
+        private int CurrentLevelIndex
+        {
+            get => PlayerPrefs.GetInt("level", 0);
+            set
+            {
+                PlayerPrefs.SetInt("level", value);
+                PlayerPrefs.Save();
+            }
+        }
+
+        public bool SkinUnlocked => SkinProgress > SkinUnlockThreshold;
         public CharacterSkin NextSkin => skins[NextSkinIndex];
         public CharacterSkin ActiveSkin => skins[ActiveSkinIndex];
 
@@ -56,10 +67,10 @@ namespace SF
 
         private void OnGameWon()
         {
-            int progress = SkinProgress;
-            progress++;
+            float progress = SkinProgress;
+            progress += GetCurrentLevelConfig().SkinProgressFill;
 
-            if (progress > winsPerSkin)
+            if (progress > SkinUnlockThreshold)
             {
                 progress = 1;
 
@@ -74,21 +85,74 @@ namespace SF
             }
 
             SkinProgress = progress;
+
+            CurrentLevelIndex++;
         }
 
         public void UseNextSkin()
         {
             ActiveSkinIndex = NextSkinIndex;
+            SkinProgress = 0;
 
             OnActiveSkinChanged.Invoke();
         }
 
-        public CharacterSkin[] GetUnusedSkins()
+        public List<CharacterSkin> GetUnusedSkins()
         {
             var result = new List<CharacterSkin>(skins);
             result.Remove(ActiveSkin);
 
-            return result.ToArray();
+            return result;
+        }
+
+        public CharacterSkin[] GetEnemiesForLevel()
+        {
+            var enemies = new List<CharacterSkin>();
+            var config = GetCurrentLevelConfig();
+            var allowedSkins = GetUnusedSkins();
+
+            enemies.AddRange(config.Enemies);
+
+            //replace the skin used by the player
+            int skinsToAdd = enemies.RemoveAll(s => s == ActiveSkin);
+            if (skinsToAdd > 0)
+            {
+                foreach (var skin in allowedSkins)
+                {
+                    if (!enemies.Contains(skin))
+                    {
+                        for (int i = 0; i < skinsToAdd; i++)
+                        {
+                            enemies.Add(skin);
+                        }
+
+                        break;
+                    }
+                }
+            }
+
+            //add random enemies
+            for (int i = 0; i < config.AdditionalRandomEnemies; i++)
+            {
+                int rndIndex = Random.Range(0, allowedSkins.Count);
+                var skin = allowedSkins[rndIndex];
+                enemies.Add(skin);
+            }
+
+            return enemies.ToArray();
+        }
+
+        public LevelConfig GetCurrentLevelConfig()
+        {
+            if (CurrentLevelIndex < introlevels.Length)
+            {
+                return introlevels[CurrentLevelIndex];
+            }
+            else
+            {
+                int index = (CurrentLevelIndex - introlevels.Length) % loopLevels.Length;
+                return loopLevels[index];
+            }
         }
     }
 }

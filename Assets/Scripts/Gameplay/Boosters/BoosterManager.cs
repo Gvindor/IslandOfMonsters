@@ -27,6 +27,13 @@ namespace SF
         {
             boosterInstances = new List<Booster>();
             spawnTimer = spawnTime.Random();
+
+            var pm = FindObjectOfType<ProgressionManager>();
+
+            if (pm)
+            {
+                AutoSpawnBoosts = pm.GetCurrentLevelConfig().BoostEnabled;
+            }
         }
 
         public void SpawnBooster()

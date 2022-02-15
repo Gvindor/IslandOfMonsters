@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,20 +7,13 @@ namespace SF
     public class PlayerSpawner : MonoBehaviour
     {
         [SerializeField] bool spawnOnAwake = true;
-        [SerializeField] int charactersToSpawn = 6;
-        [SerializeField] float radius = 5;
-        [SerializeField] bool useSkins = true;
-        [SerializeField] bool circleMode = true;
         [SerializeField] Transform[] spawnPoints;
-
-        [Header("Prefabs")] //Only used when ProgressionManager isn't present.
-        [SerializeField] GameObject prefabPlayer;
-        [SerializeField] GameObject prefabEnemy;
 
         private List<FighterCharacterController> aliveEnemies;
         private FighterCharacterController player;
+        private ProgressionManager pm;
 
-        public int TotalCharacters => charactersToSpawn;
+        public int TotalCharacters { get; private set; }
         public int AliveEnemiesCount => aliveEnemies != null ? aliveEnemies.Count : 0;
 
         public UnityEvent<FighterCharacterController> OnCharacterSpawned = new UnityEvent<FighterCharacterController>();
@@ -30,6 +22,8 @@ namespace SF
         private void Awake()
         {
             aliveEnemies = new List<FighterCharacterController>();
+
+            pm = FindObjectOfType<ProgressionManager>();
 
             if (spawnOnAwake)
             {
@@ -40,49 +34,26 @@ namespace SF
 
         public void SpawnPlayer()
         {
-            var prefab = prefabPlayer;
-
-            if (useSkins)
-            {
-                var pm = FindObjectOfType<ProgressionManager>();
-
-                if (pm)
-                    prefab = pm.ActiveSkin.PlayerPrefab;
-                else
-                    Debug.LogError("Can't find Progression Manager.", this);
-            }
+            var prefab = pm.ActiveSkin.PlayerPrefab;
 
             player = SpawnCharacter(0, prefab);
+
+            TotalCharacters++;
 
             OnCharacterSpawned.Invoke(player);
         }
 
         public void SpawnEnemies()
         {
-            var pm = FindObjectOfType<ProgressionManager>();
+            var skins = pm.GetEnemiesForLevel();
 
-            var prefabsPool = new List<GameObject>();
-            if (pm)
+            for (int i = 0; i < skins.Length; i++)
             {
-                var skins = pm.GetUnusedSkins();
-                foreach (var item in skins)
-                {
-                    prefabsPool.Add(item.EnemyPrefab);
-                }
-            }
-
-            for (int i = 1; i < charactersToSpawn; i++)
-            {
-                var prefab = prefabEnemy;
-                if (prefabsPool.Count > 0)
-                {
-                    prefab = prefabsPool[0];
-                    prefabsPool.RemoveAt(0);
-                }
-
-                var enemy = SpawnCharacter(i, prefab);
+                var enemy = SpawnCharacter(i + 1, skins[i].EnemyPrefab);
 
                 aliveEnemies.Add(enemy);
+
+                TotalCharacters++;
 
                 OnCharacterSpawned.Invoke(enemy);
             }
@@ -105,21 +76,10 @@ namespace SF
         {
             Vector3 position = transform.position;
 
-            if (circleMode) 
-            { 
-                float angle = 360f / charactersToSpawn * index;
-                position = new Vector3(0, 0, radius);
-
-                position = Quaternion.Euler(0, angle, 0) * position;
-                position = transform.TransformPoint(position);
-            }
-            else
+            if (spawnPoints.Length > 0)
             {
-                if (spawnPoints.Length > 0)
-                {
-                    index = index % spawnPoints.Length;
-                    position = spawnPoints[index].position;
-                }
+                index = index % spawnPoints.Length;
+                position = spawnPoints[index].position;
             }
 
             return position;
@@ -128,7 +88,7 @@ namespace SF
         private Quaternion GetCharacterRotation(int index)
         {
             var pos = GetCharacterPosition(index);
-            var forward = Vector3.Normalize(pos - transform.position);
+            var forward = Vector3.Normalize(transform.position - pos);
             var rotation = Quaternion.LookRotation(forward, Vector3.up);
 
             return rotation;
@@ -142,7 +102,7 @@ namespace SF
 
         private void OnDrawGizmos()
         {
-            for (int i = 0; i < charactersToSpawn; i++)
+            for (int i = 0; i < spawnPoints.Length; i++)
             {
                 Gizmos.color = i == 0 ? Color.yellow : Color.blue;
 
@@ -154,24 +114,18 @@ namespace SF
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
-            if (circleMode)
-            {
-                Gizmos.DrawWireSphere(transform.position, radius);
-            }
-            else
-            {
-                if (spawnPoints.Length > 1) 
-                {
-                    if (spawnPoints.Length > 2)
-                    {
-                        for (int i = 0; i < spawnPoints.Length - 1; i++)
-                        {
-                            Gizmos.DrawLine(spawnPoints[i].position, spawnPoints[i + 1].position);
-                        }
-                    }
 
-                    Gizmos.DrawLine(spawnPoints[0].position, spawnPoints[spawnPoints.Length - 1].position);
+            if (spawnPoints.Length > 1) 
+            {
+                if (spawnPoints.Length > 2)
+                {
+                    for (int i = 0; i < spawnPoints.Length - 1; i++)
+                    {
+                        Gizmos.DrawLine(spawnPoints[i].position, spawnPoints[i + 1].position);
+                    }
                 }
+
+                Gizmos.DrawLine(spawnPoints[0].position, spawnPoints[spawnPoints.Length - 1].position);
             }
         }
     }

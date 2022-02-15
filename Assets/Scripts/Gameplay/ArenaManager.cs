@@ -8,43 +8,29 @@ namespace SF
     [DefaultExecutionOrder(-10)]
     public class ArenaManager : MonoBehaviour
     {
-        [SerializeField] SceneReference[] arenas;
+        private ProgressionManager pm;
+        private LevelConfig loadedLevel;
 
         public UnityEvent OnArenaLoaded = new UnityEvent();
 
         private void Awake()
         {
-#if UNITY_EDITOR
-            if (GetLoadedArenaIndex() < 0)
-            {
-                StartCoroutine(LoadArena(0));
-            }
-            else
-                OnArenaLoaded.Invoke();
-#else
-            StartCoroutine(LoadArena(0));
-#endif
+            pm = FindObjectOfType<ProgressionManager>();
         }
 
-        private int GetLoadedArenaIndex()
+        private void Start()
         {
-            for (int i = 0; i < arenas.Length; i++)
-            {
-                var scene = SceneManager.GetSceneByPath(arenas[i].ScenePath);
-
-                if (scene.isLoaded) return i;
-            }
-
-            return -1;
+            LoadNextArena();
         }
 
-        private IEnumerator LoadArena(int index)
+        private IEnumerator LoadArena(LevelConfig config)
         {
-            SceneManager.LoadScene(arenas[index], LoadSceneMode.Additive);
+            SceneManager.LoadScene(config.Scene, LoadSceneMode.Additive);
+            loadedLevel = config;
 
             yield return null;
 
-            var scene = SceneManager.GetSceneByPath(arenas[index]);
+            var scene = SceneManager.GetSceneByPath(config.Scene);
             SceneManager.SetActiveScene(scene);
 
             OnArenaLoaded.Invoke();
@@ -52,15 +38,14 @@ namespace SF
 
         public void LoadNextArena()
         {
-            int index = GetLoadedArenaIndex();
-
-            if (index < 0) index = 0;
-            else
+            if (loadedLevel)
             {
-                SceneManager.UnloadSceneAsync(arenas[index]);
+                SceneManager.UnloadSceneAsync(loadedLevel.Scene);
             }
 
-            StartCoroutine(LoadArena(index));
+            var config = pm.GetCurrentLevelConfig();
+
+            StartCoroutine(LoadArena(config));
         }
 
     }

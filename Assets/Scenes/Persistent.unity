@@ -514,17 +514,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb5e64ee4b96d24c812d06f44bef19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winsPerSkin: 3
   skins:
   - {fileID: 11400000, guid: 15e6e064d2af02647b9e80693397bfe4, type: 2}
-  - {fileID: 11400000, guid: e1d769dbc53792b42b90f0593191b033, type: 2}
-  - {fileID: 11400000, guid: e947ef0d041eac04fa88e45a689f80b2, type: 2}
   - {fileID: 11400000, guid: 8c806db02837a204b8839f2d6f4762a3, type: 2}
-  - {fileID: 11400000, guid: 358f507d528cb8b45aee04424e97b222, type: 2}
-  - {fileID: 11400000, guid: 2232a192bc016724c8b6e45ce02d49dd, type: 2}
   - {fileID: 11400000, guid: 3a6795472633bf24abbe8bf02248f9a3, type: 2}
   - {fileID: 11400000, guid: b4a557871a141fc41876fa6e177f0f16, type: 2}
+  - {fileID: 11400000, guid: e1d769dbc53792b42b90f0593191b033, type: 2}
+  - {fileID: 11400000, guid: 2232a192bc016724c8b6e45ce02d49dd, type: 2}
+  - {fileID: 11400000, guid: e947ef0d041eac04fa88e45a689f80b2, type: 2}
+  - {fileID: 11400000, guid: 358f507d528cb8b45aee04424e97b222, type: 2}
   - {fileID: 11400000, guid: 04c0eeb5d5de1ee4e907e430fab154db, type: 2}
+  introlevels:
+  - {fileID: 11400000, guid: 5b318fdfc19be984ba3397b5b40ee43d, type: 2}
+  - {fileID: 11400000, guid: 3dfc8008b09020943951e95f2aafcc27, type: 2}
+  loopLevels:
+  - {fileID: 11400000, guid: 68262598750470543a6f0af2e9e79737, type: 2}
+  - {fileID: 11400000, guid: 45cd397549b25cf4bb799f94d162125e, type: 2}
+  - {fileID: 11400000, guid: a2553226129e17549a2086fff3467147, type: 2}
+  - {fileID: 11400000, guid: 176a6c96440b77546a71531938458b69, type: 2}
+  - {fileID: 11400000, guid: 009057584ac7175468f58a87681cf603, type: 2}
+  - {fileID: 11400000, guid: 3c705d37b3bb5e940bcbe45e78241f94, type: 2}
+  - {fileID: 11400000, guid: b142c3f55dce9f143bc31c224609c4b5, type: 2}
+  - {fileID: 11400000, guid: 3e6e003b719c7da43bf428912782a72c, type: 2}
+  - {fileID: 11400000, guid: bd4cc2ba5f295734e9f4998ce18a9aed, type: 2}
+  - {fileID: 11400000, guid: 9fced77475f0952499715d4cfe946559, type: 2}
+  - {fileID: 11400000, guid: 6d69d8e0199fd7b4fa68180d0075b2c2, type: 2}
+  - {fileID: 11400000, guid: c817a6de7a3de6740a785da3920d7b5e, type: 2}
+  - {fileID: 11400000, guid: c9e5e51ca2a5c084cbba5f69f6865945, type: 2}
+  - {fileID: 11400000, guid: e0ae908e255a50c48bcaebc82f292e5a, type: 2}
+  - {fileID: 11400000, guid: 5b5e5c78229e45e40a2acd53d092320b, type: 2}
   OnActiveSkinChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2323,13 +2341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa9d35a50abb2e42b5eb61ee96c0a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arenas:
-  - sceneAsset: {fileID: 102900000, guid: c19d487fc0c4ece4ca78a9c150df2140, type: 3}
-    scenePath: Assets/Scenes/Scene_3.unity
-  - sceneAsset: {fileID: 102900000, guid: 96734eaaa702e844891cd473d12fd858, type: 3}
-    scenePath: Assets/Scenes/Scene_2.unity
-  - sceneAsset: {fileID: 102900000, guid: 68a0e65c7e8c90a4e9b0751a831a1442, type: 3}
-    scenePath: Assets/Scenes/Scene_1.unity
   OnArenaLoaded:
     m_PersistentCalls:
       m_Calls: []
