@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 24245626249182344}
   - component: {fileID: 8307173621473304191}
   - component: {fileID: 4723941067080005048}
+  - component: {fileID: 3243552142761281990}
+  - component: {fileID: 3461301948609163722}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.002_Farmhouse_wall2_cell.001
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8307173621473304191
 MeshFilter:
@@ -55,6 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +82,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &3243552142761281990
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119529655817238726}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &3461301948609163722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119529655817238726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.111485, y: 1.1496353, z: 0.120743}
+  m_Center: {x: -1.4427805, y: -6.9473553, z: -0.00029350072}
 --- !u!1 &1321364738724848111
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +123,8 @@ GameObject:
   - component: {fileID: 1559433659199809218}
   - component: {fileID: 9217980502713184974}
   - component: {fileID: 1971864052335806507}
+  - component: {fileID: 4748952069478253391}
+  - component: {fileID: 8172405979987470497}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.009_Farmhouse_wall2_cell.008
   m_TagString: Untagged
@@ -134,6 +169,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,6 +194,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &4748952069478253391
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321364738724848111}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8172405979987470497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321364738724848111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8294673, y: 0.16077805, z: 0.095621005}
+  m_Center: {x: 2.0876644, y: -9.292149, z: -0.012854502}
 --- !u!1 &1371257681580908522
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +235,8 @@ GameObject:
   - component: {fileID: 4599442702578941807}
   - component: {fileID: 7268159491166537986}
   - component: {fileID: 1551448847714703220}
+  - component: {fileID: 5615662224178514331}
+  - component: {fileID: 7253675190801800348}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.008_Farmhouse_wall2_cell.007
   m_TagString: Untagged
@@ -213,6 +281,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -237,6 +306,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &5615662224178514331
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371257681580908522}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7253675190801800348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371257681580908522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2170649, y: 1.554266, z: 0.121725}
+  m_Center: {x: 0.8365919, y: -7.1496696, z: 0.00019749999}
 --- !u!1 &2679686782297159875
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +347,8 @@ GameObject:
   - component: {fileID: 4846293732151748362}
   - component: {fileID: 246415976725766706}
   - component: {fileID: 6073403563439333788}
+  - component: {fileID: 8292645684278866465}
+  - component: {fileID: 7627856938056198522}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.004_Farmhouse_wall2_cell.003
   m_TagString: Untagged
@@ -267,7 +368,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &246415976725766706
 MeshFilter:
@@ -292,6 +393,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -316,6 +418,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8292645684278866465
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2679686782297159875}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7627856938056198522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2679686782297159875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0962677, y: 0.56775856, z: 0.120519}
+  m_Center: {x: 1.9546041, y: -8.975574, z: -0.00040549785}
 --- !u!1 &2838158629631994924
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +459,8 @@ GameObject:
   - component: {fileID: 6502788090660462620}
   - component: {fileID: 1336191025208204422}
   - component: {fileID: 1569088105382816484}
+  - component: {fileID: 6736715242218499428}
+  - component: {fileID: 2598894763270480972}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.003_Farmhouse_wall2_cell.002
   m_TagString: Untagged
@@ -346,7 +480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1336191025208204422
 MeshFilter:
@@ -371,6 +505,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -395,85 +530,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &3759889242663228935
-GameObject:
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &6736715242218499428
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 302854546195774253}
-  - component: {fileID: 6410207179451271592}
-  - component: {fileID: 1083996897957827921}
-  m_Layer: 0
-  m_Name: Farmhouse_wall2_cell.007_Farmhouse_wall2_cell.006
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &302854546195774253
-Transform:
+  m_GameObject: {fileID: 2838158629631994924}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2598894763270480972
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3759889242663228935}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.94, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6410207179451271592
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3759889242663228935}
-  m_Mesh: {fileID: -3133326145813951868, guid: e3ba27d00f47f044cb09ea681c6d38ed, type: 3}
---- !u!23 &1083996897957827921
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3759889242663228935}
+  m_GameObject: {fileID: 2838158629631994924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -3477871774998351194, guid: e3ba27d00f47f044cb09ea681c6d38ed, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9255979, y: 1.0803185, z: 0.121676}
+  m_Center: {x: -1.3254479, y: -8.474541, z: 0.00017300248}
 --- !u!1 &4187829120479229203
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +571,8 @@ GameObject:
   - component: {fileID: 8710932011870589941}
   - component: {fileID: 1718761429421548167}
   - component: {fileID: 3459106929638184682}
+  - component: {fileID: 3298850528861649505}
+  - component: {fileID: 7250877986172146152}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.006_Farmhouse_wall2_cell.005
   m_TagString: Untagged
@@ -504,7 +592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1718761429421548167
 MeshFilter:
@@ -529,6 +617,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -553,6 +642,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &3298850528861649505
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187829120479229203}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7250877986172146152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187829120479229203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40547705, y: 1.1184278, z: 0.120740995}
+  m_Center: {x: 2.3001215, y: -6.9317513, z: -0.0002944991}
 --- !u!1 &5366030747897073615
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +683,8 @@ GameObject:
   - component: {fileID: 2803074271804511290}
   - component: {fileID: 1185465661756640115}
   - component: {fileID: 8762978003838689599}
+  - component: {fileID: 2753679983073886467}
+  - component: {fileID: 8019705715092739367}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.005_Farmhouse_wall2_cell.004
   m_TagString: Untagged
@@ -583,7 +704,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1185465661756640115
 MeshFilter:
@@ -608,6 +729,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -632,6 +754,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &2753679983073886467
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366030747897073615}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8019705715092739367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366030747897073615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2114363, y: 1.0650673, z: 0.12171}
+  m_Center: {x: 0.3869442, y: -8.840004, z: 0.00018999726}
 --- !u!1 &6186271688831798907
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +814,6 @@ Transform:
   - {fileID: 8334111821671305580}
   - {fileID: 1559433659199809218}
   - {fileID: 4599442702578941807}
-  - {fileID: 302854546195774253}
   - {fileID: 8710932011870589941}
   - {fileID: 2803074271804511290}
   - {fileID: 4846293732151748362}
@@ -683,6 +834,8 @@ GameObject:
   - component: {fileID: 8334111821671305580}
   - component: {fileID: 4449239711663533706}
   - component: {fileID: 8853633743258658076}
+  - component: {fileID: 2413111631672431559}
+  - component: {fileID: 6437629920492633218}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.010_Farmhouse_wall2_cell.009
   m_TagString: Untagged
@@ -727,6 +880,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -751,6 +905,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &2413111631672431559
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747206783521229467}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6437629920492633218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747206783521229467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4391389, y: 0.62501144, z: 0.119533}
+  m_Center: {x: -2.2785685, y: -9.060032, z: -0.00089850277}
 --- !u!1 &8206472623333443263
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +946,8 @@ GameObject:
   - component: {fileID: 1848890591748378831}
   - component: {fileID: 2329143419506737645}
   - component: {fileID: 2921657444116574963}
+  - component: {fileID: 3316012681489240287}
+  - component: {fileID: 4504580019600311921}
   m_Layer: 0
   m_Name: Farmhouse_wall2_cell.001_Farmhouse_wall2_cell.011
   m_TagString: Untagged
@@ -781,7 +967,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7977140148182214664}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2329143419506737645
 MeshFilter:
@@ -806,6 +992,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -830,3 +1017,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &3316012681489240287
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206472623333443263}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4504580019600311921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8206472623333443263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63644314, y: 0.7080784, z: 0.121575}
+  m_Center: {x: 2.1842613, y: -8.175056, z: 0.00012250245}

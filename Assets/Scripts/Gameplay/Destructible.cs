@@ -56,6 +56,8 @@ namespace SF
                 {
                     Despawn(rb.gameObject);
                 }
+
+                Destroy(gameObject);
             }
             else
             {

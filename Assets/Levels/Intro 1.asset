@@ -15,7 +15,8 @@ MonoBehaviour:
   boostEnabled: 0
   skinProgressFill: 0.5
   scene:
-    sceneAsset: {fileID: 102900000, guid: 96734eaaa702e844891cd473d12fd858, type: 3}
-    scenePath: Assets/Scenes/Scene_2.unity
+    sceneAsset: {fileID: 102900000, guid: 68a0e65c7e8c90a4e9b0751a831a1442, type: 3}
+    scenePath: Assets/Scenes/Scene_1.unity
+  additionalRandomEnemies: 0
   enemies:
   - {fileID: 11400000, guid: 8c806db02837a204b8839f2d6f4762a3, type: 2}

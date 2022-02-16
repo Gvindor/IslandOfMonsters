@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2439030820855623290}
   - component: {fileID: 4356424062826579163}
   - component: {fileID: 9205497085378537788}
+  - component: {fileID: 1920141605754604964}
+  - component: {fileID: 7526325751987531185}
   m_Layer: 0
   m_Name: Farmhouse_wall3_cell.001_Farmhouse_wall3_cell.006
   m_TagString: Untagged
@@ -55,6 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +82,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &1920141605754604964
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4351629909000741016}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7526325751987531185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4351629909000741016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.65058494, y: 0.6727791, z: 0.120736}
+  m_Center: {x: -0.9251826, y: -10.608416, z: -0.00141}
 --- !u!1 &6007114875293606868
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +123,8 @@ GameObject:
   - component: {fileID: 5042555780164217653}
   - component: {fileID: 7098769372333789148}
   - component: {fileID: 6042678927192148985}
+  - component: {fileID: 8463353666753666544}
+  - component: {fileID: 4786983367213673337}
   m_Layer: 0
   m_Name: Farmhouse_wall3_cell.003_Farmhouse_wall3_cell.002
   m_TagString: Untagged
@@ -134,6 +169,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,6 +194,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8463353666753666544
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6007114875293606868}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4786983367213673337
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6007114875293606868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9236115, y: 0.71115685, z: 0.120736}
+  m_Center: {x: 0.05320692, y: -10.560938, z: -0.00141}
 --- !u!1 &7384094594343195223
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +235,8 @@ GameObject:
   - component: {fileID: 517912167597421533}
   - component: {fileID: 6152935722562442096}
   - component: {fileID: 7576978751831448024}
+  - component: {fileID: 335923831289601379}
+  - component: {fileID: 488290066112725470}
   m_Layer: 0
   m_Name: Farmhouse_wall3_cell_Farmhouse_wall3_cell.005
   m_TagString: Untagged
@@ -213,6 +281,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -237,6 +306,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &335923831289601379
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7384094594343195223}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &488290066112725470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7384094594343195223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4197172, y: 2.0049477, z: 0.120931}
+  m_Center: {x: -0.54061645, y: -12.202887, z: -0.0015055016}
 --- !u!1 &7738187143758505112
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +381,8 @@ GameObject:
   - component: {fileID: 634311586058218392}
   - component: {fileID: 4433167313815224699}
   - component: {fileID: 7767947884778549788}
+  - component: {fileID: 8951992307511948979}
+  - component: {fileID: 4361354561955826722}
   m_Layer: 0
   m_Name: Farmhouse_wall3_cell.002_Farmhouse_wall3_cell.001
   m_TagString: Untagged
@@ -326,6 +427,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -350,3 +452,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8951992307511948979
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217546504063245309}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4361354561955826722
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217546504063245309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64153314, y: 1.9708004, z: 0.120932}
+  m_Center: {x: 0.9287584, y: -11.831016, z: -0.0015060008}

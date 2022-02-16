@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minImpulse: 50
-  spawnFracturedObject: 1
-  fracturedPrefab: {fileID: 5720561765285492322, guid: 750a3ffde0191fd488b01df053e8b25b, type: 3}
+  spawnFracturedObject: 0
+  fracturedPrefab: {fileID: 0}
   chainTrigger: []
   deactivateOnTrigger: []
