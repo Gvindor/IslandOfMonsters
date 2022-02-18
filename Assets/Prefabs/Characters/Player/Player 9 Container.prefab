@@ -1,16 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &956630789088951177
+--- !u!1001 &2732102816170300534
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2181810995741062713}
+    m_TransformParent: {fileID: 4344647889776541128}
     m_Modifications:
     - target: {fileID: 7842895273079876784, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Name
       value: Player Gizmo
       objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876787, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4406364157369104420}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -45,19 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.50535
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.50535
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.50535
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,18 +164,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 9 Container
       objectReference: {fileID: 0}
+    - target: {fileID: 4405216319694129856, guid: 04ae3f5309bb82047942b536acfa8a9e, type: 3}
+      propertyPath: autoAttackDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ae3f5309bb82047942b536acfa8a9e, type: 3}
+--- !u!4 &4344647889776541128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 655274736700038807, guid: 04ae3f5309bb82047942b536acfa8a9e, type: 3}
+  m_PrefabInstance: {fileID: 3842497207627211615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1516737974620892291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2332798623220453340, guid: 04ae3f5309bb82047942b536acfa8a9e, type: 3}
   m_PrefabInstance: {fileID: 3842497207627211615}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2181810995741062713 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3104127279347996006, guid: 04ae3f5309bb82047942b536acfa8a9e, type: 3}
+--- !u!114 &4406364157369104420 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 609611032074345339, guid: 04ae3f5309bb82047942b536acfa8a9e, type: 3}
   m_PrefabInstance: {fileID: 3842497207627211615}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516737974620892291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48058e36c6a5234cb50d252a9b537ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &975479121040520638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLockDistance: 8
   retreatTime: 1.5
-  targetGizmoPrefab: {fileID: 6967689676335054692, guid: f09d70e4865894041acec9f9ea0f6434, type: 3}
 --- !u!114 &7322406613800754237
 MonoBehaviour:
   m_ObjectHideFlags: 0

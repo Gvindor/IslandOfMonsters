@@ -8,12 +8,10 @@ namespace SF
         [SerializeField] [Min(0)] float enemyLockDistance = 2f;
         [Tooltip("How long character should run from the target before breaking lock")]
         [SerializeField] [Min(0)] float retreatTime = 1f;
-        [SerializeField] TargetGizmo targetGizmoPrefab;
 
         private FighterCharacterController character;
         private float findTargetTimer;
         private float retreatTimer;
-        private TargetGizmo targetGizmo;
         private CameraManager cameraManager;
 
         private GameObject[] targets;
@@ -24,9 +22,6 @@ namespace SF
             targets = GameObject.FindGameObjectsWithTag("Enemy");
 
             cameraManager = FindObjectOfType<CameraManager>();
-
-            targetGizmo = Instantiate(targetGizmoPrefab);
-            targetGizmo.Hide();
         }
 
         private void Update()
@@ -73,12 +68,10 @@ namespace SF
                 {
                     var cc = targets[id].GetComponent<CombatController>();
                     
-                    targetGizmo.Show(cc);
                     character.ChangeTarget(cc.transform);
                 }
                 else
                 {
-                    targetGizmo.Hide();
                     character.ChangeTarget(null);
                 }
 
@@ -103,7 +96,6 @@ namespace SF
                         {
                             findTargetTimer = 2f;
                             character.ChangeTarget(null);
-                            targetGizmo.Hide();
                         }
                     }
                     else

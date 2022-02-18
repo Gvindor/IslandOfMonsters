@@ -42,10 +42,10 @@ namespace SF
             }
         }
 
-        private int CurrentLevelIndex
+        public int CurrentLevelIndex
         {
             get => PlayerPrefs.GetInt("level", 0);
-            set
+            private set
             {
                 PlayerPrefs.SetInt("level", value);
                 PlayerPrefs.Save();

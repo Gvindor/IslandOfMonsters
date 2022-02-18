@@ -18,6 +18,8 @@ namespace SF
             {
                 transform.position = target.transform.position;
                 fill.fillAmount = target.HP / (float)target.MaxHP;
+
+                if (target.Character.IsDead) Hide();
             }
         }
 

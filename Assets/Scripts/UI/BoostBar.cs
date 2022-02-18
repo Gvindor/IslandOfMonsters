@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace SF 
 { 
@@ -9,6 +10,7 @@ namespace SF
         private const string VisibleKey = "Visible";
 
         [SerializeField] Image fill;
+        [SerializeField] TMP_Text timeLabel;
 
         private Animator animator;
         private FighterCharacterController character;
@@ -38,7 +40,11 @@ namespace SF
             SetBarVisible(character.ActiveBoost != null);
 
             if (character.ActiveBoost != null)
+            {
                 fill.fillAmount = character.BoostTimeLeft / character.ActiveBoost.Duration;
+
+                timeLabel.text = $"{Mathf.CeilToInt(character.BoostTimeLeft)}s";
+            }
         }
 
         private void SetBarVisible(bool visible)

@@ -8,6 +8,7 @@ namespace SF
         [Range(0.5f, 0.9f)]
         [SerializeField] private float screenBoundOffset = 0.9f;
         [SerializeField] TargetArrow arrowPrefab;
+        [SerializeField] bool paintArrows = false;
 
         private Camera mainCamera;
         private Vector3 screenCentre;
@@ -57,7 +58,7 @@ namespace SF
                 }
                 if (indicator)
                 {
-                    indicator.Color = target.TargetColor;// Sets the image color of the indicator.
+                    indicator.Color = paintArrows ? target.TargetColor : Color.white;// Sets the image color of the indicator.
                     indicator.transform.position = screenPosition; //Sets the position of the indicator on the screen.
                 }
             }

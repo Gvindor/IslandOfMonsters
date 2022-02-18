@@ -5,13 +5,13 @@ namespace SF
     public class Rotate : MonoBehaviour
     {
         [SerializeField] bool useUnscaledTime = true;
-        [SerializeField] float rotationSpeed = 60;
+        [SerializeField] Vector3 rotationSpeed;
 
         private void Update()
         {
-            float deltaAngle = useUnscaledTime ? rotationSpeed * Time.unscaledDeltaTime : rotationSpeed * Time.deltaTime;
+            Vector3 deltaAngle = useUnscaledTime ? rotationSpeed * Time.unscaledDeltaTime : rotationSpeed * Time.deltaTime;
 
-            transform.Rotate(Vector3.up, deltaAngle);
+            transform.Rotate(deltaAngle);
         }
     }
 }

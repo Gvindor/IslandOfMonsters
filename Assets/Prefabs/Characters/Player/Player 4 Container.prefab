@@ -1,16 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3058276838669885897
+--- !u!1001 &5950772292623389589
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 788948992875641051}
+    m_TransformParent: {fileID: 8347052676351303453}
     m_Modifications:
     - target: {fileID: 7842895273079876784, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Name
       value: Player Gizmo
       objectReference: {fileID: 0}
+    - target: {fileID: 7842895273079876787, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 788948992875641055}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -45,19 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.253107
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.253107
-      objectReference: {fileID: 0}
-    - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.253107
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7842895273079876797, guid: d63f363b2b047c84a8a6f87650c6d863, type: 3}
       propertyPath: m_LocalPosition.x
@@ -164,6 +156,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 4 Container
       objectReference: {fileID: 0}
+    - target: {fileID: 4058137176186359205, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
+      propertyPath: autoAttackDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623175079762663448, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
+      propertyPath: maxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623175079762663448, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
+      propertyPath: hitImpulse
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 7623175079762663448, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
       propertyPath: hurtSlowdown
       value: 0
@@ -190,16 +194,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
+--- !u!4 &8347052676351303453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1220103427828793306, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
+  m_PrefabInstance: {fileID: 7149497073079689415}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788948992875641059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7623175079762663460, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
   m_PrefabInstance: {fileID: 7149497073079689415}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &788948992875641051 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7623175079762663452, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
+--- !u!114 &788948992875641055 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7623175079762663448, guid: cf4f53acf1756bd418f5884e59558788, type: 3}
   m_PrefabInstance: {fileID: 7149497073079689415}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788948992875641059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48058e36c6a5234cb50d252a9b537ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7077530925650493080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,4 +241,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyLockDistance: 8
   retreatTime: 1
-  targetGizmoPrefab: {fileID: 6967689676335054692, guid: f09d70e4865894041acec9f9ea0f6434, type: 3}
