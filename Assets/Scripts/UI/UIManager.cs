@@ -5,45 +5,45 @@ namespace SF
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] GameObject gameplayUI;
-        [SerializeField] GameObject winUI;
-        [SerializeField] GameObject lostUI;
-        [SerializeField] GameObject lobbyUI;
+        [SerializeField] AUiScreen gameplayUI;
+        [SerializeField] AUiScreen winUI;
+        [SerializeField] AUiScreen lostUI;
+        [SerializeField] AUiScreen lobbyUI;
 
         public void SwitchToGameplay()
         {
-            gameplayUI.SetActive(true);
+            gameplayUI.SetVisible(true);
 
-            winUI.SetActive(false);
-            lostUI.SetActive(false);
-            lobbyUI.SetActive(false);
+            winUI.SetVisible(false);
+            lostUI.SetVisible(false);
+            lobbyUI.SetVisible(false);
         }
 
         public void SwithToWinScreen()
         {
-            winUI.SetActive(true);
+            winUI.SetVisible(true);
 
-            gameplayUI.SetActive(false);
-            lobbyUI.SetActive(false);
-            lostUI.SetActive(false);
+            gameplayUI.SetVisible(false);
+            lobbyUI.SetVisible(false);
+            lostUI.SetVisible(false);
         }
 
         public void SwithToLobby()
         {
-            lobbyUI.SetActive(true);
+            lobbyUI.SetVisible(true);
 
-            gameplayUI.SetActive(false);
-            winUI.SetActive(false);
-            lostUI.SetActive(false);
+            gameplayUI.SetVisible(false);
+            winUI.SetVisible(false);
+            lostUI.SetVisible(false);
         }
 
         public void SwithToLostScreen()
         {
-            lostUI.SetActive(true);
+            lostUI.SetVisible(true);
 
-            lobbyUI.SetActive(false);
-            gameplayUI.SetActive(false);
-            winUI.SetActive(false);
+            lobbyUI.SetVisible(false);
+            gameplayUI.SetVisible(false);
+            winUI.SetVisible(false);
         }
     }
 }

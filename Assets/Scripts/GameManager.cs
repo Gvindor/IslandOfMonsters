@@ -21,11 +21,13 @@ namespace SF
         private void Awake()
         {
             arenaManager.OnArenaLoaded.AddListener(OnArenaLoaded);
-
-            uiManager.SwithToLobby();
-
             gameState = GameState.Lobby;
 
+        }
+
+        private void Start()
+        {
+            uiManager.SwithToLobby();
         }
 
         public void StartGame()
