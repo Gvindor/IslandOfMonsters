@@ -22,7 +22,6 @@ namespace SF
         {
             arenaManager.OnArenaLoaded.AddListener(OnArenaLoaded);
             gameState = GameState.Lobby;
-
         }
 
         private void Start()
@@ -30,19 +29,30 @@ namespace SF
             uiManager.SwithToLobby();
         }
 
-        public void StartGame()
+        public void PrepareToStart()
         {
-            boosts.AutoSpawnBoosts = true;
-            spawner.SpawnEnemies();
             uiManager.SwitchToGameplay();
             cameraManager.SwitchToGameplayCamera();
-
             gameState = GameState.Gameplay;
+        }
+
+        public void StartGame()
+        {
+            spawner.EnableEnemies();
         }
 
         public void NextGame()
         {
             arenaManager.LoadNextArena();
+        }
+
+        public void BackToLobby()
+        {
+            gameState = GameState.Lobby;
+            uiManager.SwithToLobby();
+            cameraManager.SwitchToOverviewCamera();
+
+            NextGame();
         }
 
         private void OnArenaLoaded()
@@ -51,6 +61,7 @@ namespace SF
             spawner.OnCharacterDead.AddListener(OnCharacterDead);
 
             spawner.SpawnPlayer();
+            spawner.SpawnEnemies();
 
             boosts = FindObjectOfType<BoosterManager>();
             boosts.AutoSpawnBoosts = false;

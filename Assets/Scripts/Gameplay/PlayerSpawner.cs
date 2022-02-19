@@ -53,9 +53,22 @@ namespace SF
 
                 aliveEnemies.Add(enemy);
 
+                var ai = enemy.GetComponentInChildren<AIBrain>();
+                if (ai) ai.Disable();
+
                 TotalCharacters++;
 
                 OnCharacterSpawned.Invoke(enemy);
+            }
+        }
+
+        public void EnableEnemies()
+        {
+            foreach (var enemy in aliveEnemies)
+            {
+                var ai = enemy.GetComponentInChildren<AIBrain>();
+
+                if (ai) ai.Enable();
             }
         }
 

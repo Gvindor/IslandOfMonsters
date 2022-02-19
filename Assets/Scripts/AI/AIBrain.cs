@@ -12,7 +12,7 @@ namespace SF
 
         private NavMeshAgent agent;
 
-        private void Start()
+        private void Awake()
         {
             agent = GetComponent<NavMeshAgent>();
             agent.updatePosition = false;
@@ -23,6 +23,21 @@ namespace SF
         private void LateUpdate()
         {
             agent.nextPosition = transform.position;
+        }
+
+        public void Enable()
+        {
+            defaultState.gameObject.SetActive(true);
+        }
+
+        public void Disable()
+        {
+            var states = GetComponentsInChildren<AiState>();
+
+            foreach (var state in states)
+            {
+                state.gameObject.SetActive(false);
+            }
         }
     }
 }

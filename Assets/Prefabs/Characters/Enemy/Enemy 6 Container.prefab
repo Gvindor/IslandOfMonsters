@@ -196,6 +196,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6072387828461075488, guid: 64131cc3a0ce05049877200960a616cc, type: 3}
   m_PrefabInstance: {fileID: 1806580561345294208}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &782809496333982354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1427458992624809234, guid: 64131cc3a0ce05049877200960a616cc, type: 3}
+  m_PrefabInstance: {fileID: 1806580561345294208}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5052167216787556634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48058e36c6a5234cb50d252a9b537ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &99406514687554589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,5 +351,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Gizmo
       objectReference: {fileID: 0}
+    - target: {fileID: 1121069870206634682, guid: e2c2873c7d4b0ce4495babf7584f5136, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 782809496333982354}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2c2873c7d4b0ce4495babf7584f5136, type: 3}
