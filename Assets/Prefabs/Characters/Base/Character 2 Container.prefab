@@ -3415,7 +3415,7 @@ MonoBehaviour:
   - {fileID: 935883083186752559}
   maxHP: 80
   hitImpulse: 100
-  hitParticlesPrefab: {fileID: 3340121816905529857, guid: 1cba747ec0a93b240b2bd2f17da1fd4b, type: 3}
+  hitParticlesPrefab: {fileID: 4787146697146794704, guid: e9050f838eb01db44b8958e4d8266866, type: 3}
   powerKicksEnabled: 1
   powerKickChance: 0.25
   bulletTimeOnHitRecived: 0

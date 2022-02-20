@@ -146,7 +146,7 @@ namespace SF
                 if (item.isStopped) return item;
             }
 
-            var particles = Instantiate(hitParticlesPrefab, transform);
+            var particles = Instantiate(hitParticlesPrefab, transform.parent);
 
             hitParticles.Add(particles);
 
