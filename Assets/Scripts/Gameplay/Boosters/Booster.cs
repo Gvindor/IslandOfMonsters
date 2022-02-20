@@ -12,6 +12,8 @@ namespace SF
         [SerializeField] float howerHeight = 0.5f;
         [SerializeField] float rotationSpeed = 30f;
         [SerializeField] float fallSpeed = 1f;
+        [SerializeField] Transform model;
+        [SerializeField] ParticleSystem hoverParticles;
 
         private bool picked;
         private bool landed;
@@ -47,10 +49,11 @@ namespace SF
                 {
                     landed = true;
                     animator.SetTrigger(LightsKey);
+                    hoverParticles.Play();
                 }
             }
 
-            transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+            model.Rotate(0, rotationSpeed * Time.deltaTime, 0);
         }
 
         private void ApplyBoost(FighterCharacterController player)
@@ -68,6 +71,12 @@ namespace SF
         {
             OnPicked.Invoke(this);
             Destroy(gameObject);
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawSphere(transform.position + Vector3.down * howerHeight, 0.2f);
         }
     }
 }

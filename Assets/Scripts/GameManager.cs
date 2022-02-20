@@ -39,6 +39,7 @@ namespace SF
         public void StartGame()
         {
             spawner.EnableEnemies();
+            boosts.AutoSpawnEnabled = true;
         }
 
         public void NextGame()
@@ -64,14 +65,15 @@ namespace SF
             spawner.SpawnEnemies();
 
             boosts = FindObjectOfType<BoosterManager>();
-            boosts.AutoSpawnBoosts = false;
+            boosts.AutoSpawnEnabled = false;
 
             cameraManager = FindObjectOfType<CameraManager>();
             cameraManager.UpdatePlayerReference();
 
             if (gameState == GameState.End)
             {
-                StartGame();
+                uiManager.SwitchToGameplay();
+                cameraManager.SwitchToGameplayCamera();
             }
             if (gameState == GameState.Lobby)
             {

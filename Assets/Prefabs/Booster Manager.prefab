@@ -44,10 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boosterPrefabs:
-  - {fileID: 1155661000655230260, guid: e4b4767ddd7e955469efe79ee84405b3, type: 3}
-  - {fileID: 1974901726034504140, guid: 6ce66903ecebcf643a56df35781e39bc, type: 3}
-  - {fileID: 2980380485533678879, guid: 456f7bc9cab0cf6459702a23fa1b7f45, type: 3}
-  - {fileID: 5147322678978023623, guid: 7b2fd2b4e2359b446b28aca277787ede, type: 3}
+  - {fileID: 4390841806149693872, guid: 4dab8ff500eaaf54685636c0a7565c0d, type: 3}
   width: 10
   height: 10
   spawnTime:

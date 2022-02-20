@@ -21,7 +21,8 @@ namespace SF
         private float spawnTimer;
         private List<Booster> boosterInstances;
 
-        public bool AutoSpawnBoosts { get; set; }
+        public bool AutoSpawnBoosts { get; private set; }
+        public bool AutoSpawnEnabled { get; set; }
 
         private void Start()
         {
@@ -86,7 +87,7 @@ namespace SF
 
         private void Update()
         {
-            if (AutoSpawnBoosts)
+            if (AutoSpawnBoosts && AutoSpawnEnabled)
             {
                 if (spawnTimer > 0)
                     spawnTimer -= Time.deltaTime;
