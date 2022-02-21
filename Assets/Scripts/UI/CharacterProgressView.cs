@@ -19,7 +19,7 @@ namespace SF
         private void OnEnable()
         {
             SetProgress(pm.SkinProgress);
-            SetPreview(pm.ActiveSkin.Preview);
+            SetPreview(pm.NextSkin.Preview);
         }
 
         private void SetPreview(Sprite sprite)

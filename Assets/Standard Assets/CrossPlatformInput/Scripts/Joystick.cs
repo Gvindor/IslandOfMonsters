@@ -113,8 +113,6 @@ namespace UnityStandardAssets.CrossPlatformInput
             {
                 m_Button.Pressed();
                 m_Button.Released();
-
-                Debug.Log("Button click!");
 			}
 
 			puck.gameObject.SetActive(false);

@@ -63,25 +63,17 @@ namespace SF
             var gm = FindObjectOfType<GameManager>();
 
             gm.OnGameWon.AddListener(OnGameWon);
+            gm.OnGameLost.AddListener(OnGameLost);
         }
 
         private void OnGameWon()
         {
             float progress = SkinProgress;
-            progress += GetCurrentLevelConfig().SkinProgressFill;
+            progress += GetCurrentLevelConfig().SkinProgressFillWin;
 
             if (progress > SkinUnlockThreshold)
             {
                 progress = 1;
-
-                int index = NextSkinIndex;
-                index++;
-
-                if (index == ActiveSkinIndex) index++; 
-
-                if (index >= skins.Length) index = 0;
-
-                NextSkinIndex = index;
             }
 
             SkinProgress = progress;
@@ -89,10 +81,32 @@ namespace SF
             CurrentLevelIndex++;
         }
 
+        private void OnGameLost()
+        {
+            float progress = SkinProgress;
+            progress += GetCurrentLevelConfig().SkinProgressFillLoose;
+
+            if (progress > SkinUnlockThreshold)
+            {
+                progress = 1;
+            }
+
+            SkinProgress = progress;
+        }
+
         public void UseNextSkin()
         {
             ActiveSkinIndex = NextSkinIndex;
             SkinProgress = 0;
+
+            int index = NextSkinIndex;
+            index++;
+
+            if (index == ActiveSkinIndex) index++;
+
+            if (index >= skins.Length) index = 0;
+
+            NextSkinIndex = index;
 
             OnActiveSkinChanged.Invoke();
         }
