@@ -4459,7 +4459,7 @@ MonoBehaviour:
   lookAtPos: {x: 0, y: 0, z: 0}
   lookAtTimer: 0
   lookAt: 1
-  defaultLoopAtPos: {x: 0, y: 1, z: 2}
+  defaultLoopAtPos: {x: 0, y: 0.28, z: 0.28}
   rotationSpeed: 10
   autoAttackDelay: 2
   autoAttackRange: 5

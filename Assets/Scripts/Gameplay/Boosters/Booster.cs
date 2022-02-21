@@ -65,6 +65,8 @@ namespace SF
             manager?.ApplyBoostToCharacter(player);
 
             animator.SetTrigger(PickKey);
+
+            SoundManager.PlaySFX(SoundManager.SfxType.Boost, transform.position);
         }
 
         private void OnPickAnimationDone()

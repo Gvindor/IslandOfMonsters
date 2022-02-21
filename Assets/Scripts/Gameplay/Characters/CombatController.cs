@@ -47,6 +47,8 @@ namespace SF
         private void OnAttackStarted()
         {
             hitTargets.Clear();
+
+            SoundManager.PlaySFX(SoundManager.SfxType.Punch, transform.position);
         }
 
         private bool TakeHit(CombatController sender, GameObject go, Vector3 point, Vector3 impulse, int damage, bool isPowerKick)
@@ -97,6 +99,7 @@ namespace SF
             //rb.AddForce(dir.normalized * 400, ForceMode.Impulse);
 
             PlayHitVFX(point);
+            SoundManager.PlaySFX(SoundManager.SfxType.Hit, point);
 
             OnHitRecived.Invoke(sender);
 

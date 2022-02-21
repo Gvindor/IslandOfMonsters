@@ -64,6 +64,8 @@ namespace SF
                 rb.isKinematic = false;
                 Despawn(gameObject);
             }
+
+            SoundManager.PlaySFX(SoundManager.SfxType.Destruction, transform.position);
         }
 
         private void Despawn(GameObject gameObject)
