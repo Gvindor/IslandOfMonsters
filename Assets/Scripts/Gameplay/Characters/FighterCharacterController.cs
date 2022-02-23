@@ -1,8 +1,6 @@
 ﻿using RagdollMecanimMixer;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityStandardAssets.CrossPlatformInput;
-using System.Collections.Generic;
 
 namespace SF
 {
@@ -273,7 +271,7 @@ namespace SF
 
         void OnAnimatorIK()
         {
-            if (lookAt)
+            if (lookAt && target)
             {
                 animator.SetLookAtWeight(1, 0.5f);
                 animator.SetLookAtPosition(lookAtPos);
