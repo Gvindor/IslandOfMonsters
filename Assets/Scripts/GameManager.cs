@@ -8,6 +8,7 @@ namespace SF
     {
         [SerializeField] ArenaManager arenaManager;
         [SerializeField] UIManager uiManager;
+        [SerializeField] float endCutsceneLength = 10f;
 
         private PlayerSpawner spawner;
         private BoosterManager boosts;
@@ -98,27 +99,44 @@ namespace SF
         {
             spawner.OnCharacterDead.RemoveListener(OnCharacterDead);
 
-            gameState = GameState.End;
+            gameState = GameState.EndCutscene;
 
             OnGameLost.Invoke();
 
-            uiManager.SwithToLostScreen();
+            StartCoroutine(EndGameAfterDelay(endCutsceneLength, false));
         }
 
         private void OnAllEnemiesDead()
         {
             spawner.OnCharacterDead.RemoveListener(OnCharacterDead);
-            gameState = GameState.End;
+            gameState = GameState.EndCutscene;
+
+            spawner.Player?.Dance();
+
+            cameraManager.SwitchToVictoryCamera();
 
             OnGameWon.Invoke();
 
-            uiManager.SwithToWinScreen();
+            StartCoroutine(EndGameAfterDelay(endCutsceneLength, true));
+        }
+
+        private IEnumerator EndGameAfterDelay(float delay, bool win)
+        {
+            yield return new WaitForSecondsRealtime(delay);
+
+            gameState = GameState.End;
+
+            if (win)
+                uiManager.SwithToWinScreen();
+            else
+                uiManager.SwithToLostScreen();
         }
 
         private enum GameState
         {
             Lobby,
             Gameplay,
+            EndCutscene,
             End
         }
     }

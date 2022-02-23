@@ -43,10 +43,12 @@ namespace SF
         private bool isRun;
         private bool isDead;
         private bool isFainted;
+        private bool isDancing;
 
         public bool IsAttacking => animator.GetCurrentAnimatorStateInfo(0).IsTag("attack");
         public bool IsDead => isDead;
         public bool IsFainted => isFainted;
+        public bool IsDancing => isDancing;
         public Vector2 Input => input;
         public Transform Target => target;
         public float SpeedModifier { get; set; } = 1f;
@@ -73,6 +75,8 @@ namespace SF
 
         public void Die()
         {
+            StopDance();
+
             isDead = true;
 
             rb.isKinematic = true;
@@ -91,6 +95,8 @@ namespace SF
 
         public void Faint()
         {
+            StopDance();
+
             isFainted = true;
             faintTimer = faintDuration;
 
@@ -118,7 +124,7 @@ namespace SF
 
         public void Move(Vector2 input)
         {
-            if (!IsDead && !IsFainted)
+            if (!IsDead && !IsFainted && !IsDancing)
                 this.input = new Vector3(input.x, 0, input.y);
             else 
                 this.input = Vector3.zero;
@@ -126,6 +132,8 @@ namespace SF
 
         public void Fight()
         {
+            if (IsDead || IsFainted || IsDancing) return;
+
             float time = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
 
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("Default") || (IsAttacking && time > 0.5f))
@@ -151,6 +159,21 @@ namespace SF
             attackTimer -= Time.deltaTime;
         }
 
+        public void Dance()
+        {
+            isDancing = true;
+            target = null;
+            animator.SetBool("dance", true);
+        }
+
+        public void StopDance()
+        {
+            if (!isDancing) return;
+
+            isDancing = false;
+            animator.SetBool("dance", false);
+        }
+
         // Update is called once per frame
         void Update()
         {
@@ -171,7 +194,7 @@ namespace SF
             if (boostTimer > 0) boostTimer -= Time.deltaTime;
             if (boostTimer < 0 && ActiveBoost != null) ClearBoost();
 
-            if (IsDead || IsFainted) return;
+            if (IsDead || IsFainted || IsDancing) return;
 
             AutoAttack();
 

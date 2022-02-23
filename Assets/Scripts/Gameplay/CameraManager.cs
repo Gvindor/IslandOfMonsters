@@ -7,6 +7,7 @@ namespace SF
     {
         [SerializeField] CinemachineVirtualCamera gameplayCamera;
         [SerializeField] CinemachineVirtualCamera overviewCamera;
+        [SerializeField] CinemachineVirtualCamera victoryCamera;
 
         private void Start()
         {
@@ -31,6 +32,9 @@ namespace SF
             {
                 gameplayCamera.Follow = player;
                 gameplayCamera.LookAt = player;
+
+                victoryCamera.Follow = player;
+                victoryCamera.LookAt = player;
             }
         }
 
@@ -38,12 +42,21 @@ namespace SF
         {
             overviewCamera.gameObject.SetActive(false);
             gameplayCamera.gameObject.SetActive(true);
+            victoryCamera.gameObject.SetActive(false);
         }
 
         public void SwitchToOverviewCamera()
         {
             gameplayCamera.gameObject.SetActive(false);
             overviewCamera.gameObject.SetActive(true);
+            victoryCamera.gameObject.SetActive(false);
+        }
+
+        public void SwitchToVictoryCamera()
+        {
+            gameplayCamera.gameObject.SetActive(false);
+            overviewCamera.gameObject.SetActive(false);
+            victoryCamera.gameObject.SetActive(true);
         }
     }
 }

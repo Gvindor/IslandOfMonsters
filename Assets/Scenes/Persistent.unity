@@ -256,6 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arenaManager: {fileID: 1643173347}
   uiManager: {fileID: 1903049406}
+  endCutsceneLength: 5
   OnGameWon:
     m_PersistentCalls:
       m_Calls: []

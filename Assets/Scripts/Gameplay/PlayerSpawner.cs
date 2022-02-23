@@ -13,6 +13,7 @@ namespace SF
         private FighterCharacterController player;
         private ProgressionManager pm;
 
+        public FighterCharacterController Player => player;
         public int TotalCharacters { get; private set; }
         public int AliveEnemiesCount => aliveEnemies != null ? aliveEnemies.Count : 0;
 
