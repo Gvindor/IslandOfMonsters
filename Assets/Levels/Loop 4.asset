@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 476ca0d357a60974086e04f4e6fc2bc0, type: 3}
   m_Name: Loop 4
   m_EditorClassIdentifier: 
-  boostEnabled: 0
-  skinProgressFill: 0.333
+  boostEnabled: 1
+  skinProgressFillWin: 0.333
+  skinProgressFillLoose: 0.15
   scene:
     sceneAsset: {fileID: 102900000, guid: 96734eaaa702e844891cd473d12fd858, type: 3}
     scenePath: Assets/Scenes/Scene_2.unity
+  additionalRandomEnemies: 0
   enemies:
   - {fileID: 11400000, guid: 358f507d528cb8b45aee04424e97b222, type: 2}
   - {fileID: 11400000, guid: 04c0eeb5d5de1ee4e907e430fab154db, type: 2}
