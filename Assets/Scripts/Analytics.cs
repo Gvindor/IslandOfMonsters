@@ -50,9 +50,9 @@ namespace SF
             if (FB.IsInitialized)
                 FB.LogAppEvent(logEvent, parameters: parameters);
             AppsFlyer.sendEvent(logEvent, strParams);
-            //AppMetrica.Instance.ReportEvent(logEvent, parameters);
+            AppMetrica.Instance.ReportEvent(logEvent, parameters);
 
-            //AppMetrica.Instance.SendEventsBuffer();
+            AppMetrica.Instance.SendEventsBuffer();
         }
 
         public enum LevelResult
