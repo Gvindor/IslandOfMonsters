@@ -62,8 +62,14 @@ namespace SF
         {
             var gm = FindObjectOfType<GameManager>();
 
+            gm.OnGameStart.AddListener(OnGameStart);
             gm.OnGameWon.AddListener(OnGameWon);
             gm.OnGameLost.AddListener(OnGameLost);
+        }
+
+        private void OnGameStart() 
+        {
+            Analytics.LogLevelStart(CurrentLevelIndex + 1);
         }
 
         private void OnGameWon()
@@ -79,6 +85,8 @@ namespace SF
             SkinProgress = progress;
 
             CurrentLevelIndex++;
+
+            Analytics.LogLevelFinished(CurrentLevelIndex);
         }
 
         private void OnGameLost()

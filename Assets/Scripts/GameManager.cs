@@ -16,6 +16,7 @@ namespace SF
 
         private GameState gameState;
 
+        public UnityEvent OnGameStart = new UnityEvent();
         public UnityEvent OnGameWon = new UnityEvent();
         public UnityEvent OnGameLost = new UnityEvent();
 
@@ -41,6 +42,8 @@ namespace SF
         {
             spawner.EnableEnemies();
             boosts.AutoSpawnEnabled = true;
+
+            OnGameStart.Invoke();
         }
 
         public void NextGame()
