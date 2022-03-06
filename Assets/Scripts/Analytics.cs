@@ -2,6 +2,7 @@
 using UnityEngine;
 using AppsFlyerSDK;
 using System.Collections.Generic;
+using Facebook.Unity;
 
 namespace SF
 {
@@ -10,14 +11,54 @@ namespace SF
         const string LevelStartEvent = "level_start";
         const string LevelFinishedEvent = "level_finished";
 
-        public static void LogLevelStart(int level)
+        private const string LevelNumberParam = "level_number";
+        private const string LevelResultParam = "result";
+
+        public static void LogLevelStart(int num)
         {
-            AppsFlyer.sendEvent(LevelStartEvent, new Dictionary<string, string>() { { "level", level.ToString() } });
+            var parameters = new Dictionary<string, object>()
+            {
+                { LevelNumberParam, num },
+            };
+
+            Debug.Log($"[Analytics] {LevelStartEvent} | Num: {num}");
+
+            LogEvent(LevelStartEvent, parameters);
         }
 
-        public static void LogLevelFinished(int level)
+        public static void LogLevelFinished(int num, LevelResult result)
         {
-            AppsFlyer.sendEvent(LevelFinishedEvent, new Dictionary<string, string>() { { "level", level.ToString() } });
+            var parameters = new Dictionary<string, object>()
+            {
+                { LevelNumberParam, num },
+                { LevelResultParam, result.ToString().ToLowerInvariant() },
+            };
+
+            Debug.Log($"[Analytics] {LevelFinishedEvent} | Num: {num} Result: {result}");
+
+            LogEvent(LevelFinishedEvent, parameters);
+        }
+
+        public static void LogEvent(string logEvent, Dictionary<string, object> parameters)
+        {
+            var strParams = new Dictionary<string, string>();
+            foreach (var item in parameters)
+            {
+                strParams[item.Key] = item.Value.ToString();
+            }
+
+            if (FB.IsInitialized)
+                FB.LogAppEvent(logEvent, parameters: parameters);
+            AppsFlyer.sendEvent(logEvent, strParams);
+            //AppMetrica.Instance.ReportEvent(logEvent, parameters);
+
+            //AppMetrica.Instance.SendEventsBuffer();
+        }
+
+        public enum LevelResult
+        {
+            Win,
+            Lose
         }
     }
 }

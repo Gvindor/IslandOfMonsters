@@ -86,7 +86,7 @@ namespace SF
 
             CurrentLevelIndex++;
 
-            Analytics.LogLevelFinished(CurrentLevelIndex);
+            Analytics.LogLevelFinished(CurrentLevelIndex, Analytics.LevelResult.Win);
         }
 
         private void OnGameLost()
@@ -100,6 +100,8 @@ namespace SF
             }
 
             SkinProgress = progress;
+
+            Analytics.LogLevelFinished(CurrentLevelIndex + 1, Analytics.LevelResult.Lose);
         }
 
         public void UseNextSkin()
