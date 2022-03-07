@@ -11,16 +11,19 @@ namespace SF
 
         [SerializeField] Image fill;
         [SerializeField] TMP_Text timeLabel;
+        [SerializeField] GameManager gameManager;
 
         private Animator animator;
         private FighterCharacterController character;
 
-        private IEnumerator Start()
+        private void Start()
         {
             animator = GetComponent<Animator>();
+            gameManager.OnGameStart.AddListener(OnGameStart);
+        }
 
-            yield return null; //wait one frame for everything to initialize
-
+        private void OnGameStart()
+        {
             var characters = FindObjectsOfType<FighterCharacterController>();
 
             foreach (var item in characters)

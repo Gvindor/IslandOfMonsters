@@ -4124,6 +4124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fill: {fileID: 933756417}
   timeLabel: {fileID: 116085350}
+  gameManager: {fileID: 82426370}
 --- !u!1001 &610235592166896054
 PrefabInstance:
   m_ObjectHideFlags: 0
